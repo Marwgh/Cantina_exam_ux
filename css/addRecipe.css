@@ -303,6 +303,7 @@ footer section {
   body {
     margin-top: 6vw;
   }
+
   footer {
     height: 35vw;
     display: grid;
@@ -360,6 +361,7 @@ footer section {
   body {
     margin-top: 6vw;
   }
+
   footer {
     height: 13.5vw;
     display: grid;
@@ -441,7 +443,6 @@ main h1 {
 
 form {
   position: relative;
-  align-items: center;
 }
 form img {
   width: 6vw;
@@ -456,6 +457,27 @@ form fieldset {
   padding: 1.5rem;
   margin-bottom: 1rem;
 }
+form fieldset .ingredient, form fieldset .utensil {
+  border: solid 0.1vw;
+  display: grid;
+  grid-template-columns: 5% 90% 5%;
+}
+form fieldset .step {
+  border: solid 0.1vw;
+  display: grid;
+  grid-template-columns: 5% 5% 85% 5%;
+  margin: 2vw 0;
+}
+form fieldset .bars {
+  width: 2vw;
+  height: 2vw;
+  padding: 1vw;
+}
+form fieldset .cross {
+  width: 2.5vw;
+  height: 2.5vw;
+  padding: 1vw;
+}
 form input[type=submit] {
   background-color: #6e1916;
   color: white;
@@ -464,17 +486,6 @@ form input[type=submit] {
   border-radius: 0.5vw;
   display: block;
   margin: auto;
-}
-form .ingredient, form .utensil, form .step {
-  border: solid 0.1vw;
-}
-form .bars {
-  width: 1vw;
-  height: 1vw;
-}
-form .cross {
-  width: 1.5vw;
-  height: 1.5vw;
 }
 
 /*# sourceMappingURL=addRecipe.css.map */

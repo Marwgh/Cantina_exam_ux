@@ -12,23 +12,43 @@ main {
 
 form {
     position: relative;
-    align-items: center;
+    // align-items: center;
     img {
         width: 6vw;
         height: auto;
-        // position: absolute;
-        // top: 50%;
-        // left: 50%;
-        // transform: translate(-50%, -50%);
         display: block;
         margin:auto;
     }
+
     #fileUpload {
         display: none;
     }
     fieldset {
         padding: 1.5rem;
         margin-bottom: 1rem;
+        .ingredient, .utensil {
+            border: solid 0.1vw;
+            display: grid;
+            grid-template-columns: 5% 90% 5%;
+        }
+        .step {
+            border: solid 0.1vw;
+            display: grid;
+            grid-template-columns: 5% 5% 85% 5%;
+            margin: 2vw 0;
+        }
+        .bars {
+            width: 2vw;
+            height: 2vw;
+            padding: 1vw;
+        }
+        .cross {
+            width: 2.5vw;
+            height: 2.5vw;
+            padding: 1vw;
+        }
+    
+
     }
     input[type="submit"] {
         background-color: $ctaColor;
@@ -40,17 +60,5 @@ form {
         // bottom: 0;
         display: block;
         margin:auto;
-    }
-    .ingredient, .utensil, .step {
-        border: solid 0.1vw;
-        // border-radius: 0.5vw;
-    }
-    .bars {
-        width: 1vw;
-        height: 1vw;
-    }
-    .cross {
-        width: 1.5vw;
-        height: 1.5vw;
     }
 }

@@ -55,7 +55,9 @@
           <img src="images/svg/image-solid.svg" alt="upload">
         </label>
         <input id="fileUpload" name="fileUpload" type="file"><br>
-        <label for="">Upload Recipe Image or Video</label>
+        <div>
+          <label class="upload" for="">Upload Recipe Image or Video</label>
+        </div>
       </fieldset>
       <fieldset>
         <input id="title" name="title" type="text" placeholder="Recipe title"><br>
@@ -118,21 +120,24 @@
           <option name="10" value="10">10</option>
         </select>
         <span></span>
-        <div class="step">
-          <output for="">1</output>
-          <label for="">
-            <img class="bars" src="images/svg/bars-solid.svg" alt="bars">
+        <div>
+          <div class="step">
+            <output for="">1</output>
+            <label for="">
+              <img class="bars" src="images/svg/bars-solid.svg" alt="bars">
+            </label>
+            <input type="text" name="ingredient" id="ingredient" placeholder="ingredient here">
+            <!-- <input type="button" id="close" name="close" -->
+            <label for="">
+              <img class="cross" src="images/svg/xmark-solid.svg" alt="cross">
+            </label>
+          </div>
+          <label for="fileUpload">
+            <img src="images/svg/image-solid.svg" alt="upload">
           </label>
-          <input type="text" name="ingredient" id="ingredient" placeholder="ingredient here">
-          <!-- <input type="button" id="close" name="close" -->
-          <label for="">
-            <img class="cross" src="images/svg/xmark-solid.svg" alt="cross">
-          </label>
+          <input id="fileUpload" name="fileUpload" type="file">
         </div>
-        <label for="fileUpload">
-          <img src="images/svg/image-solid.svg" alt="upload">
-        </label>
-        <input id="fileUpload" name="fileUpload" type="file"><br>
+        
       </fieldset>
       <fieldset>
         <label for="tags">Add tags</label><br>
