@@ -1,0 +1,56 @@
+@import "style";
+
+
+main {
+    font-family: $paragraphFont;
+    max-width: 500px;
+    margin: 0 auto;
+    h1 {
+        text-align: center;
+    }
+}
+
+form {
+    position: relative;
+    align-items: center;
+    img {
+        width: 6vw;
+        height: auto;
+        // position: absolute;
+        // top: 50%;
+        // left: 50%;
+        // transform: translate(-50%, -50%);
+        display: block;
+        margin:auto;
+    }
+    #fileUpload {
+        display: none;
+    }
+    fieldset {
+        padding: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    input[type="submit"] {
+        background-color: $ctaColor;
+        color: $whiteSpace;
+        padding: 0.5vw 2vw;
+        border: $ctaColor solid 0.1vw;
+        border-radius: 0.5vw;
+        // position: absolute;
+        // bottom: 0;
+        display: block;
+        margin:auto;
+    }
+    .ingredient, .utensil, .step {
+        border: solid 0.1vw;
+        // border-radius: 0.5vw;
+    }
+    .bars {
+        width: 1vw;
+        height: 1vw;
+    }
+    .cross {
+        width: 1.5vw;
+        height: 1.5vw;
+    }
+}

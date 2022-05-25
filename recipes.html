@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes</title>
+    <link rel="stylesheet" href="css/recipesStyle.css">
+</head>
+<body>
+    <header>
+        <div>
+            <a href="index.html"><img src="images/svg/logo2.svg" alt="logo"></a>
+        </div>
+        <nav>
+
+            <a href="recipe.html">Recipes</a>
+            <a href="addRecipe.html">Add Recipe</a>
+            <a href="recipeGenerator.html">Recipe Generator</a>
+
+            <div>
+                <input type="checkbox">
+                <div id="userMenu">
+                    <a href="profilePage.html">Your profile</a>
+                    <a href="">Settings</a>
+                    <a href="">Logout</a>
+                </div>
+            </div>
+            <img src="images/svg/user-solid.svg" alt="ProfileButton">
+        </nav>
+        <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <div id="menuB">
+                <a href="recipe.html">Recipes</a>
+                <a href="addRecipe.html">Add Recipe</a>
+                <a href="recipeGenerator.html">Recipe Generator</a>
+                <a href="">Your profile</a>
+                <a href="">Settings</a>
+                <a href="">Logout</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        
+        <!--Search bar-->
+        <section class="searchWrapper">
+        <input type="search" class="searchInput" name="search" placeholder="search"></input>
+        <img src="images/svg/magnifying-glass-solid.svg">
+        </section>
+
+        <!--Filter Order-->
+        <section class="buttonWrapper">
+            <section class="filterWrapper">
+                <div>
+                    <input type="checkbox" name="name1">
+                    <label for="">Filter</label>
+                    <div></div>
+                </div>
+                </section>
+                
+            <section>
+                <select id="dropDownExample" value="">
+                  <option></option>
+                  <option value="option1">option1</option>
+                  <option value="option2">option2</option>
+                  <option value="option3">option3</option>
+                  <option value="option4">option4</option>
+                </select>
+                <label for="dropDownExample">Order</label>
+      
+            </section>
+        </section>
+
+        <!--Recipe-->
+
+        <section class="yourRecipes">
+            <ul class="container">
+              <li>
+                <img src="images/image/raphael-nogueira-63mHpYEyjCA-unsplash.jpg" alt="Recipe image">
+                <div class="recipeDetails">
+                  <h3>Chicken Ceasar Salad</h3>
+                  <ul class="descripDetails">
+                    <li>Time: 01:30</li>
+                    <li>Serves: 4</li>
+                    <li>☆★★★★</li>
+                </ul>
+                </div>
+                <div class="buttonContainer">
+                  <button>Update</button>
+                  <button>Delete</button>
+                </div>
+              </li>
+            </ul>
+            <ul class="container">
+              <li>
+                <img src="images/image/raphael-nogueira-63mHpYEyjCA-unsplash.jpg" alt="Recipe image">
+      
+                <div class="recipeDetails">
+                  <h3>Chicken Ceasar Salad</h3>
+                  <ul class="descripDetails">
+                    <li>Time: 01:30</li>
+                    <li>Serves: 4</li>
+                    <li>☆★★★★</li>
+                </ul>
+                </div>
+                <div class="buttonContainer">
+                  <button>Update</button>
+                  <button>Delete</button>
+                </div>
+              </li>
+            </ul>
+
+     </section>
+    <!--Horizontal Ad-->
+
+    <section class="advert1">
+    </section>
+
+    </main>
+
+    <!--Footer-->
+    <footer>
+        <div>
+            <a class="footerLogo" href="index.html"><img src="images/svg/logo2.svg" alt="Logo"></a>
+            <section>
+                <img src="images/svg/facebook-square-brands.svg" alt="Facebook">
+                <img src="images/svg/twitter-square-brands.svg" alt="Twitter">
+                <img src="images/svg/instagram-square-brands.svg" alt="Instagram">
+                <img src="images/svg/linkedin-brands.svg" alt="Linkedin">
+            </section>
+        </div>
+
+        <p class="copyRight">&copy;Group D</p>
+        <section>
+            <h2>Pages</h2>
+            <ul>
+                <li><a href="recipe.html">Recipe </a></li>
+                <li><a href="addRecipe.html">Add recipe </a></li>
+                <li><a href="recipeGenerator.html">Recipe Generator </a></li>
+                <li><a href="profilePage.html">Profile page</a></li>
+            </ul>
+        </section>
+        <section>
+            <h2>Company Info</h2>
+            <p>Bla bla bla</p>
+        </section>
+        <section>
+            <h2>Contact</h2>
+            <ul>
+                <li>cantina.info@cantina.com</li>
+                <li>+45 55551234</li>
+                <li>Tatawine</li>
+            </ul>
+        </section>
+    </footer>
+</body>
+</html>

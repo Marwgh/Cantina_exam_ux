@@ -1,0 +1,375 @@
+@import "style";
+
+// MAIN
+main {
+    font-family: $paragraphFont;
+    text-align: justify;
+    h1 {
+        font-size: $phoneH1;
+    }
+    h2, th {
+        font-size: $iphoneH2;
+    }
+    h3 {
+        font-size: $iphoneH3;
+    }
+    p, input, li, td, input[type="submit"], button {
+        font-size: $iphoneP;
+    }
+    label {
+        font-size: $iphoneP;
+        font-weight:900;
+    }
+
+}
+
+
+// HERO HERO HERO HERO HERO HERO HERO HERO HERO HERO HERO HERO HERO HERO
+.hero {
+    grid-area: hero;
+    height: 40vw;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+
+    h1 {
+        z-index: 1;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        // color: $whiteSpace;
+        // backdrop-filter: grayscale(0.5);
+    }
+
+    img {
+        width: 100%;
+        filter: blur(4px);
+        position: absolute;
+        top: -5vw;
+        left: 0;
+    }
+}
+
+// textInformation textInformation textInformation textInformation 
+.leftSide {
+    grid-area: leftSide;
+}
+
+.rightSide {
+    grid-area: rightSide;
+}
+// info
+.info {
+    grid-area: info;
+    box-shadow: 0 8px 8px -4px $textColor;
+    text-align: center;
+
+    ul li {
+        display: inline;
+    }
+}
+
+// recipeButtons
+.recipeButtons {
+    grid-area: recipeButtons;
+    width: 100%;
+    margin: 1vw 2vw 2vw 0;
+
+    button {
+        background-color: $ctaColor;
+        float: right;
+        padding: 0.5vw 2vw;
+        border: $ctaColor solid 0.1vw;
+        border-radius: 0.5vw;
+        cursor: pointer;
+        color: $whiteSpace;
+        margin-right: 1rem;
+    }
+}
+
+// description
+.description {
+    grid-area: description;
+    margin: 1vw 3.5vw;
+}
+
+// list
+.list {
+    text-align:start;
+    margin: 2vw;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    box-shadow: 4px 4px 10px rgba($color: $textColor, $alpha: 0.5);
+    th {
+        text-align: left;
+    }
+}
+
+// ingredients & utensils
+.ingredients td:last-child {
+    width: 10%;
+    text-align: right;
+}
+
+.utensils {
+    padding-top: 0.5rem;
+}
+
+// nutrition
+.nutrition {
+    td:first-child {
+        width: 60%;
+    }
+
+    td:nth-child(2) {
+        width: 20%;
+        text-align: right;
+        padding-right: 1rem;
+    }
+
+    td:last-child {
+        width: 20%;
+        text-align: right;
+    }
+}
+
+// steps
+.steps {
+    grid-area: steps;
+    margin: 2rem;
+
+    ol {
+        margin-top: 1rem;
+
+        li {
+            margin-bottom: 1.5rem;
+        }
+    }
+}
+
+// feedback
+.feedback {
+    grid-area: feedback;
+    margin: 0.5rem;
+    div h3 {
+        margin-left: 0.5rem;
+    }
+    section h2 {
+        margin-left: 0.5rem;
+    }
+    .comments {
+        border: solid 0.2rem $secondaryColor;
+        border-radius: 0.5rem;
+        .comment {
+            display: grid;
+            grid-template-columns: max-content;
+            grid-template-areas: "img div";
+            border-bottom: solid 0.2rem $secondaryColor;
+    
+            img {
+                width: 5rem;
+                height: 5rem;
+                border-radius: 50%;
+                margin: 0.5rem;
+            }
+    
+            div {
+                margin: 0.5rem;
+                h3 {
+                    margin: 0;
+                }
+            }
+        }
+    
+        .commenting {
+            padding-top: 0.5rem;
+            label {
+                padding: 0 0 0 1rem;
+            }
+    
+            textarea {
+                border: none;
+                resize: none;
+                width: 98%;
+            }
+    
+            div {
+                width: 100%;
+                height: 2.2rem;
+    
+                input[type="submit"] {
+                    background-color: $ctaColor;
+                    float: right;
+                    padding: 0.5vw 2vw;
+                    border: $ctaColor solid 0.1vw;
+                    border-radius: 0.5vw;
+                    cursor: pointer;
+                    color: $whiteSpace;
+                    margin-right: 1rem;
+                }
+            }
+        }
+    }
+    
+}
+
+@media only screen and (min-width: map-get($breakPoints, md)) {
+    .recipeButtons {
+        width: 100%;
+        margin-top: 1rem;
+        margin-bottom: 0;
+    }
+
+    .info {
+        box-shadow: 4px 4px 10px rgba($color: $textColor, $alpha: 0.5);
+        border-radius: 0.5rem;
+        margin: 0 0.7rem;
+
+        ul {
+            padding: 0;
+        }
+    }
+
+    .textInformation {
+        max-width: 500px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1.2fr 1fr;
+        grid-template-areas:
+            "recipeButtons recipeButtons"
+            "leftSide description"
+            "leftSide info"
+            "leftSide rightSide"
+            "steps steps"
+            "feedback feedback";
+    }
+
+    .commenting {
+        height: 22vw;
+    }
+
+    main {
+        h1 {
+            font-size: $ipadH1;
+        }
+        h2, th {
+            font-size: $ipadH2;
+        }
+        h3 {
+            font-size: $ipadH3;
+        }
+        p, input, li, td, input[type="submit"], button, label {
+            font-size: $ipadP;
+        }
+    }
+}
+
+@media only screen and (min-width: map-get($breakPoints, lg)) {
+    .hero {
+        height: 30vw;
+    }
+
+    .steps {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .info {
+        box-shadow: 4px 4px 10px rgba($color: $textColor, $alpha: 0.5);
+        border-radius: 0.5rem;
+        margin: 0 2vw;
+
+        ul {
+            padding: 0;
+        }
+    }
+
+    .textInformation {
+        max-width: 850px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1.2fr 1fr;
+        grid-template-areas:
+            "recipeButtons recipeButtons"
+            "leftSide description"
+            "leftSide info"
+            "leftSide rightSide"
+            "steps steps"
+            "feedback feedback";
+    }
+
+    .commenting {
+        height: 16vw;
+    }
+
+    main {
+        h1 {
+            font-size: $pcH1;
+        }
+        h2, th {
+            font-size: $pcH2;
+        }
+        h3 {
+            font-size: $pcH3;
+        }
+        p, input, li, td, input[type="submit"], button, label {
+            font-size: $pcP;
+        }
+    }
+}
+
+@media only screen and (min-width: map-get($breakPoints, xl)) {
+    .hero {
+        height: 20vw;
+
+    }
+
+    .steps {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .info {
+        box-shadow: 4px 4px 10px rgba($color: $textColor, $alpha: 0.5);
+        border-radius: 0.5rem;
+        margin: 0 2vw;
+
+        ul {
+            padding: 0;
+        }
+    }
+
+    .textInformation {
+        max-width: 1100px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1.2fr 1fr;
+        grid-template-areas:
+            "recipeButtons recipeButtons"
+            "leftSide description"
+            "leftSide info"
+            "leftSide rightSide"
+            "steps steps"
+            "feedback feedback";
+    }
+
+    .commenting {
+        height: 14vw;
+    }
+
+    main {
+        h1 {
+            font-size: $pcH1;
+        }
+        h2, th {
+            font-size: $pcH2;
+        }
+        h3 {
+            font-size: $pcH3;
+        }
+        p, input, li, td, input[type="submit"], button, label {
+            font-size: $pcP;
+        }
+    }
+}

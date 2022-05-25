@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/recipe.css">
+    <title>Recipe</title>
+</head>
+<!-- some text from: https://www.bbcgoodfood.com/recipes/chicken-caesar-salad -->
+<body>
+    <header>
+        <div>
+            <a href="index.html"><img src="images/svg/logo2.svg" alt="logo"></a>
+        </div>
+        <nav>
+
+            <a href="recipe.html">Recipes</a>
+            <a href="addRecipe.html">Add Recipe</a>
+            <a href="recipeGenerator.html">Recipe Generator</a>
+
+            <div>
+                <input type="checkbox">
+                <div id="userMenu">
+                    <a href="profilePage.html">Your profile</a>
+                    <a href="">Settings</a>
+                    <a href="">Logout</a>
+                </div>
+            </div>
+            <img src="images/svg/user-solid.svg" alt="ProfileButton">
+        </nav>
+        <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <div id="menuB">
+                <a href="recipe.html">Recipes</a>
+                <a href="addRecipe.html">Add Recipe</a>
+                <a href="recipeGenerator.html">Recipe Generator</a>
+                <a href="">Your profile</a>
+                <a href="">Settings</a>
+                <a href="">Logout</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <img src="images/image/raphael-nogueira-63mHpYEyjCA-unsplash.jpg" alt="Dish">
+            <h1>Chicken Caesar Salad</h1>
+        </section>
+        <section class="textInformation">
+            <section class="info">
+                <ul>
+                    <li>Time: 20-30mins</li>
+                    <li>Serves: 4</li>
+                    <li>Rating: ☆★★★★</li>
+                </ul>
+            </section>
+            <div class="recipeButtons">
+                <button>Share</button>
+                <button>Print</button>
+            </div>
+            <article class="description">
+                <h2>Description</h2>
+                <p>A classic chicken salad recipe, featuring crunchy croutons and a creamy, garlic dressing. Ideal for lunch with friends.</p>
+            </article>
+            <section class="list leftSide">
+                <table class="ingredients">
+                    <thead>
+                        <th>Ingredients:</th>
+                        <th></th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Thick slices crusty white bread</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>Olive oil</td>
+                            <td>3tbsp</td>
+                        </tr>
+                        <tr>
+                            <td>Salt (Sea salt)</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Skinless, boneless chicken breasts</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>Large romaine lettuce</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>Caesar Dressing</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Parmesan</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="utensils">
+                    <thead>
+                        <th>Utensils:</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Baking tray (oven)</td>
+                        </tr>
+                        <tr>
+                            <td>Pan</td>
+                        </tr>
+                        <tr>
+                            <td>Peeler or Grater</td>
+                        </tr>
+                        <tr>
+                            <td>2 Knives</td>
+                        </tr>
+                        <tr>
+                            <td>Cutting board</td>
+                        </tr>
+                        <tr>
+                            <td>Bowl</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section class="list rightSide">
+                <table class="nutrition">
+                    <thead>
+                        <th>Nutrition:</th>
+                        <th></th>
+                        <th></th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Calories</td>
+                            <td>200</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Fat</td>
+                            <td>14(g)</td>
+                            <td>18%</td>
+                        </tr>
+                        <tr>
+                            <td>Protein</td>
+                            <td>12(g)</td>
+                            <td>24%</td>
+                        </tr>
+                        <tr>
+                            <td>Sugar</td>
+                            <td>1(g)</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Fiber</td>
+                            <td>1(g)</td>
+                            <td>4%</td>
+                        </tr>
+                        <tr>
+                            <td>Sodium</td>
+                            <td>480(mg)</td>
+                            <td>21%</td>
+                        </tr>
+                        <tr>
+                            <td>Calcium</td>
+                            <td>150(mg)</td>
+                            <td>12%</td>
+                        </tr>
+                        <tr>
+                            <td>Iron</td>
+                            <td>0.7(mg)</td>
+                            <td>4%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section class="steps">
+                <article>
+                    <h2>Steps:</h2>
+                    <ol>
+                        <li>Heat oven to 200C/fan 180C/gas 6. Tear 1 medium ciabatta into big, ragged croutons or, if you prefer, cut with a bread knife. Spread over a large baking sheet or tray and sprinkle over 2 tbsp olive oil.</li>
+                        <li>Rub the oil into the bread and season with a little salt if you like (sea salt crystals are best for this). Bake for 8-10 mins, turning the croutons a few times during cooking so they brown evenly.</li>
+                        <li>Rub 2 skinless, boneless chicken breasts with 1 tbsp olive oil, season. Place pan over a medium heat for 1 min, until hot, but not smoking. Lay the chicken on the pan (it will sizzle if it’s hot enough) and leave for 4 mins.</li>
+                    </ol>
+                </article>
+                <section>
+                    <img src="" alt="Advert" class="advert2">
+                </section>
+                <article>
+                    <ol start="4">
+                        <li>Turn the chicken, then cook for 4 mins more. Check if it’s cooked by poking the tip of a sharp knife into the thickest part; there should be no sign of pink and juices will run clear.</li>
+                        <li>Shave/Grate the cheese with a peeler.</li> 
+                        <li>Tear 1 large cos or romaine lettuce into large pieces and put in a large bowl.</li>
+                        <li>Pull chicken into bite-size strips and scatter half over the leaves, along with half the croutons.</li>
+                        <li>Add most of the dressing and toss with your fingers. Scatter the rest of the chicken and croutons, then drizzle with the remaining dressing. Sprinkle the parmesan on top and serve straight away.</li>
+                    </ol>
+                </article>
+            </section>
+            <section class="feedback">
+                <div>
+                    <h3>Rate:<span>☆☆☆☆☆</span></h3>
+                </div>
+                <section>
+                    <h2>Comments:</h2>
+                    <section class="comments">
+                        <article class="comment">
+                            <img src="images/svg/user-solid.svg" alt="Profile Picture">
+                            <div>
+                                <h3>jessica.hardy</h3>
+                                <p>Impeccable dish. Very easy and delish to make for lunch for the family.</p>
+                            </div>
+                        </article>
+                        <article class="comment">
+                            <img src="images/svg/user-solid.svg" alt="Profile Picture">
+                            <div>
+                                <h3>henry.martin</h3>
+                                <p>Easy to make and perfect dish to eat for several days without heating up.</p>
+                            </div>
+                        </article>
+                        <article class="comment">
+                            <img src="images/svg/user-solid.svg" alt="Profile Picture">
+                            <div>
+                                <h3>david.cedeno</h3>
+                                <p>Would definetly make this dish again. Fast and tasty.</p>
+                            </div>
+                        </article>
+                        <form class="commenting">
+                            <label for="comment">Comment</label><br>
+                            <textarea name="comment" id="comment" cols="30" rows="5"></textarea><br>
+                            <div>
+                                <input type="submit" value="Post">
+                            </div>
+                            
+                        </form>
+                    </section>
+                </section>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <a class="footerLogo" href="index.html"><img src="images/svg/logo2.svg" alt="Logo"></a>
+            <section>
+                <img src="images/svg/facebook-square-brands.svg" alt="Facebook">
+                <img src="images/svg/twitter-square-brands.svg" alt="Twitter">
+                <img src="images/svg/instagram-square-brands.svg" alt="Instagram">
+                <img src="images/svg/linkedin-brands.svg" alt="Linkedin">
+            </section>
+        </div>
+
+        <p class="copyRight">&copy;Group D</p>
+        <section>
+            <h2>Pages</h2>
+            <ul>
+                <li><a href="recipe.html">Recipe </a></li>
+                <li><a href="addRecipe.html">Add recipe </a></li>
+                <li><a href="recipeGenerator.html">Recipe Generator </a></li>
+                <li><a href="profilePage.html">Profile page</a></li>
+            </ul>
+        </section>
+        <section>
+            <h2>Company Info</h2>
+            <p>Bla bla bla</p>
+        </section>
+        <section>
+            <h2>Contact</h2>
+            <ul>
+                <li>cantina.info@cantina.com</li>
+                <li>+45 55551234</li>
+                <li>Tatawine</li>
+            </ul>
+        </section>
+    </footer>
+</body>
+
+</html>

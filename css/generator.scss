@@ -1,0 +1,116 @@
+@import "style";
+
+
+
+
+/*MAIN    MAIN    MAIN    MAIN    MAIN    MAIN    MAIN    MAIN    MAIN    MAIN    MAIN    MAIN*/
+
+main {
+  padding: 5vw;
+  font-family: $paragraphFont;
+  font-size: $iphoneP;
+
+  h1 {
+    font-family: $titleFont;
+    text-align: center;
+    font-size: $phoneH1;
+    margin-bottom: 5vw;
+  }
+
+  h2 {
+    font-size: $iphoneH2;
+  }
+
+  >section:first-of-type {
+    position: relative;
+    margin-bottom: 5vw;
+
+    p {
+      filter: opacity(0.5);
+      margin-top: 1vw;
+    }
+
+    img {
+      position: absolute;
+      top: 1vw;
+      right: 0;
+    }
+
+    section {
+      form {
+        margin: 5vw 0 5vw 0;
+        position: relative;
+
+        input {
+          width: 90%;
+          height: 8vw;
+          border-radius: 1vw;
+          border: 1px solid $textColor;
+          padding: 0.5vw;
+        }
+
+        img {
+          position: absolute;
+          right: 10vw;
+          top: 2vw;
+          width: 5vw;
+          height: auto;
+        }
+
+      }
+
+      section {
+        margin: 5vw 0 5vw 0;
+        display: grid;
+        grid-template-columns: repeat(2, 45vw);
+        row-gap: 5vw;
+      }
+    }
+
+    span {
+      display: block;
+      width: 85vw;
+      height: 0.5vw;
+      background-color: $primaryColor;
+      border-radius: 1vw;
+    }
+  }
+
+  >:nth-last-child(2) {
+
+    p {
+      filter: opacity(0.5)
+    }
+
+    section {
+      form {
+        margin: 5vw 0 5vw 0;
+        position: relative;
+
+        input {
+          width: 90%;
+          height: 8vw;
+          border-radius: 1vw;
+          border: 1px solid $textColor;
+          padding: 0.5vw;
+        }
+
+        img {
+          position: absolute;
+          right: 10vw;
+          top: 2vw;
+          width: 5vw;
+          height: auto;
+        }
+
+      }
+
+      section {
+        margin: 5vw 0 5vw 0;
+        display: grid;
+        grid-template-columns: repeat(2, 45vw);
+        row-gap: 5vw;
+      }
+    }
+  }
+}
