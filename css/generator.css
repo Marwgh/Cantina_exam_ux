@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;500;700&family=Roboto:wght@300;500;700&display=swap");
 /*Break points*/
 * {
@@ -303,10 +304,7 @@ footer section {
   body {
     margin-top: 6vw;
   }
-<<<<<<< HEAD
-=======
 
->>>>>>> 81a4a39b6e7ed7edda0959efbc73bc732c734862
   footer {
     height: 35vw;
     display: grid;
@@ -364,10 +362,7 @@ footer section {
   body {
     margin-top: 6vw;
   }
-<<<<<<< HEAD
-=======
 
->>>>>>> 81a4a39b6e7ed7edda0959efbc73bc732c734862
   footer {
     height: 13.5vw;
     display: grid;
@@ -431,13 +426,6 @@ footer section {
     margin-top: 6vw;
   }
 
-<<<<<<< HEAD
-@media only screen and (min-width: 768px) {
-  body {
-    margin-top: 6vw;
-  }
-=======
->>>>>>> 81a4a39b6e7ed7edda0959efbc73bc732c734862
   footer {
     font-size: 1vw;
   }
@@ -459,6 +447,26 @@ main h1 {
 }
 main h2 {
   font-size: 6vw;
+}
+main input[type=checkBox] {
+  appearance: none;
+  width: 4vw;
+  height: 4vw;
+  border: 1px solid black;
+  border-radius: 1vw;
+  position: relative;
+  margin-right: 1vw;
+}
+main input[type=checkBox]:checked {
+  background-color: #1f5473;
+}
+main input[type=checkBox]:checked::after {
+  content: "✓";
+  color: white;
+  position: absolute;
+  left: 25%;
+  width: 100%;
+  height: 100%;
 }
 main > section:first-of-type {
   position: relative;
@@ -497,6 +505,10 @@ main > section:first-of-type section section {
   grid-template-columns: repeat(2, 45vw);
   row-gap: 5vw;
 }
+main > section:first-of-type section section div {
+  display: flex;
+  align-items: center;
+}
 main > section:first-of-type span {
   display: block;
   width: 85vw;
@@ -530,6 +542,271 @@ main > :nth-last-child(2) section section {
   display: grid;
   grid-template-columns: repeat(2, 45vw);
   row-gap: 5vw;
+}
+main > :nth-last-child(2) section section div {
+  display: flex;
+  align-items: center;
+}
+main > article {
+  position: relative;
+}
+main > article button {
+  appearance: none;
+  border: 1px solid #6e1916;
+  background-color: #6e1916;
+  color: white;
+  width: 100%;
+  padding: 2vw 2.5vw 2vw 2.5vw;
+  border-radius: 1.5vw;
+  cursor: pointer;
+}
+main > article img {
+  position: absolute;
+  top: 2vw;
+  right: 20vw;
+}
+
+@media only screen and (min-width: 480px) {
+  main {
+    font-size: 2.4vw;
+  }
+  main h1 {
+    font-size: 4vw;
+  }
+  main h2 {
+    font-size: 3.4vw;
+  }
+  main input[type=checkBox] {
+    width: 3vw;
+    height: 3vw;
+  }
+  main > section:first-of-type {
+    margin-bottom: 5vw;
+  }
+  main > section:first-of-type section form {
+    margin: 3vw 0 5vw 0;
+  }
+  main > section:first-of-type section form input {
+    width: 50%;
+    height: 6vw;
+    padding: 0.8vw;
+  }
+  main > section:first-of-type section form img {
+    left: 39vw;
+    top: 2vw;
+    width: 4vw;
+    height: auto;
+  }
+  main > section:first-of-type section section {
+    margin: 5vw 0 5vw 0;
+    display: grid;
+    grid-template-columns: repeat(3, 30vw);
+    row-gap: 5vw;
+  }
+  main > section:first-of-type span {
+    height: 0.3vw;
+  }
+  main > :nth-last-child(2) p {
+    filter: opacity(0.5);
+  }
+  main > :nth-last-child(2) section form {
+    margin: 3vw 0 5vw 0;
+  }
+  main > :nth-last-child(2) section form input {
+    width: 50%;
+    height: 6vw;
+    padding: 0.8vw;
+  }
+  main > :nth-last-child(2) section form img {
+    left: 39vw;
+    top: 2vw;
+    width: 4vw;
+    height: auto;
+  }
+  main > :nth-last-child(2) section section {
+    margin: 5vw 0 5vw 0;
+    display: grid;
+    grid-template-columns: repeat(4, 22vw);
+    row-gap: 5vw;
+  }
+  main > article {
+    position: relative;
+  }
+  main > article button {
+    font-size: 2.4vw;
+  }
+  main > article img {
+    position: absolute;
+    top: 2vw;
+    right: 25vw;
+  }
+}
+@media only screen and (min-width: 768px) {
+  main {
+    font-size: 1.8vw;
+    margin-bottom: 5vw;
+  }
+  main h1 {
+    font-size: 3.6vw;
+  }
+  main h2 {
+    font-size: 3vw;
+  }
+  main input[type=checkBox] {
+    width: 2.5vw;
+    height: 2.5vw;
+    border-radius: 0.5vw;
+    margin-right: 0.5vw;
+  }
+  main > section:first-of-type section form {
+    margin: 2vw 0 3vw 0;
+  }
+  main > section:first-of-type section form input {
+    width: 45%;
+    height: 2.5vw;
+    padding: 1vw;
+  }
+  main > section:first-of-type section form img {
+    left: 38vw;
+    top: 1.25vw;
+    width: 2vw;
+    height: auto;
+  }
+  main > section:first-of-type section section {
+    margin: 5vw 0 5vw 0;
+    display: grid;
+    grid-template-columns: repeat(5, 18vw);
+    row-gap: 4vw;
+  }
+  main > section:first-of-type span {
+    height: 0.2vw;
+    width: 90vw;
+  }
+  main > :nth-last-child(2) p {
+    filter: opacity(0.5);
+  }
+  main > :nth-last-child(2) section form {
+    margin: 2vw 0 3vw 0;
+  }
+  main > :nth-last-child(2) section form input {
+    width: 45%;
+    height: 2.5vw;
+    padding: 1vw;
+  }
+  main > :nth-last-child(2) section form img {
+    left: 38vw;
+    top: 1.25vw;
+    width: 2vw;
+    height: auto;
+  }
+  main > :nth-last-child(2) section section {
+    margin: 5vw 0 5vw 0;
+    display: grid;
+    grid-template-columns: repeat(6, 15vw);
+    row-gap: 5vw;
+  }
+  main > article {
+    position: relative;
+  }
+  main > article button {
+    font-size: 1.8vw;
+    font-weight: 700;
+    padding: 1vw 2.5vw 1vw 2.5vw;
+    border-radius: 1vw;
+  }
+  main > article img {
+    position: absolute;
+    top: 1.5vw;
+    right: 28vw;
+  }
+}
+@media only screen and (min-width: 1032px) {
+  main {
+    font-size: 1vw;
+    margin-bottom: 5vw;
+    padding: 0 15vw 0 15vw;
+  }
+  main h1 {
+    font-size: 2.6vw;
+  }
+  main h2 {
+    font-size: 1.8vw;
+  }
+  main input[type=checkBox] {
+    width: 1.8vw;
+    height: 1.8vw;
+  }
+  main input[type=checkBox]:checked::after {
+    top: 15%;
+    left: 25%;
+    width: 100%;
+    height: 100%;
+  }
+  main > section:first-of-type section form {
+    margin-top: 1vw;
+  }
+  main > section:first-of-type section form input {
+    width: 30%;
+    height: 1vw;
+    padding: 1vw;
+    border-radius: 0.6vw;
+  }
+  main > section:first-of-type section form img {
+    left: 20vw;
+    top: 0.8vw;
+    width: 1.5vw;
+    height: auto;
+  }
+  main > section:first-of-type section section {
+    margin: 3vw 0 3vw 0;
+    display: grid;
+    grid-template-columns: repeat(6, 12vw);
+    row-gap: 2.5vw;
+  }
+  main > section:first-of-type span {
+    height: 0.2vw;
+    width: 70vw;
+    margin-top: 0;
+  }
+  main > :nth-last-child(2) p {
+    filter: opacity(0.5);
+  }
+  main > :nth-last-child(2) section form {
+    margin-top: 1vw;
+  }
+  main > :nth-last-child(2) section form input {
+    width: 30%;
+    height: 1vw;
+    padding: 1vw;
+    border-radius: 0.6vw;
+  }
+  main > :nth-last-child(2) section form img {
+    left: 20vw;
+    top: 0.8vw;
+    width: 1.5vw;
+    height: auto;
+  }
+  main > :nth-last-child(2) section section {
+    margin: 5vw 0 5vw 0;
+    display: grid;
+    grid-template-columns: repeat(7, 10vw);
+    row-gap: 2.5vw;
+  }
+  main > article {
+    position: relative;
+  }
+  main > article button {
+    font-size: 1.8vw;
+    font-weight: 700;
+    padding: 1vw 2.5vw 1vw 2.5vw;
+    border-radius: 1vw;
+  }
+  main > article img {
+    position: absolute;
+    top: 1.4vw;
+    right: 25vw;
+    width: 1vw;
+  }
 }
 
 /*# sourceMappingURL=generator.css.map */
