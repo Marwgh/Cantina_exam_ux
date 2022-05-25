@@ -71,37 +71,39 @@
       <fieldset>
         <label for="ingredients">Ingredients</label><br>
         <div id="ingredients">
-          
+          <div class="ingredient">
+            <label for="">
+              <img class="bars" src="images/svg/bars-solid.svg" alt="bars">
+            </label>
+            <input type="text" name="ingredient" id="ingredient" placeholder="ingredient here">
+            <!-- <input type="button" id="close" name="close" -->
+            <label for="">
+              <img class="cross" src="images/svg/xmark-solid.svg" alt="cross">
+            </label>
+          </div>
         </div>
-        <!-- <output class="ingredient" name="ingredient" for="add">
-          <span>
-            <img class="bars" src="images/svg/bars-solid.svg" alt="bars">
-          </span>
-          <input id="ingredient" type="text" placeholder="Ingredient">
-          <span>
-            <img class="cross" src="images/svg/xmark-solid.svg" alt="cross">
-          </span>
-        </output><br> -->
-        <input id="add" name="add" type="button" onclick="addIngredient" value="+ Add Ingredient">
+        <input id="add" name="add" type="button" onclick="addIngredient();" value="+ Add Ingredient">
       </fieldset>
       <fieldset>
         <label for="utensils">Utensils</label><br>
-        <div class="utensil">
-          <label for="">
-            <img class="bars" src="images/svg/bars-solid.svg" alt="bars">
-          </label>
-          <input type="text" name="ingredient" id="ingredient" placeholder="ingredient here">
-          <!-- <input type="button" id="close" name="close" -->
-          <label for="">
-            <img class="cross" src="images/svg/xmark-solid.svg" alt="cross">
-          </label>
+        <div id="utensils">
+          <div class="utensil">
+            <label for="">
+              <img class="bars" src="images/svg/bars-solid.svg" alt="bars">
+            </label>
+            <input type="text" name="utensil" id="utensil" placeholder="ingredient here">
+            <!-- <input type="button" id="close" name="close" -->
+            <label for="">
+              <img class="cross" src="images/svg/xmark-solid.svg" alt="cross">
+            </label>
+          </div>
         </div>
-        <input id="add" name="add" type="button" onclick="addUtensil" value="+ Add Ingredient">
+        <input id="add" name="add" type="button" onclick="addUtensil();" value="+ Add Ingredient">
       </fieldset>
 
       <fieldset>
         <label for="steps">Steps</label><br>
-        <select>
+        <select id="nrSteps" onchange="changeSteps(this)">
           <option name="1" value="1">1</option>
           <option name="2" value="2">2</option>
           <option name="3" value="3">3</option>
@@ -114,29 +116,37 @@
           <option name="10" value="10">10</option>
         </select>
         <span></span>
-        <div>
-          <div class="step">
-            <output for="">1</output>
-            <label for="">
-              <img class="bars" src="images/svg/bars-solid.svg" alt="bars">
+        <div id="steps">
+          <div>
+            <div class="step">
+              <output for="">1</output>
+              <label for="">
+                <img class="bars" src="images/svg/bars-solid.svg" alt="bars">
+              </label>
+              <input type="text" name="ingredient" id="ingredient" placeholder="ingredient here">
+              <!-- <input type="button" id="close" name="close" -->
+              <label for="">
+                <img class="cross" src="images/svg/xmark-solid.svg" alt="cross">
+              </label>
+            </div>
+            <label for="fileUpload">
+              <img src="images/svg/image-solid.svg" alt="upload">
             </label>
-            <input type="text" name="ingredient" id="ingredient" placeholder="ingredient here">
-            <!-- <input type="button" id="close" name="close" -->
-            <label for="">
-              <img class="cross" src="images/svg/xmark-solid.svg" alt="cross">
-            </label>
+            <input id="fileUpload" name="fileUpload" type="file">
           </div>
-          <label for="fileUpload">
-            <img src="images/svg/image-solid.svg" alt="upload">
-          </label>
-          <input id="fileUpload" name="fileUpload" type="file">
         </div>
         
       </fieldset>
       <fieldset>
         <label for="tags">Add tags</label><br>
         <input id="tag" name="tag" type="text" placeholder="Write tag here"><br>
-        <output for="tag" name="tag"></output>
+        <input id="tagButton" name="tagButton" type="button" value="button" onclick="addTag();">
+        <div id="tagList">
+          <!-- <output for="tag" name="tag">1</output>
+          <output for="tag" name="tag">2</output>
+          <output for="tag" name="tag">3</output>
+          <output for="tag" name="tag">4</output> -->
+        </div>
       </fieldset>
       <input type="submit" value="PUBLISH">
     </form>
