@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/addRecipe.css">
+  <script src="js/script.js"></script>
   <title>Add Recipe</title>
 </head>
 
@@ -69,15 +70,8 @@
       </fieldset>
       <fieldset>
         <label for="ingredients">Ingredients</label><br>
-        <div class="ingredient">
-          <label for="">
-            <img class="bars" src="images/svg/bars-solid.svg" alt="bars">
-          </label>
-          <input type="text" name="ingredient" id="ingredient" placeholder="ingredient here">
-          <!-- <input type="button" id="close" name="close" -->
-          <label for="">
-            <img class="cross" src="images/svg/xmark-solid.svg" alt="cross">
-          </label>
+        <div id="ingredients">
+          
         </div>
         <!-- <output class="ingredient" name="ingredient" for="add">
           <span>
@@ -88,7 +82,7 @@
             <img class="cross" src="images/svg/xmark-solid.svg" alt="cross">
           </span>
         </output><br> -->
-        <input id="add" name="add" type="button" value="+ Add Ingredient">
+        <input id="add" name="add" type="button" onclick="addIngredient" value="+ Add Ingredient">
       </fieldset>
       <fieldset>
         <label for="utensils">Utensils</label><br>
@@ -102,7 +96,7 @@
             <img class="cross" src="images/svg/xmark-solid.svg" alt="cross">
           </label>
         </div>
-        <input id="add" name="add" type="button" value="+ Add Ingredient">
+        <input id="add" name="add" type="button" onclick="addUtensil" value="+ Add Ingredient">
       </fieldset>
 
       <fieldset>
