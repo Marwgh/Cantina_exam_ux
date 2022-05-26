@@ -120,10 +120,28 @@ div.recipeDetails{
     }
 }
 
-ul.descripDetails {
-    list-style-type:none;
-    li:nth-child(3){
+div.recipeDetails p{
         color:$secondaryColor;
+}
+
+ul.descripDetails {
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    list-style-type:none;
+   
+    li {
+        padding-right:.5rem;
+    }
+
+    li img{
+        width:1.5rem;
+        height:1.5rem;
+    }
+
+    li:nth-child(2) {
+        margin-right:2rem;
+        margin-bottom:1rem;
     }
 }
 
@@ -213,19 +231,31 @@ section.advert1{
         }
     }
    
-
+    #seven, #eight,#nine{
+        margin-top:12rem;
+    }
     section.yourRecipes{
         display:grid;
-        grid-template-columns: repeat(2, 100vw);
+        grid-template-columns: repeat(3, 33vw);
+        row-gap: 4rem;
+        column-gap: 0;
         ul.container{
-            margin:1rem;
-            width:30%;
+            cursor:pointer;
+            margin:0 auto;
+            width:70%;
             h3{
-                font-size:$pcH3;
+                font-size:$pcP;
             }
             div.buttonContainer button{
                 font-size:$pcP;
             }
+            
+        }
+        section.advert1{
+            
+            top:90vw;
+            left:10vw;
+            position:absolute;
         }
     }
 

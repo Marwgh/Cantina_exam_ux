@@ -707,12 +707,36 @@ div.recipeDetails div.buttonContainer {
   margin-top: 2rem;
 }
 
+div.recipeDetails p {
+  color: #f4a234;
+}
+
 ul.descripDetails {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   list-style-type: none;
 }
 
-ul.descripDetails li:nth-child(3) {
-  color: #f4a234;
+ul.descripDetails li {
+  padding-right: .5rem;
+}
+
+ul.descripDetails li img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+ul.descripDetails li:nth-child(2) {
+  margin-right: 2rem;
+  margin-bottom: 1rem;
 }
 
 ul.container div.buttonContainer {
@@ -813,20 +837,32 @@ section.advert1 h2 {
     top: 5vw;
     right: 12vw;
   }
+  #seven, #eight, #nine {
+    margin-top: 12rem;
+  }
   section.yourRecipes {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (100vw)[2];
-        grid-template-columns: repeat(2, 100vw);
+    -ms-grid-columns: (33vw)[3];
+        grid-template-columns: repeat(3, 33vw);
+    row-gap: 4rem;
+    -webkit-column-gap: 0;
+            column-gap: 0;
   }
   section.yourRecipes ul.container {
-    margin: 1rem;
-    width: 30%;
+    cursor: pointer;
+    margin: 0 auto;
+    width: 70%;
   }
   section.yourRecipes ul.container h3 {
-    font-size: 2.5vw;
+    font-size: 1.8vw;
   }
   section.yourRecipes ul.container div.buttonContainer button {
     font-size: 1.8vw;
+  }
+  section.yourRecipes section.advert1 {
+    top: 90vw;
+    left: 10vw;
+    position: absolute;
   }
 }
