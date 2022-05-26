@@ -229,9 +229,14 @@ header #menuB a {
 }
 /*BODY      BODY        BODY        BODY        BODY        BODY        BODY        BODY        BODY*/
 body {
-  margin-top: 25vw;
+  margin-top: 20vw;
 }
 
+@media only screen and (min-width: 480px) {
+  body {
+    margin-top: 25vw;
+  }
+}
 /*FOOTER        FOOTER      FOOTER        FOOTER        FOOTER        FOOTER        FOOTER        FOOTER*/
 footer {
   background-color: #1f5473;
