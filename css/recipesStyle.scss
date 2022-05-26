@@ -22,6 +22,11 @@ label {
     font-size: $iphoneP;
     font-weight:900;
 }
+section.recipeWrapper{
+    display:flex;
+    flex-flow: column;
+    
+}
 
 section.searchWrapper {
     margin-top:10vw;
@@ -70,23 +75,6 @@ section.buttonWrapper{
 // Recipes
 
 //change ad placement order
-section.recipeWrapper{
-    display:flex;
-    flex-direction: column;
-    
-    section.yourRecipe:nth-child(1) {
-     order: 2;
-    }
-    section.yourRecipe:nth-child(2) {
-     order: 3;
-    }
-    section.yourRecipe:nth-child(3) {
-     order: 1;
-    }
-    section.yourRecipe:nth-child(4) {
-     order: 4;
-    }
-}
 
 section.yourRecipes{
     display:flex;
@@ -143,22 +131,6 @@ ul.container div.buttonContainer {
     display:flex;
     flex-direction:row;
     justify-content:center;
-
-button {
-        margin-top:1rem;
-        width:50%;
-        background-color:$whiteSpace;
-        border: 1px solid $ctaColor;
-        border-style:solid none none none;
-        color:$ctaColor;
-        cursor:pointer;
-        padding:1rem 1rem;
-        font-size: 3.4vw;
-        }
-        button:nth-child(1) {
-            border-style:solid solid none none;
-        }
-        
 }
 
 section.advert1{
@@ -171,8 +143,9 @@ section.advert1{
     margin-bottom:2rem;
     width:80%;
     height:8rem;
-    background-color: gray;
-    opacity:0.5;
+    background-color: $textColor;
+    opacity:0.1;
+    color:$whiteSpace;
     h2{
         font-size:$iphoneH2;
     }
@@ -200,6 +173,12 @@ section.advert1{
             right:16vw;
         }
     }
+    section.recipeWrapper{
+        display:flex;
+        flex-flow: column;
+       
+    }
+
     section.yourRecipes {
         display:flex;
         flex-direction:row;
@@ -233,26 +212,11 @@ section.advert1{
             right:12vw;
         }
     }
-   section.recipeWrapper{
-       display:flex;
-       flex-direction: column;
-       
-       section.yourRecipes:nth-child(1) {
-        order: 4;
-       }
-       section.yourRecipes:nth-child(2) {
-        order: 1;
-       }
-       section.yourRecipes:nth-child(3) {
-        order: 2;
-       }
-       section.yourRecipes:nth-child(4) {
-        order: 3;
-       }
-   }
+   
+
     section.yourRecipes{
-        display:flex;
-        flex-direction: row;
+        display:grid;
+        grid-template-columns: repeat(2, 100vw);
         ul.container{
             margin:1rem;
             width:30%;
@@ -264,4 +228,5 @@ section.advert1{
             }
         }
     }
+
 }
