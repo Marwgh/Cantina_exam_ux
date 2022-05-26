@@ -1,10 +1,13 @@
 'use strict';
 
+let counterIngredient = 0;
+let counterUtensil = 0;
+let counterStep = 0;
+
 function addIngredient() {
     const newIngredient = document.createElement("div");
-    let counter = 0;
-    counter = counter+1;
-    const id = "ingredient"+counter;
+    counterIngredient = counterIngredient+1;
+    const id = "ingredient"+counterIngredient;
 
     newIngredient.setAttribute("id",id);
     newIngredient.classList.add("ingredient");
@@ -15,8 +18,8 @@ function addIngredient() {
         </label>
         <input type="text" name="ingredient" id="ingredient" placeholder="ingredient here">
         <div>
-            <input type="button" class="removeHidden" id="removeIngredient${counter}" name="remove" onclick="removeIngredient('${id}');">
-            <label for="removeIngredient${counter}">
+            <input type="button" class="removeHidden" id="removeIngredient${counterIngredient}" name="remove" onclick="removeIngredient('${id}');">
+            <label for="removeIngredient${counterIngredient}">
                 <img class="remove" src="images/svg/xmark-solid.svg" alt="remove">
             </label>
         </div>
@@ -32,9 +35,8 @@ function removeIngredient(ingredient) {
 
 function addUtensil() {
     const newUtensil = document.createElement("div");
-    let counter = 0;
-    counter = counter+1;
-    const id = "utensil"+counter;
+    counterUtensil = counterUtensil+1;
+    const id = "utensil"+counterUtensil;
 
     newUtensil.setAttribute("id",id);
     newUtensil.classList.add("utensil");
@@ -45,8 +47,8 @@ function addUtensil() {
         </label>
         <input type="text" name="utensil" id="utensil" placeholder="utensil here">
         <div>
-            <input type="button" class="removeHidden" id="removeUtensil${counter}" name="remove" onclick="removeUtensil('${id}');">
-            <label for="removeUtensil${counter}">
+            <input type="button" class="removeHidden" id="removeUtensil${counterUtensil}" name="remove" onclick="removeUtensil('${id}');">
+            <label for="removeUtensil${counterUtensil}">
                 <img class="remove" src="images/svg/xmark-solid.svg" alt="remove">
             </label>
         </div>
@@ -67,9 +69,8 @@ function changeSteps(_this) {
     steps.innerHTML = ''
     for (let i = 1; i <= stepCount; i++) {
         const newStep = document.createElement("div");
-        let counter = 0;
-        counter = counter+1;
-        const id = "step"+counter;
+        counterStep = counterStep+1;
+        const id = "step"+counterStep;
 
         newStep.setAttribute("id",id);
 
@@ -81,8 +82,8 @@ function changeSteps(_this) {
             </label>
             <input type="text" name="stepText" id="stepText" placeholder="step here">
             <div>
-                <input type="button" class="removeHidden" id="removeStep${counter}" name="remove" onclick="removeStep('${id}');">
-                <label for="removeStep${counter}">
+                <input type="button" class="removeHidden" id="removeStep${counterStep}" name="remove" onclick="removeStep('${id}');">
+                <label for="removeStep${counterStep}">
                     <img class="remove" src="images/svg/xmark-solid.svg" alt="remove">
                 </label>
             </div>
@@ -107,12 +108,14 @@ function addTag() {
     const tagText = document.getElementById("tag").value;
 
     newTag.innerHTML = `
-        <output onclick="this.parentElement.remove();">${tagText}</output>
+        <output onclick="removeTag();">${tagText}</output>
     `
 
     document.getElementById("tagList").appendChild(newTag);
 
 }
+
+// function removeTag(tag)
 
 // const tagList = document.querySelector('#tagList');
 
