@@ -503,18 +503,82 @@ form input {
 /*Top Recipes*/
 .top_recipes_wrapper {
   background-color: #DEE8F2;
-  height: 20vw;
+  height: 40vw;
+  padding: 2vw;
+  align-items: center;
+}
+.top_recipes_wrapper h1 {
+  margin-top: 2rem;
+  text-align: center;
+}
+.top_recipes_wrapper img {
+  text-align: center;
   width: 100%;
 }
-.top_recipes_wrapper ul {
+.top_recipes_wrapper ul.container {
+  display: grid;
+  grid-template-columns: repeat(4, 20vw);
+  gap: 4vw;
+  width: 20%;
+}
+.top_recipes_wrapper ul.container li:nth-child(3) {
+  padding-bottom: 1rem;
+}
+.top_recipes_wrapper ul.container > li {
+  width: 100%;
+  margin-top: 1rem;
+  list-style-type: none;
+  border: 1px solid #6e1916;
+  border-radius: 1vw;
+  overflow: hidden;
+}
+.top_recipes_wrapper h3 {
+  margin: 1rem 0rem;
+}
+
+div.recipeDetails {
+  text-align: left;
+  padding-left: 2rem;
+}
+div.recipeDetails div.buttonContainer {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+div.recipeDetails p {
+  margin-top: 1rem;
+  color: #f4a234;
+}
+
+ul.descripDetails {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
   list-style-type: none;
 }
-.top_recipes_wrapper ul li {
-  margin-left: 5vw;
+ul.descripDetails li {
+  display: flex;
+  align-items: center;
+  padding-right: 0.5rem;
+  margin-bottom: 1rem;
 }
-.top_recipes_wrapper ul li img {
-  height: 10vw;
+ul.descripDetails li img {
+  width: 1.5rem;
+  height: 1.5rem;
+  padding-right: 0.5rem;
+}
+ul.descripDetails li:nth-child(2) {
+  margin-right: 2rem;
+}
+
+ul.container div.buttonContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 /*ARTICLE WRAPPER SECTION*/
@@ -584,6 +648,36 @@ form input {
   margin-bottom: 1.5vw;
   -webkit-box-shadow: 0px 4px 21px -6px rgba(0, 0, 0, 0.78);
   box-shadow: 0px 4px 21px -6px rgba(0, 0, 0, 0.78);
+}
+
+/*CTA WRAPPER*/
+.sign_up_wrapper {
+  background-color: #f4a234;
+  height: 15vw;
+  width: 80%;
+  margin-left: 10vw;
+  margin-bottom: 10vw;
+  border-radius: 2vw;
+  text-align: center;
+  padding: 2vw;
+}
+.sign_up_wrapper h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 2.6vw;
+}
+.sign_up_wrapper p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1vw;
+  padding: 1vw;
+  margin-bottom: 1vw;
+}
+.sign_up_wrapper a {
+  background-color: #1f5473;
+  color: white;
+  padding: 1vw 3vw;
+  text-decoration: none;
+  font-family: "Oswald", sans-serif;
+  border-radius: 0.2vw;
 }
 
 /*# sourceMappingURL=home.css.map */

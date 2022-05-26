@@ -67,21 +67,91 @@ width: 10vw;
 
 /*Top Recipes*/
 
-.top_recipes_wrapper {
-    background-color: $fillColor;
-    height: 20vw;
-    width: 100%;
-    ul {
-        display: flex;
-        list-style-type: none;
-        li{
-            margin-left: 5vw;
-            img {
-                height: 10vw;
-            }
+.top_recipes_wrapper{
+background-color: $fillColor;
+height: 40vw;
+padding: 2vw;
+align-items: center;
+    h1 {
+        margin-top:2rem;
+        text-align: center;
+
+    }
+    
+    img {
+        text-align: center;
+        width:100%;
+    }
+    ul.container {
+        display: grid;
+    grid-template-columns: repeat(4, 20vw);
+    gap: 4vw;
+        width: 20%;
+        li:nth-child(3){
+            padding-bottom:1rem; 
+        }
+        >li {
+            width: 100%;
+        margin-top:1rem;
+        list-style-type:none;
+        border: 1px solid $ctaColor;
+        border-radius:1vw;
+        overflow: hidden;
         }
     }
+    h3{
+        margin:1rem 0rem;
+    }
 }
+
+div.recipeDetails{
+    text-align:left;
+    padding-left:2rem;
+    div.buttonContainer{
+        display:flex;
+        flex-direction: row;
+        justify-content:center;
+        align-items: center;
+        margin-top:2rem;
+    }
+}
+
+div.recipeDetails p{
+    margin-top:1rem;
+    color:$secondaryColor;
+}
+
+ul.descripDetails {
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type:none;
+
+    li {
+        display:flex;
+        align-items: center;
+        padding-right:.5rem;
+        margin-bottom:1rem;
+    }
+
+    li img{
+        width:1.5rem;
+        height:1.5rem;
+        padding-right:0.5rem;
+    }
+
+    li:nth-child(2) {
+        margin-right:2rem;
+    }
+}
+
+ul.container div.buttonContainer {
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+}
+
 
 /*ARTICLE WRAPPER SECTION*/
 
@@ -157,5 +227,37 @@ width: 10vw;
             box-shadow: 0px 4px 21px -6px rgba(0,0,0,0.78);
             }
         }
+    }
+}
+
+/*CTA WRAPPER*/
+
+.sign_up_wrapper {
+    background-color: $secondaryColor;
+    height: 15vw;
+    width: 80%;
+    margin-left: 10vw;
+    margin-bottom: 10vw;
+    border-radius: 2vw; 
+    text-align: center; 
+    padding: 2vw;
+    h1 {
+        font-family: $titleFont;
+        font-size: $dskH1;
+    }
+    p {
+        font-family: $paragraphFont;
+        font-size: $dskP;
+        padding: 1vw;
+        margin-bottom: 1vw;
+
+    }
+    a {
+        background-color: $primaryColor;
+        color: $whiteSpace;
+        padding: 1vw 3vw;
+        text-decoration: none;
+        font-family: $titleFont;
+        border-radius: 0.2vw;
     }
 }
