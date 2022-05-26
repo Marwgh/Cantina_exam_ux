@@ -3,6 +3,7 @@
 let counterIngredient = 0;
 let counterUtensil = 0;
 let counterStep = 0;
+let counterTag = 0;
 
 function addIngredient() {
     const newIngredient = document.createElement("div");
@@ -13,7 +14,7 @@ function addIngredient() {
     newIngredient.classList.add("ingredient");
 
     newIngredient.innerHTML = `
-        <label for="">
+        <label>
             <img class="bars" src="images/svg/bars-solid.svg" alt="bars">
         </label>
         <input type="text" name="ingredient" id="ingredient" placeholder="ingredient here">
@@ -42,7 +43,7 @@ function addUtensil() {
     newUtensil.classList.add("utensil");
 
     newUtensil.innerHTML = `
-        <label for="">
+        <label>
             <img class="bars" src="images/svg/bars-solid.svg" alt="bars">
         </label>
         <input type="text" name="utensil" id="utensil" placeholder="utensil here">
@@ -76,8 +77,8 @@ function changeSteps(_this) {
 
         newStep.innerHTML = `
         <div class="step">
-            <label for="">${i}</label>
-            <label for="">
+            <label>${i}</label>
+            <label>
                 <img class="bars" src="images/svg/bars-solid.svg" alt="bars">
             </label>
             <input type="text" name="stepText" id="stepText" placeholder="step here">
@@ -105,17 +106,21 @@ function removeStep(step) {
 
 function addTag() {
     const newTag = document.createElement("div");
+    counterTag = counterTag+1;
+    const id = "tag"+counterTag;
+    newTag.setAttribute("id", id);
     const tagText = document.getElementById("tag").value;
 
     newTag.innerHTML = `
-        <output onclick="removeTag();">${tagText}</output>
+        <output onclick="removeTag('${id}');">${tagText}</output>
     `
-
     document.getElementById("tagList").appendChild(newTag);
-
 }
 
-// function removeTag(tag)
+function removeTag(tag) {
+    console.log(event.target);
+    document.querySelector("#"+tag).remove();
+}
 
 // const tagList = document.querySelector('#tagList');
 

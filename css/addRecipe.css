@@ -455,45 +455,58 @@ main h1 {
 form {
   position: relative;
 }
-form img {
-  width: 6vw;
-  height: auto;
-  display: block;
-  margin: auto;
+form input, form textarea, form select {
+  font-size: 3.8vw;
 }
-form #fileUpload {
-  display: none;
+form select {
+  margin-bottom: 1vw;
+}
+form label {
+  font-size: 3.8vw;
+  font-weight: 900;
+}
+form fieldset:nth-child(2) input:first-child, form fieldset:nth-child(2) textarea {
+  width: 100%;
+  margin-bottom: 1vw;
+}
+form fieldset:nth-child(2) div {
+  display: grid;
+  grid-area: "label input";
 }
 form fieldset {
   padding: 1.5rem;
   margin-bottom: 1rem;
 }
-form fieldset .ingredient, form fieldset .utensil {
+form fieldset img {
+  width: 6vw;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+form fieldset #fileUpload {
+  display: none;
+}
+form fieldset .ingredient, form fieldset .utensil, form fieldset .step {
   border: solid 0.1vw;
-  display: grid;
-  grid-template-columns: 5% 90% 5%;
+  display: flex;
+  margin-bottom: 1vw;
 }
-form fieldset .ingredient input, form fieldset .utensil input {
+form fieldset .ingredient input, form fieldset .utensil input, form fieldset .step input {
   border: none;
+  width: 100%;
 }
-form fieldset .step {
-  border: solid 0.1vw;
-  display: grid;
-  grid-template-columns: 5% 5% 85% 5%;
-  margin: 2vw 0;
-}
-form fieldset .step input {
-  border: none;
+form fieldset .step label:first-child {
+  padding: 1vw;
 }
 form fieldset .bars {
-  width: 2vw;
-  height: 2vw;
-  padding: 1vw;
+  width: 3.8vw;
+  height: 3.8vw;
+  padding: 1.5vw 1vw;
 }
 form fieldset .remove {
-  width: 2.5vw;
-  height: 2.5vw;
-  padding: 1vw;
+  width: 3.8vw;
+  height: 3.8vw;
+  padding: 1.5vw 1vw;
 }
 form fieldset .removeHidden {
   display: none;
@@ -509,6 +522,9 @@ form input[type=button], form input[type=submit] {
 form input[type=submit] {
   display: block;
   margin: auto;
+}
+form #tagButton {
+  margin-top: 1vw;
 }
 
 /*# sourceMappingURL=addRecipe.css.map */

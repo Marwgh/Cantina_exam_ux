@@ -13,46 +13,67 @@ main {
 form {
     position: relative;
     // align-items: center;
-    img {
-        width: 6vw;
-        height: auto;
-        display: block;
-        margin:auto;
+
+    input, textarea, select {
+        font-size: $iphoneP;
     }
 
-    #fileUpload {
-        display: none;
+    select {
+        margin-bottom: 1vw;
+    }
+
+    label {
+        font-size: $iphoneP;
+        font-weight: 900;
+    }
+
+    fieldset:nth-child(2) {
+        input:first-child, textarea {
+            width: 100%;
+            margin-bottom: 1vw;
+        }
+        div {
+            display: grid;
+            grid-area: "label input";
+        }
     }
 
     fieldset {
         padding: 1.5rem;
         margin-bottom: 1rem;
-        .ingredient, .utensil {
+
+        img {
+            width: 6vw;
+            height: auto;
+            display: block;
+            margin:auto;
+        }
+    
+        #fileUpload {
+            display: none;
+        }
+
+        .ingredient, .utensil, .step {
             border: solid 0.1vw;
-            display: grid;
-            grid-template-columns: 5% 90% 5%;
+            display: flex;
+            margin-bottom: 1vw;
             input {
                 border: none;
+                width: 100%;
             }
         }
-        .step {
-            border: solid 0.1vw;
-            display: grid;
-            grid-template-columns: 5% 5% 85% 5%;
-            margin: 2vw 0;
-            input {
-                border: none;
-            }
+        .step label:first-child {
+            padding: 1vw;
         }
         .bars {
-            width: 2vw;
-            height: 2vw;
-            padding: 1vw;
+            width: $iphoneP;
+            height: $iphoneP;
+            padding: 1.5vw 1vw;
         }
         .remove {
-            width: 2.5vw;
-            height: 2.5vw;
-            padding: 1vw;
+            width: $iphoneP;
+            height: $iphoneP;
+            padding: 1.5vw 1vw;
         }
 
         .removeHidden {
@@ -72,5 +93,9 @@ form {
     input[type="submit"] {
         display: block;
         margin:auto;
+    }
+
+    #tagButton {
+        margin-top: 1vw;
     }
 }
