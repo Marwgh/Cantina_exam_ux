@@ -1,10 +1,27 @@
 @import "style";
 
 
-
-
 /*MAIN    MAIN    MAIN    MAIN    MAIN    MAIN    MAIN    MAIN    MAIN    MAIN    MAIN    MAIN*/
+aside{
+  display:none;
+}
 
+ section.tabletAd{
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  width:80%;
+  margin:0 auto;
+  margin-bottom:2rem;
+  height:3rem;
+  background-color:$textColor;
+  opacity:0.2;
+  font-family: $titleFont;
+  h3{
+    color:$whiteSpace;
+    font-size:$ipadH1;
+  }
+}
 main {
   padding: 5vw;
   font-family: $paragraphFont;
@@ -176,6 +193,13 @@ main {
 }
 
 @media only screen and (min-width: map-get($breakPoints, md)) {
+
+  aside{
+    display:none;
+  }
+  section.tabletAd{
+    display:none;
+  }
   main {
     font-size: $ipadP;
 
@@ -291,6 +315,25 @@ main {
 }
 
 @media only screen and (min-width: map-get($breakPoints, lg)) {
+  aside{
+    display:none;
+  }
+  section.tabletAd{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    width:80%;
+    margin:0 auto;
+    margin-bottom:2rem;
+    height:5rem;
+    background-color:$textColor;
+    opacity:0.2;
+    font-family: $titleFont;
+    h3{
+      color:$whiteSpace;
+      font-size:$ipadH3;
+    }
+  }
   main {
     font-size: $pcP;
     margin-bottom: 5vw;
@@ -303,6 +346,7 @@ main {
       font-size: $pcH2;
     }
 
+
     input[type=checkBox] {
       width: 2.5vw;
       height: 2.5vw;
@@ -311,8 +355,6 @@ main {
 
 
     }
-
-
 
 
 
@@ -409,6 +451,7 @@ main {
       }
     }
   }
+
 
 }
 
@@ -533,5 +576,39 @@ main {
         width: 1vw;
       }
     }
+  }
+  aside {
+    width:100%;
+    margin:0 auto;
+    display:block;
+    section{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      position: absolute;
+      top:30vw;
+      
+    }
+    section.advert2left,section.advert2right{
+      margin:0 3rem;
+      width:8vw;
+      height:20rem;
+      background-color:$textColor;
+      opacity:0.2;
+      color:$whiteSpace;
+      font-size:$dskH2;
+      font-family: $titleFont;
+      }
+      section.advert2left{
+        left:0;
+        float:left;
+      }
+      section.advert2right{
+        right:0;
+        float:right;
+      }
+  }
+  section.tabletAd{
+    display:none;
   }
 }
