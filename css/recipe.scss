@@ -178,6 +178,16 @@ main {
     }
 }
 
+// advert
+section.advert2 {
+    img {
+        height: auto;
+        width: 50vw;
+        display: block;
+        margin: auto;
+    }
+}
+
 // feedback
 .feedback {
     grid-area: feedback;

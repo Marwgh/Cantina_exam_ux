@@ -258,3 +258,91 @@ form {
         }
     }
 }
+
+
+// advert
+section.advert1 {
+    display: none;
+    img {
+        height: auto;
+        width: 12vw;
+        margin-bottom: 5vw;
+    }
+}
+
+.advert {
+    .adLeft {
+        position: absolute;
+        top: 70vh;
+        left: 0;
+    }
+
+    .adRight {
+        position: absolute;
+        top: 70vh;
+        right: 0;
+    }
+}
+
+
+section.advert2 {
+    img {
+        height: auto;
+        width: 80vw;
+        display: block;
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: map-get($breakPoints, md)) {
+    section.advert2 {
+        img {
+            width: 60vw;
+        }
+    }
+}
+
+@media only screen and (min-width: map-get($breakPoints, lg)) {
+    section.advert1 {
+        display: block;
+    }
+
+    .advert {
+        .adLeft {
+            padding-left: 5vw;
+        }
+    
+        .adRight {
+            padding-right: 5vw;
+        }
+    }
+
+    section.advert2 {
+        img {
+            display: none;
+        }
+    }
+}
+
+@media only screen and (min-width: map-get($breakPoints, xl)) {
+    
+    section.advert1 {
+        display: block;
+    }
+
+    .advert {
+        .adLeft {
+            padding-left: 10vw;
+        }
+    
+        .adRight {
+            padding-right: 10vw;
+        }
+    }
+
+    section.advert2 {
+        img {
+            display: none;
+        }
+    }
+}

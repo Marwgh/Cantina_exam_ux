@@ -694,5 +694,69 @@ form #tagButton {
     width: 3vw;
   }
 }
+section.advert1 {
+  display: none;
+}
+section.advert1 img {
+  height: auto;
+  width: 12vw;
+  margin-bottom: 5vw;
+}
+
+.advert .adLeft {
+  position: absolute;
+  top: 70vh;
+  left: 0;
+}
+.advert .adRight {
+  position: absolute;
+  top: 70vh;
+  right: 0;
+}
+
+section.advert2 img {
+  height: auto;
+  width: 80vw;
+  display: block;
+  margin: auto;
+}
+
+@media only screen and (min-width: 480px) {
+  section.advert2 img {
+    width: 60vw;
+  }
+}
+@media only screen and (min-width: 768px) {
+  section.advert1 {
+    display: block;
+  }
+
+  .advert .adLeft {
+    padding-left: 5vw;
+  }
+  .advert .adRight {
+    padding-right: 5vw;
+  }
+
+  section.advert2 img {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1032px) {
+  section.advert1 {
+    display: block;
+  }
+
+  .advert .adLeft {
+    padding-left: 10vw;
+  }
+  .advert .adRight {
+    padding-right: 10vw;
+  }
+
+  section.advert2 img {
+    display: none;
+  }
+}
 
 /*# sourceMappingURL=addRecipe.css.map */

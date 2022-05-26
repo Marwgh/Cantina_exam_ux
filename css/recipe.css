@@ -636,6 +636,13 @@ main label {
   margin-bottom: 1.5rem;
 }
 
+section.advert2 img {
+  height: auto;
+  width: 50vw;
+  display: block;
+  margin: auto;
+}
+
 .feedback {
   grid-area: feedback;
   margin: 0.5rem;
