@@ -229,14 +229,14 @@ header #menuB a {
 }
 /*BODY      BODY        BODY        BODY        BODY        BODY        BODY        BODY        BODY*/
 body {
-  margin-top: 20vw;
+  margin-top: 25vw;
 }
 
 /*FOOTER        FOOTER      FOOTER        FOOTER        FOOTER        FOOTER        FOOTER        FOOTER*/
 footer {
   background-color: #1f5473;
   width: 100%;
-  height: 75vh;
+  height: 170vw;
   bottom: 0;
   color: white;
   font-family: "Roboto", sans-serif;
@@ -363,7 +363,7 @@ footer section {
   }
 
   footer {
-    height: 13.5vw;
+    height: 23.5vw;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     font-size: 1.8vw;
@@ -389,7 +389,7 @@ footer section {
     left: 47.5vw;
   }
   footer > section {
-    grid-column-start: 5;
+    grid-column: 4/span 2;
     text-align: right;
     align-items: unset;
   }
@@ -398,10 +398,20 @@ footer section {
     text-align: right;
     grid-column: 6/span 2;
     width: 80%;
-    margin-right: 5vw;
+  }
+  footer > :nth-child(4) p {
+    float: right;
+    width: 100%;
   }
   footer > :last-child {
     grid-column-start: 8;
+    position: relative;
+  }
+  footer > :last-child ul {
+    position: absolute;
+    top: 4vw;
+    right: 0vw;
+    width: 13vw;
   }
   footer li {
     padding-bottom: 0.5vw;
@@ -427,10 +437,71 @@ footer section {
 
   footer {
     font-size: 1vw;
+    height: 13.5vw;
   }
   footer h2 {
     font-size: 1.8vw;
   }
+}
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif, sans-serif;
+}
+
+/* SEARCH BAR STYLING*/
+form {
+  height: 15vw;
+}
+form input {
+  width: 35vw;
+  height: 4vw;
+  margin-top: 4vw;
+  margin-left: 30vw;
+  font-size: large;
+}
+
+/*Food Categories Styling*/
+.food_categories_wrapper ul {
+  display: flex;
+  height: 20vw;
+  list-style-type: none;
+  margin-left: 7vw;
+}
+.food_categories_wrapper ul li {
+  margin-left: 6vw;
+}
+.food_categories_wrapper ul li img {
+  width: 12vw;
+  height: 12vw;
+  border-radius: 50%;
+}
+
+.food_categories_wrapper div {
+  border-radius: 50%;
+  height: 10vw;
+  width: 10vw;
+}
+.food_categories_wrapper div button {
+  width: 6vw;
+  height: 2vw;
+  margin-left: 3vw;
+  margin-top: 2vw;
+}
+
+/*Top Recipes*/
+.top_recipes_wrapper {
+  height: 20vw;
+  width: 100%;
+}
+.top_recipes_wrapper ul {
+  display: flex;
+  list-style-type: none;
+}
+.top_recipes_wrapper ul li {
+  margin-left: 5vw;
+}
+.top_recipes_wrapper ul li img {
+  height: 10vw;
 }
 
 /*# sourceMappingURL=home.css.map */
