@@ -454,6 +454,9 @@ main h1 {
   font-size: 8vw;
   margin-bottom: 4vw;
 }
+main img {
+  fill: #1f5473;
+}
 
 form {
   position: relative;
@@ -624,12 +627,12 @@ form #tagButton {
   }
   form fieldset p {
     font-size: 1.5vw;
-    padding: 0.8vw 0 0.8vw 1vw;
+    padding: 0.5vw 0 0.5vw 1vw;
   }
   form fieldset .bars, form fieldset .remove {
     width: 1.5vw;
     height: 1.5vw;
-    padding: 1vw 1vw;
+    padding: 0.7vw 1vw;
   }
   form fieldset img {
     width: 5vw;

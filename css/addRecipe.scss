@@ -10,6 +10,10 @@ main {
         font-size: $phoneH1;
         margin-bottom: 4vw;
     }
+
+    img {
+        fill: $primaryColor;
+    }
 }
 
 form {
@@ -231,13 +235,13 @@ form {
 
             p {
                 font-size: $dskP*1.5;
-                padding: 0.8vw 0 0.8vw 1vw;
+                padding: 0.5vw 0 0.5vw 1vw;
             }
         
             .bars, .remove {
                 width: $dskP*1.5;
                 height: $dskP*1.5;
-                padding: 1vw 1vw;
+                padding: 0.7vw 1vw;
             }
 
             img {
