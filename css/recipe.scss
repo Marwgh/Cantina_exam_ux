@@ -74,26 +74,41 @@ main {
 // info
 .info {
     grid-area: info;
-    box-shadow: 0 8px 8px -4px $textColor;
+    box-shadow: 4px 4px 10px rgb(0 0 0 / 50%);
     text-align: center;
+    padding: 1vw;
 
-    ul li {
-        display: inline;
+    ul {
+        display: flex;
+        justify-content: space-evenly;
+
+        li {
+            display: flex;
+            align-items: center;
+
+            img {
+                width: auto;
+                height: 10vw;
+            }
+
+        }
+
     }
+
 }
 
 // recipeButtons
 .recipeButtons {
     grid-area: recipeButtons;
     width: 100%;
-    margin: 1vw 2vw 2vw 0;
+    margin: 5vw 2vw 2vw 0;
 
     button {
         background-color: $ctaColor;
         float: right;
         padding: 0.5vw 2vw;
         border: $ctaColor solid 0.1vw;
-        border-radius: 0.5vw;
+        border-radius: 1vw;
         cursor: pointer;
         color: $whiteSpace;
         margin-right: 1rem;
@@ -236,8 +251,18 @@ main {
 @media only screen and (min-width: map-get($breakPoints, md)) {
     .recipeButtons {
         width: 100%;
-        margin-top: 1rem;
-        margin-bottom: 0;
+
+        margin: 1vw 2vw 0 0;
+
+        button {
+            border-radius: 0.8vw;
+        }
+
+        :first-child {
+            margin-right: 3vw;
+
+        }
+
     }
 
     .info {
@@ -247,7 +272,16 @@ main {
 
         ul {
             padding: 0;
+            justify-content: space-between;
+
+            li {
+                img {
+                    height: 3vw;
+                }
+            }
         }
+
+
     }
 
     .textInformation {
@@ -311,6 +345,13 @@ main {
 
         ul {
             padding: 0;
+            justify-content: space-around;
+
+            li {
+                img {
+                    height: 5vw;
+                }
+            }
         }
     }
 
@@ -359,6 +400,13 @@ main {
 }
 
 @media only screen and (min-width: map-get($breakPoints, xl)) {
+    .recipeButtons {
+        :first-child {
+            margin-right: 1.8vw;
+
+        }
+    }
+
     .hero {
         height: 20vw;
 
@@ -376,6 +424,12 @@ main {
 
         ul {
             padding: 0;
+
+            li {
+                img {
+                    height: 3vw;
+                }
+            }
         }
     }
 
