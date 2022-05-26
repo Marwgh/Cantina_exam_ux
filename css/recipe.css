@@ -502,24 +502,34 @@ main label {
 
 .info {
   grid-area: info;
-  box-shadow: 0 8px 8px -4px black;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
   text-align: center;
+  padding: 1vw;
+}
+.info ul {
+  display: flex;
+  justify-content: space-evenly;
 }
 .info ul li {
-  display: inline;
+  display: flex;
+  align-items: center;
+}
+.info ul li img {
+  width: auto;
+  height: 10vw;
 }
 
 .recipeButtons {
   grid-area: recipeButtons;
   width: 100%;
-  margin: 1vw 2vw 2vw 0;
+  margin: 5vw 2vw 2vw 0;
 }
 .recipeButtons button {
   background-color: #6e1916;
   float: right;
   padding: 0.5vw 2vw;
   border: #6e1916 solid 0.1vw;
-  border-radius: 0.5vw;
+  border-radius: 1vw;
   cursor: pointer;
   color: white;
   margin-right: 1rem;
@@ -635,8 +645,13 @@ main label {
 @media only screen and (min-width: 480px) {
   .recipeButtons {
     width: 100%;
-    margin-top: 1rem;
-    margin-bottom: 0;
+    margin: 1vw 2vw 0 0;
+  }
+  .recipeButtons button {
+    border-radius: 0.8vw;
+  }
+  .recipeButtons :first-child {
+    margin-right: 3vw;
   }
 
   .info {
@@ -646,6 +661,10 @@ main label {
   }
   .info ul {
     padding: 0;
+    justify-content: space-between;
+  }
+  .info ul li img {
+    height: 3vw;
   }
 
   .textInformation {
@@ -697,6 +716,10 @@ main label {
   }
   .info ul {
     padding: 0;
+    justify-content: space-around;
+  }
+  .info ul li img {
+    height: 5vw;
   }
 
   .textInformation {
@@ -732,6 +755,10 @@ main label {
   }
 }
 @media only screen and (min-width: 1032px) {
+  .recipeButtons :first-child {
+    margin-right: 1.8vw;
+  }
+
   .hero {
     height: 20vw;
   }
@@ -748,6 +775,9 @@ main label {
   }
   .info ul {
     padding: 0;
+  }
+  .info ul li img {
+    height: 3vw;
   }
 
   .textInformation {
