@@ -23,6 +23,7 @@ form {
     #fileUpload {
         display: none;
     }
+
     fieldset {
         padding: 1.5rem;
         margin-bottom: 1rem;
@@ -30,12 +31,18 @@ form {
             border: solid 0.1vw;
             display: grid;
             grid-template-columns: 5% 90% 5%;
+            input {
+                border: none;
+            }
         }
         .step {
             border: solid 0.1vw;
             display: grid;
             grid-template-columns: 5% 5% 85% 5%;
             margin: 2vw 0;
+            input {
+                border: none;
+            }
         }
         .bars {
             width: 2vw;
@@ -47,17 +54,22 @@ form {
             height: 2.5vw;
             padding: 1vw;
         }
-    
+
+        .removeHidden {
+            display: none;
+        }
 
     }
-    input[type="submit"] {
+    input[type="button"], input[type="submit"] {
         background-color: $ctaColor;
-        color: $whiteSpace;
         padding: 0.5vw 2vw;
         border: $ctaColor solid 0.1vw;
         border-radius: 0.5vw;
-        // position: absolute;
-        // bottom: 0;
+        cursor: pointer;
+        color: $whiteSpace;
+    }
+
+    input[type="submit"] {
         display: block;
         margin:auto;
     }

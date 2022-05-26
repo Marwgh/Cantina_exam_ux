@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/addRecipe.css">
-  <script src="js/script.js"></script>
+  <script src="js/script.js" defer></script>
   <title>Add Recipe</title>
 </head>
 
@@ -71,14 +71,14 @@
       <fieldset>
         <label for="ingredients">Ingredients</label><br>
         <div id="ingredients">
-          <div class="ingredient">
+          <div id="ingredient0" class="ingredient">
             <label for="">
               <img class="bars" src="images/svg/bars-solid.svg" alt="bars">
             </label>
             <input type="text" name="ingredient" id="ingredient" placeholder="ingredient here">
             <div>
-              <input type="button" id="remove" name="remove" onclick="this.parentElement.parentElement.parentElement.remove();">
-              <label for="remove">
+              <input type="button" class="removeHidden" id="removeIngredient0" name="remove" onclick="removeIngredient('ingredient0');">
+              <label for="removeIngredient0">
                 <img class="remove" src="images/svg/xmark-solid.svg" alt="remove">
               </label>
             </div>
@@ -89,14 +89,14 @@
       <fieldset>
         <label for="utensils">Utensils</label><br>
         <div id="utensils">
-          <div class="utensil">
+          <div id="utensil0" class="utensil">
             <label for="">
               <img class="bars" src="images/svg/bars-solid.svg" alt="bars">
             </label>
-            <input type="text" name="utensil" id="utensil" placeholder="ingredient here">
+            <input type="text" name="utensil" id="utensil" placeholder="utensil here">
             <div>
-              <input type="button" id="remove" name="remove" onclick="this.parentElement.parentElement.parentElement.remove();">
-              <label for="remove">
+              <input type="button" class="removeHidden" id="removeUtensil0" name="remove" onclick="removeUtensil('utensil0');">
+              <label for="removeUtensil0">
                 <img class="remove" src="images/svg/xmark-solid.svg" alt="remove">
               </label>
             </div>
@@ -121,16 +121,16 @@
         </select>
         <span></span>
         <div id="steps">
-          <div>
+          <div id="step0">
             <div class="step">
-              <output for="">1</output>
+              <label for="">1</label>
               <label for="">
                 <img class="bars" src="images/svg/bars-solid.svg" alt="bars">
               </label>
-              <input type="text" name="stepText" id="stepText" placeholder="ingredient here">
+              <input type="text" name="stepText" id="stepText" placeholder="step here">
               <div>
-                <input type="button" id="remove" name="remove" onclick="this.parentElement.parentElement.parentElement.remove();">
-                <label for="remove">
+                <input type="button" class="removeHidden" id="removeStep0" name="remove" onclick="removeStep('step0');">
+                <label for="removeStep0">
                   <img class="remove" src="images/svg/xmark-solid.svg" alt="remove">
                 </label>
               </div>

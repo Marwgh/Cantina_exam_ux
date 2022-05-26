@@ -473,11 +473,17 @@ form fieldset .ingredient, form fieldset .utensil {
   display: grid;
   grid-template-columns: 5% 90% 5%;
 }
+form fieldset .ingredient input, form fieldset .utensil input {
+  border: none;
+}
 form fieldset .step {
   border: solid 0.1vw;
   display: grid;
   grid-template-columns: 5% 5% 85% 5%;
   margin: 2vw 0;
+}
+form fieldset .step input {
+  border: none;
 }
 form fieldset .bars {
   width: 2vw;
@@ -489,12 +495,18 @@ form fieldset .remove {
   height: 2.5vw;
   padding: 1vw;
 }
-form input[type=submit] {
+form fieldset .removeHidden {
+  display: none;
+}
+form input[type=button], form input[type=submit] {
   background-color: #6e1916;
-  color: white;
   padding: 0.5vw 2vw;
   border: #6e1916 solid 0.1vw;
   border-radius: 0.5vw;
+  cursor: pointer;
+  color: white;
+}
+form input[type=submit] {
   display: block;
   margin: auto;
 }

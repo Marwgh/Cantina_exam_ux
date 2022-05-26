@@ -2,88 +2,104 @@
 
 function addIngredient() {
     const newIngredient = document.createElement("div");
+    let counter = 0;
+    counter = counter+1;
+    const id = "ingredient"+counter;
+
+    newIngredient.setAttribute("id",id);
+    newIngredient.classList.add("ingredient");
 
     newIngredient.innerHTML = `
-        <div class="ingredient">
-            <label for="">
-                <img class="bars" src="images/svg/bars-solid.svg" alt="bars">
+        <label for="">
+            <img class="bars" src="images/svg/bars-solid.svg" alt="bars">
+        </label>
+        <input type="text" name="ingredient" id="ingredient" placeholder="ingredient here">
+        <div>
+            <input type="button" class="removeHidden" id="removeIngredient${counter}" name="remove" onclick="removeIngredient('${id}');">
+            <label for="removeIngredient${counter}">
+                <img class="remove" src="images/svg/xmark-solid.svg" alt="remove">
             </label>
-            <input type="text" name="ingredient" id="ingredient" placeholder="ingredient here">
-            <div>
-                <input type="button" id="remove" name="remove" onclick="this.parentElement.parentElement.parentElement.remove();">
-                <label for="remove">
-                    <img class="remove" src="images/svg/xmark-solid.svg" alt="remove">
-                </label>
-            </div>
         </div>
     `
 
     document.getElementById("ingredients").appendChild(newIngredient);
 }
 
+function removeIngredient(ingredient) {
+    console.log(event.target);
+    document.querySelector("#"+ingredient).remove();
+}
+
 function addUtensil() {
     const newUtensil = document.createElement("div");
+    let counter = 0;
+    counter = counter+1;
+    const id = "utensil"+counter;
+
+    newUtensil.setAttribute("id",id);
+    newUtensil.classList.add("utensil");
 
     newUtensil.innerHTML = `
-        <div class="utensil">
-            <label for="">
-                <img class="bars" src="images/svg/bars-solid.svg" alt="bars">
+        <label for="">
+            <img class="bars" src="images/svg/bars-solid.svg" alt="bars">
+        </label>
+        <input type="text" name="utensil" id="utensil" placeholder="utensil here">
+        <div>
+            <input type="button" class="removeHidden" id="removeUtensil${counter}" name="remove" onclick="removeUtensil('${id}');">
+            <label for="removeUtensil${counter}">
+                <img class="remove" src="images/svg/xmark-solid.svg" alt="remove">
             </label>
-            <input type="text" name="utensil" id="utensil" placeholder="ingredient here">
-            <div>
-                <input type="button" id="remove" name="remove" onclick="this.parentElement.parentElement.parentElement.remove();">
-                <label for="remove">
-                    <img class="remove" src="images/svg/xmark-solid.svg" alt="remove">
-                </label>
-            </div>
         </div>
     `
 
     document.getElementById("utensils").appendChild(newUtensil);
 }
 
+function removeUtensil(utensil) {
+    console.log(event.target);
+    document.querySelector("#"+utensil).remove();
+}
+
 
 function changeSteps(_this) {
-    const ItemCount = +_this.value //get the value
+    const stepCount = +_this.value //get the value
     const steps = document.querySelector('#steps') //append results
     steps.innerHTML = '' //clear the results on each update
-    for (var i = 1; i <= ItemCount; i++) {
+    for (let i = 1; i <= stepCount; i++) {
         const newStep = document.createElement("div");
-        // var input = document.createElement('input') //create input
-        // var label = document.createElement("label"); //create label
-        // label.innerText = 'Input ' + i
-        // input.type = "text";
-        // input.placeholder = "Type text here"; //add a placeholder
-        // input.className = "my-inputs"; // set the CSS class
-        // results.appendChild(label); //append label
-        // results.appendChild(document.createElement("br"));
-        // results.appendChild(input); //append input
-        // results.appendChild(document.createElement("br"));
+        let counter = 0;
+        counter = counter+1;
+        const id = "step"+counter;
+
+        newStep.setAttribute("id",id);
 
         newStep.innerHTML = `
-        <div>
-            <div class="step">
-                <output for="">1</output>
-                <label for="">
-                    <img class="bars" src="images/svg/bars-solid.svg" alt="bars">
-                </label>
-                <input type="text" name="stepText" id="stepText" placeholder="ingredient here">
-                <div>
-                    <input type="button" id="remove" name="remove" onclick="this.parentElement.parentElement.parentElement.remove();">
-                    <label for="remove">
-                        <img class="remove" src="images/svg/xmark-solid.svg" alt="remove">
-                    </label>
-                </div>
-            </div>
-            <label for="fileUpload">
-                <img src="images/svg/image-solid.svg" alt="upload">
+        <div class="step">
+            <label for="">${i}</label>
+            <label for="">
+                <img class="bars" src="images/svg/bars-solid.svg" alt="bars">
             </label>
-            <input id="fileUpload" name="fileUpload" type="file">
+            <input type="text" name="stepText" id="stepText" placeholder="step here">
+            <div>
+                <input type="button" class="removeHidden" id="removeStep${counter}" name="remove" onclick="removeStep('${id}');">
+                <label for="removeStep${counter}">
+                    <img class="remove" src="images/svg/xmark-solid.svg" alt="remove">
+                </label>
+            </div>
         </div>
+        <label for="fileUpload">
+            <img src="images/svg/image-solid.svg" alt="upload">
+        </label>
+        <input id="fileUpload" name="fileUpload" type="file">
         `
 
         document.getElementById("steps").appendChild(newStep);
     }
+}
+
+function removeStep(step) {
+    console.log(event.target);
+    document.querySelector("#"+step).remove();
 }
 
 function addTag() {
@@ -111,6 +127,5 @@ function addTag() {
 //         document.getElementById("tagButton").click();
 //     }
 // });
-
 
 
