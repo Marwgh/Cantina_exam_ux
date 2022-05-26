@@ -507,7 +507,7 @@ form input {
 
 /*ARTICLE WRAPPER SECTION*/
 .article_wrapper {
-  height: 40vw;
+  height: 60vw;
   width: 100%;
   margin: 3vw;
   text-align: center;
@@ -518,10 +518,25 @@ form input {
   margin-top: 5vw;
 }
 
+.blog_section {
+  display: flex;
+}
+.blog_section article ul {
+  list-style-type: none;
+}
+.blog_section article li img {
+  width: 18vw;
+  height: 10vw;
+}
+
 /*CHEF WRAPPER SECTION*/
 .chef_wrapper {
-  height: 20vw;
-  width: 100%;
+  height: 30vw;
+  width: 80%;
+  align-self: center;
+}
+.chef_wrapper h2 {
+  text-align: center;
 }
 .chef_wrapper ul {
   display: flex;
@@ -536,6 +551,7 @@ form input {
   width: 12vw;
   height: 12vw;
   border-radius: 50%;
+  margin-bottom: 1.5vw;
 }
 
 /*# sourceMappingURL=home.css.map */
