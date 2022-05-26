@@ -490,6 +490,7 @@ form input {
 
 /*Top Recipes*/
 .top_recipes_wrapper {
+  background-color: #DEE8F2;
   height: 20vw;
   width: 100%;
 }
@@ -502,6 +503,39 @@ form input {
 }
 .top_recipes_wrapper ul li img {
   height: 10vw;
+}
+
+/*ARTICLE WRAPPER SECTION*/
+.article_wrapper {
+  height: 40vw;
+  width: 100%;
+  margin: 3vw;
+  text-align: center;
+}
+.article_wrapper img {
+  height: 30vw;
+  width: auto;
+  margin-top: 5vw;
+}
+
+/*CHEF WRAPPER SECTION*/
+.chef_wrapper {
+  height: 20vw;
+  width: 100%;
+}
+.chef_wrapper ul {
+  display: flex;
+  height: 20vw;
+  list-style-type: none;
+  margin-left: 7vw;
+}
+.chef_wrapper ul li {
+  margin-left: 6vw;
+}
+.chef_wrapper ul li img {
+  width: 12vw;
+  height: 12vw;
+  border-radius: 50%;
 }
 
 /*# sourceMappingURL=home.css.map */
