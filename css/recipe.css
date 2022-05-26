@@ -305,10 +305,6 @@ footer section {
 }
 
 @media only screen and (min-width: 480px) {
-  body {
-    margin-top: 6vw;
-  }
-
   footer {
     height: 35vw;
     display: grid;
