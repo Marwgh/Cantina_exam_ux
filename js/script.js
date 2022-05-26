@@ -9,9 +9,12 @@ function addIngredient() {
                 <img class="bars" src="images/svg/bars-solid.svg" alt="bars">
             </label>
             <input type="text" name="ingredient" id="ingredient" placeholder="ingredient here">
-            <label for="">
-                <img class="cross" src="images/svg/xmark-solid.svg" alt="cross">
-            </label>
+            <div>
+                <input type="button" id="remove" name="remove" onclick="this.parentElement.parentElement.parentElement.remove();">
+                <label for="remove">
+                    <img class="remove" src="images/svg/xmark-solid.svg" alt="remove">
+                </label>
+            </div>
         </div>
     `
 
@@ -27,9 +30,12 @@ function addUtensil() {
                 <img class="bars" src="images/svg/bars-solid.svg" alt="bars">
             </label>
             <input type="text" name="utensil" id="utensil" placeholder="ingredient here">
-            <label for="">
-                <img class="cross" src="images/svg/xmark-solid.svg" alt="cross">
-            </label>
+            <div>
+                <input type="button" id="remove" name="remove" onclick="this.parentElement.parentElement.parentElement.remove();">
+                <label for="remove">
+                    <img class="remove" src="images/svg/xmark-solid.svg" alt="remove">
+                </label>
+            </div>
         </div>
     `
 

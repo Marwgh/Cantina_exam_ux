@@ -76,10 +76,12 @@
               <img class="bars" src="images/svg/bars-solid.svg" alt="bars">
             </label>
             <input type="text" name="ingredient" id="ingredient" placeholder="ingredient here">
-            <!-- <input type="button" id="close" name="close" -->
-            <label for="">
-              <img class="cross" src="images/svg/xmark-solid.svg" alt="cross">
-            </label>
+            <div>
+              <input type="button" id="remove" name="remove" onclick="this.parentElement.parentElement.parentElement.remove();">
+              <label for="remove">
+                <img class="remove" src="images/svg/xmark-solid.svg" alt="remove">
+              </label>
+            </div>
           </div>
         </div>
         <input id="add" name="add" type="button" onclick="addIngredient();" value="+ Add Ingredient">
@@ -92,10 +94,12 @@
               <img class="bars" src="images/svg/bars-solid.svg" alt="bars">
             </label>
             <input type="text" name="utensil" id="utensil" placeholder="ingredient here">
-            <!-- <input type="button" id="close" name="close" -->
-            <label for="">
-              <img class="cross" src="images/svg/xmark-solid.svg" alt="cross">
-            </label>
+            <div>
+              <input type="button" id="remove" name="remove" onclick="this.parentElement.parentElement.parentElement.remove();">
+              <label for="remove">
+                <img class="remove" src="images/svg/xmark-solid.svg" alt="remove">
+              </label>
+            </div>
           </div>
         </div>
         <input id="add" name="add" type="button" onclick="addUtensil();" value="+ Add Ingredient">
