@@ -166,7 +166,7 @@ div.recipeDetails{
 ul.descripDetails {
     list-style-type:none;
     li:nth-child(3){
-        color:$secondaryColor;
+        color:$secondaryColor;        
     }
 }
 
@@ -215,6 +215,11 @@ button {
         display:flex;
         flex-direction: row;
         flex-wrap: wrap;
+        h2 {
+            font-size:$ipadH2;
+            margin-top:2rem;
+            text-align: center;
+        }
         ul.container {
             margin:1rem 1.5rem;
         }
@@ -229,6 +234,13 @@ button {
 //Desktop
 
 @media only screen and (min-width: map-get($breakPoints, lg)) {
+    main h1 {
+        font-size:$pcH1;
+    }
+
+    main h2 {
+        font-size:$pcP;
+    }
     article.Details{
         display:flex;
         flex-direction: column;
