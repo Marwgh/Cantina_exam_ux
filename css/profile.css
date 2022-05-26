@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;500;700&family=Roboto:wght@300;500;700&display=swap");
-
 /*Break points*/
 * {
   margin: 0;
@@ -14,8 +13,8 @@ header {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   font-family: "Roboto", sans-serif;
   background-color: rgba(31, 84, 115, 0.98);
   color: white;
@@ -72,7 +71,7 @@ header #menuToggle span {
   border-radius: 1.5vw;
   z-index: 1;
   -webkit-transform-origin: 0.2vw 0;
-  transform-origin: 0.2vw 0;
+          transform-origin: 0.2vw 0;
   -webkit-transition: opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
   transition: opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
@@ -81,34 +80,34 @@ header #menuToggle span {
 
 header #menuToggle span:first-child {
   -webkit-transform-origin: 0% 0%;
-  transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
 }
 
 header #menuToggle span:nth-last-child(2) {
   -webkit-transform-origin: 0% 100%;
-  transform-origin: 0% 100%;
+          transform-origin: 0% 100%;
 }
 
-header #menuToggle input:checked~span {
+header #menuToggle input:checked ~ span {
   opacity: 1;
   -webkit-transform: rotate(45deg) translate(-0.5vw, -0.11vw);
-  transform: rotate(45deg) translate(-0.5vw, -0.11vw);
+          transform: rotate(45deg) translate(-0.5vw, -0.11vw);
 }
 
-header #menuToggle input:checked~span:nth-last-child(3) {
+header #menuToggle input:checked ~ span:nth-last-child(3) {
   opacity: 0;
   -webkit-transform: rotate(0deg) scale(0.2, 0.2);
-  transform: rotate(0deg) scale(0.2, 0.2);
+          transform: rotate(0deg) scale(0.2, 0.2);
 }
 
-header #menuToggle input:checked~span:nth-last-child(2) {
+header #menuToggle input:checked ~ span:nth-last-child(2) {
   -webkit-transform: rotate(-45deg) translate(-0.1vw, 0.1vw);
-  transform: rotate(-45deg) translate(-0.1vw, 0.1vw);
+          transform: rotate(-45deg) translate(-0.1vw, 0.1vw);
 }
 
-header #menuToggle input:checked~#menuB {
+header #menuToggle input:checked ~ #menuB {
   -webkit-transform: none;
-  transform: none;
+          transform: none;
 }
 
 header #menuB {
@@ -125,9 +124,9 @@ header #menuB {
   display: grid;
   background-color: rgba(244, 162, 52, 0.9);
   -webkit-transform-origin: 0% 0%;
-  transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
   -webkit-transform: translate(32vw, 0);
-  transform: translate(32vw, 0);
+          transform: translate(32vw, 0);
   -webkit-transition: -webkit-transform 1s cubic-bezier(0.68, 0.39, 0.16, 1.31);
   transition: -webkit-transform 1s cubic-bezier(0.68, 0.39, 0.16, 1.31);
   transition: transform 1s cubic-bezier(0.68, 0.39, 0.16, 1.31);
@@ -144,7 +143,6 @@ header #menuB a {
     height: 10vw;
     font-size: 2.4vw;
   }
-
   header nav {
     display: block;
     width: 60vw;
@@ -152,18 +150,16 @@ header #menuB a {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     -ms-flex-pack: distribute;
-    justify-content: space-around;
+        justify-content: space-around;
     position: relative;
   }
-
   header nav a {
     text-decoration: none;
     color: #f4a234;
   }
-
   header nav div:first-of-type {
     border-radius: 50%;
     overflow: hidden;
@@ -173,7 +169,6 @@ header #menuB a {
     top: 2.2vw;
     left: 53vw;
   }
-
   header nav input {
     display: block;
     width: 5vw;
@@ -183,12 +178,10 @@ header #menuB a {
     border-radius: 50%;
     opacity: 0;
   }
-
-  header nav input:checked+#userMenu {
+  header nav input:checked + #userMenu {
     display: -ms-grid;
     display: grid;
   }
-
   header nav #userMenu {
     display: none;
     position: fixed;
@@ -203,18 +196,15 @@ header #menuB a {
     list-style: none;
     background-color: rgba(244, 162, 52, 0.9);
   }
-
   header nav #userMenu a {
     color: #6e1916;
   }
-
   header nav img {
     height: 5vw;
     width: 5vw;
     background-color: white;
     border-radius: 50%;
   }
-
   header #menuToggle {
     display: none;
   }
@@ -225,30 +215,25 @@ header #menuB a {
     height: 6vw;
     font-size: 1.8vw;
   }
-
   header nav {
     width: 45vw;
   }
-
   header nav img {
     width: 4vw;
     height: 4vw;
   }
-
   header nav div:first-of-type {
     width: 4vw;
     height: 4vw;
     top: 1vw;
     left: 39.5vw;
   }
-
   header nav #userMenu {
     top: 2.5vw;
     left: 80vw;
     width: 15vw;
     height: 12vw;
   }
-
   header nav input {
     width: 5vw;
     height: 5vw;
@@ -260,29 +245,24 @@ header #menuB a {
   header {
     font-size: 1vw;
   }
-
   header nav {
     width: 30vw;
   }
-
   header nav img {
     width: 4vw;
     height: 4vw;
   }
-
   header nav div:first-of-type {
     width: 4vw;
     height: 4vw;
     top: 1vw;
     left: 24.7vw;
   }
-
   header nav #userMenu {
     left: 85vw;
     width: 10vw;
     height: 8vw;
   }
-
   header nav input {
     width: 5vw;
     height: 5vw;
@@ -329,7 +309,7 @@ footer div section {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
+      justify-content: space-around;
   margin-top: 45vw;
 }
 
@@ -343,33 +323,33 @@ footer .copyRight {
   left: 40.5vw;
 }
 
-footer>section {
+footer > section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
 }
 
-footer>section a {
+footer > section a {
   text-decoration: none;
   color: white;
 }
 
 footer :nth-child(4) {
   -ms-grid-column: 7;
-  grid-column-start: 7;
+      grid-column-start: 7;
 }
 
 footer :last-child {
   -ms-grid-column: 8;
-  grid-column-start: 8;
+      grid-column-start: 8;
 }
 
 footer li {
@@ -396,70 +376,57 @@ footer section {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     font-size: 2.4vw;
   }
-
   footer .footerLogo img {
     width: 25vw;
     top: 0vw;
   }
-
   footer section img {
     width: 5vw;
   }
-
   footer div {
     -ms-grid-column: 1;
-    grid-column-start: 1;
+        grid-column-start: 1;
     margin-top: 1vw;
     margin-left: 2vw;
   }
-
   footer div section {
     -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin-top: 15vw;
   }
-
   footer div section :nth-child(4) {
     display: block;
   }
-
   footer .copyRight {
     left: 47.5vw;
   }
-
-  footer>section {
+  footer > section {
     -ms-grid-column: 3;
-    grid-column-start: 3;
+        grid-column-start: 3;
     text-align: right;
   }
-
-  footer>section :nth-child(4) {
+  footer > section :nth-child(4) {
     display: block;
   }
-
   footer :nth-child(4) {
     display: none;
   }
-
   footer :last-child {
     -ms-grid-column: 4;
-    grid-column-start: 4;
+        grid-column-start: 4;
   }
-
   footer li {
     padding-bottom: 2.5vw;
   }
-
   footer h2 {
     padding-bottom: 0.5vw;
     font-size: 3.4vw;
     width: 80%;
   }
-
   footer section {
     margin-top: 1vw;
   }
@@ -474,48 +441,41 @@ footer section {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     font-size: 1.8vw;
   }
-
   footer .footerLogo img {
     width: 13.5vw;
     top: -1vw;
   }
-
   footer section img {
     width: 2.5vw;
   }
-
   footer div {
     -ms-grid-column: 1;
-    grid-column-start: 1;
+        grid-column-start: 1;
     margin-top: 1vw;
     margin-left: 2vw;
   }
-
   footer div section {
     -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin-top: 6vw;
     width: 20vw;
   }
-
   footer .copyRight {
     left: 47.5vw;
   }
-
-  footer>section {
+  footer > section {
     -ms-grid-column: 5;
-    grid-column-start: 5;
+        grid-column-start: 5;
     text-align: right;
     -webkit-box-align: unset;
-    -ms-flex-align: unset;
-    align-items: unset;
+        -ms-flex-align: unset;
+            align-items: unset;
   }
-
-  footer> :nth-child(4) {
+  footer > :nth-child(4) {
     display: block;
     text-align: right;
     -ms-grid-column: 6;
@@ -524,41 +484,35 @@ footer section {
     width: 80%;
     margin-right: 5vw;
   }
-
-  footer> :last-child {
+  footer > :last-child {
     -ms-grid-column: 8;
-    grid-column-start: 8;
+        grid-column-start: 8;
   }
-
   footer li {
     padding-bottom: 0.5vw;
     width: 100%;
   }
-
   footer li a {
     width: 100%;
   }
-
   footer h2 {
     padding-bottom: 0.5vw;
     width: 100%;
     font-size: 3vw;
   }
-
   footer section {
     margin-top: 1vw;
     margin-right: 1vw;
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1032px) {
   body {
     margin-top: 6vw;
   }
   footer {
     font-size: 1vw;
   }
-
   footer h2 {
     font-size: 1.8vw;
   }
@@ -566,7 +520,7 @@ footer section {
 
 * {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   font-family: "Roboto", sans-serif, sans-serif;
 }
 
@@ -578,12 +532,13 @@ main h1 {
   margin-top: 5rem;
   margin-bottom: 4rem;
   text-align: center;
-  font-size: 2rem;
+  font-size: 8vw;
   font-family: "Oswald", sans-serif;
 }
 
 h2 {
-  font-size: 1rem;
+  font-size: 6vw;
+  text-align: center;
 }
 
 .Details p {
@@ -600,8 +555,8 @@ div.editDetails {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 div.editDetails img {
@@ -615,14 +570,14 @@ article.uploadWrapper {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 2rem;
 }
 
@@ -634,13 +589,13 @@ article.uploadWrapper img {
 }
 
 button.upload {
-  font-size: 3.4vw;
+  font-size: 3.8vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: white;
   border-radius: 1vw;
   cursor: pointer;
@@ -674,7 +629,7 @@ div.btnContainer button.cancel-btn {
   color: #6e1916;
   cursor: pointer;
   padding: .5rem .5rem;
-  font-size: 3.4vw;
+  font-size: 3.8vw;
 }
 
 div.btnContainer button.update-btn {
@@ -685,7 +640,7 @@ div.btnContainer button.update-btn {
   color: white;
   cursor: pointer;
   padding: .5rem .5rem;
-  font-size: 3.4vw;
+  font-size: 3.8vw;
 }
 
 div.deleteWrapper {
@@ -693,8 +648,8 @@ div.deleteWrapper {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 div.deleteWrapper button.delete-btn {
@@ -704,7 +659,7 @@ div.deleteWrapper button.delete-btn {
   color: white;
   border-radius: 1vw;
   padding: .5rem .5rem;
-  font-size: 3.4vw;
+  font-size: 3.8vw;
   border: none;
   cursor: pointer;
 }
@@ -715,19 +670,19 @@ section.yourRecipes {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 2rem;
 }
 
 section.yourRecipes h2 {
-  font-size: 1.2rem;
+  font-size: 6vw;
   margin-top: 2rem;
   text-align: center;
 }
@@ -760,14 +715,14 @@ div.recipeDetails div.buttonContainer {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 2rem;
 }
 
@@ -785,11 +740,11 @@ ul.container div.buttonContainer {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 ul.container div.buttonContainer button {
@@ -801,7 +756,7 @@ ul.container div.buttonContainer button {
   color: #6e1916;
   cursor: pointer;
   padding: 1rem 1rem;
-  font-size: 3.4vw;
+  font-size: 3.8vw;
 }
 
 ul.container div.buttonContainer button:nth-child(1) {
@@ -812,39 +767,33 @@ ul.container div.buttonContainer button:nth-child(1) {
   .Details p {
     width: 90vw;
   }
-
-  div.btnContainer button.cancel-btn,
-  div.btnContainer button.update-btn {
-    font-size: 3.4vw;
+  div.btnContainer button.cancel-btn, div.btnContainer button.update-btn {
+    font-size: 2.4vw;
   }
-
   div.deleteWrapper button.delete-btn {
-    font-size: 3.4vw;
+    font-size: 2.4vw;
     margin-bottom: 4rem;
   }
-
   section.yourRecipes {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+        flex-wrap: wrap;
   }
-
   section.yourRecipes ul.container {
     margin: 1rem 1.5rem;
   }
-
   section.yourRecipes ul.container:nth-child(3) {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
@@ -855,46 +804,37 @@ ul.container div.buttonContainer button:nth-child(1) {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-
   .Details p {
     width: 20rem;
   }
-
   article div.btnContainer {
     text-align: center;
   }
-
-  article div.btnContainer button.cancel-btn,
-  article div.btnContainer button.update-btn {
+  article div.btnContainer button.cancel-btn, article div.btnContainer button.update-btn {
     position: relative;
     left: 5rem;
-    font-size: 1.4vw;
+    font-size: 1.8vw;
   }
-
   div.deleteWrapper button.delete-btn {
-    font-size: 1.4vw;
+    font-size: 1.8vw;
   }
-
   ul.container div.buttonContainer button {
     font-size: 1.4vw;
   }
-
   article.recipesHeadline h2 {
     font-size: 2vw;
     text-align: center;
     margin-bottom: 2rem;
   }
-
   button.upload {
     font-size: 1.4vw;
   }
-
   ul.container {
     width: 20rem;
   }

@@ -33,6 +33,7 @@ section.searchWrapper {
 
     input {
         margin-top:3rem;
+        padding-left:1rem;
         width:80%;
         height:3rem;
         border-radius:1vw;
@@ -68,6 +69,25 @@ section.buttonWrapper{
 
 // Recipes
 
+//change ad placement order
+section.recipeWrapper{
+    display:flex;
+    flex-direction: column;
+    
+    section.yourRecipe:nth-child(1) {
+     order: 2;
+    }
+    section.yourRecipe:nth-child(2) {
+     order: 3;
+    }
+    section.yourRecipe:nth-child(3) {
+     order: 1;
+    }
+    section.yourRecipe:nth-child(4) {
+     order: 4;
+    }
+}
+
 section.yourRecipes{
     display:flex;
     flex-direction:column;
@@ -77,7 +97,6 @@ section.yourRecipes{
     padding:0 2rem;
 
     h2 {
-        font-size:$iphoneH2;
         margin-top:2rem;
         text-align: center;
     }
@@ -87,7 +106,7 @@ section.yourRecipes{
         width:100%;
     }
     ul.container {
-        margin-top:2rem;
+        margin-top:1rem;
         list-style-type:none;
         border: 1px solid $ctaColor;
         border-radius:1vw;
@@ -140,7 +159,106 @@ button {
 }
 
 section.advert1{
-    width:10rem;
-    height:5rem;
-    background-color: red;
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top:2rem;
+    margin:0 auto;
+    margin-bottom:2rem;
+    width:80%;
+    height:8rem;
+    background-color: gray;
+    opacity:0.5;
+    h2{
+        font-size:$iphoneH2;
+    }
+}
+
+//Tablet
+
+@media only screen and (min-width: map-get($breakPoints, md)) {
+    h1 {
+        font-size:$ipadH1;
+    }
+    h2 {
+        font-size:$ipadH2;
+    }
+    h3 {
+        font-size:$ipadH3;
+    }
+    p, input, li, label  {
+        font-size: $ipadP;
+    }
+    section.searchWrapper {
+        
+        img {
+            top:8vw;
+            right:16vw;
+        }
+    }
+    section.yourRecipes {
+        display:flex;
+        flex-direction:row;
+        flex-wrap:wrap;
+        ul.container{
+            margin:1rem;
+            width:45%;
+        }
+    }
+}
+
+//Desktop 
+
+@media only screen and (min-width: map-get($breakPoints, xl)) {
+    h1 {
+        font-size: $pcH1;
+    }
+    h2, th {
+        font-size: $pcH2;
+    }
+    h3 {
+        font-size: $pcH3;
+    }
+    p, input, li, label  {
+        font-size: $pcP;
+    }
+    section.searchWrapper {
+        
+        img {
+            top: 5vw;
+            right:12vw;
+        }
+    }
+   section.recipeWrapper{
+       display:flex;
+       flex-direction: column;
+       
+       section.yourRecipes:nth-child(1) {
+        order: 4;
+       }
+       section.yourRecipes:nth-child(2) {
+        order: 1;
+       }
+       section.yourRecipes:nth-child(3) {
+        order: 2;
+       }
+       section.yourRecipes:nth-child(4) {
+        order: 3;
+       }
+   }
+    section.yourRecipes{
+        display:flex;
+        flex-direction: row;
+        ul.container{
+            margin:1rem;
+            width:30%;
+            h3{
+                font-size:$pcH3;
+            }
+            div.buttonContainer button{
+                font-size:$pcP;
+            }
+        }
+    }
 }

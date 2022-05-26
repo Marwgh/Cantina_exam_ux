@@ -12,12 +12,13 @@ main h1 {
         margin-top: 5rem;
         margin-bottom: 4rem;
         text-align: center;
-        font-size:2rem; 
+        font-size:$phoneH1;; 
         font-family:$titleFont;
       
 }
 h2 {
-    font-size:1rem;
+    font-size:$iphoneH2;
+    text-align:center;
 }
 .Details p {
     font-family:$paragraphFont;
@@ -53,7 +54,7 @@ img {
 }
 
 button.upload {
-    font-size:3.4vw;
+    font-size:$iphoneP;
     display:flex;
     align-items: center;
     background-color:$whiteSpace;
@@ -89,7 +90,7 @@ div.btnContainer{
         color:$ctaColor;
         cursor:pointer;
         padding:.5rem .5rem;
-        font-size: 3.4vw;
+        font-size: $iphoneP;
     }
     button.update-btn{
         margin:.5rem 0rem;
@@ -99,7 +100,7 @@ div.btnContainer{
         color:$whiteSpace;
         cursor:pointer;
         padding:.5rem .5rem;
-        font-size: 3.4vw;
+        font-size: $iphoneP;
     }
 }
 
@@ -114,7 +115,7 @@ div.deleteWrapper {
         color:$whiteSpace;
         border-radius:1vw;
         padding:.5rem .5rem;
-        font-size: 3.4vw;
+        font-size: $iphoneP;
         border:none;
         cursor:pointer;
     
@@ -129,7 +130,7 @@ section.yourRecipes{
     margin-bottom:2rem;
 
     h2 {
-        font-size:1.2rem;
+        font-size:$iphoneH2;
         margin-top:2rem;
         text-align: center;
     }
@@ -183,7 +184,7 @@ button {
         color:$ctaColor;
         cursor:pointer;
         padding:1rem 1rem;
-        font-size: 3.4vw;
+        font-size: $iphoneP;
         }
         button:nth-child(1) {
             border-style:solid solid none none;
@@ -199,13 +200,13 @@ button {
     }
     div.btnContainer {
         button.cancel-btn, button.update-btn {
-            font-size: 3.4vw;
+            font-size: $ipadP;
         }
       
     }
     div.deleteWrapper{
         button.delete-btn {
-            font-size:3.4vw;
+            font-size:$ipadP;
             margin-bottom:4rem;
         }
     }
@@ -243,11 +244,11 @@ button {
     article div.btnContainer button.cancel-btn, article div.btnContainer button.update-btn{
         position:relative;
         left:5rem;
-        font-size:1.4vw;
+        font-size:$pcP;
     }
 
     div.deleteWrapper button.delete-btn{
-        font-size:1.4vw;
+        font-size:$pcP;
     }
     ul.container div.buttonContainer button{
         font-size:1.4vw;
