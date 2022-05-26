@@ -328,8 +328,17 @@ header {
 
 /*BODY      BODY        BODY        BODY        BODY        BODY        BODY        BODY        BODY*/
 body {
-    margin-top: 25vw;
+    margin-top: 20vw;
 }
+
+@media only screen and (min-width: map-get($breakPoints, md)) {
+    body {
+        margin-top: 25vw;
+    }
+}
+
+
+
 
 /*FOOTER        FOOTER      FOOTER        FOOTER        FOOTER        FOOTER        FOOTER        FOOTER*/
 

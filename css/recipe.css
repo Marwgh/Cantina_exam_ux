@@ -229,9 +229,14 @@ header #menuB a {
 }
 /*BODY      BODY        BODY        BODY        BODY        BODY        BODY        BODY        BODY*/
 body {
-  margin-top: 25vw;
+  margin-top: 20vw;
 }
 
+@media only screen and (min-width: 480px) {
+  body {
+    margin-top: 25vw;
+  }
+}
 /*FOOTER        FOOTER      FOOTER        FOOTER        FOOTER        FOOTER        FOOTER        FOOTER*/
 footer {
   background-color: #1f5473;
@@ -483,6 +488,7 @@ main label {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-shadow: #DEE8F2 0 0 2px;
 }
 .hero img {
   width: 100%;
@@ -618,6 +624,7 @@ main label {
 }
 .feedback .comments .commenting {
   padding-top: 0.5rem;
+  position: relative;
 }
 .feedback .comments .commenting label {
   padding: 0 0 0 1rem;
@@ -630,6 +637,8 @@ main label {
 .feedback .comments .commenting div {
   width: 100%;
   height: 2.2rem;
+  position: absolute;
+  bottom: 1vw;
 }
 .feedback .comments .commenting div input[type=submit] {
   background-color: #6e1916;
