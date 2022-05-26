@@ -708,6 +708,7 @@ div.recipeDetails div.buttonContainer {
 }
 
 div.recipeDetails p {
+  margin-top: 1rem;
   color: #f4a234;
 }
 
@@ -719,6 +720,9 @@ ul.descripDetails {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -726,17 +730,24 @@ ul.descripDetails {
 }
 
 ul.descripDetails li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-right: .5rem;
+  margin-bottom: 1rem;
 }
 
 ul.descripDetails li img {
   width: 1.5rem;
   height: 1.5rem;
+  padding-right: 0.5rem;
 }
 
 ul.descripDetails li:nth-child(2) {
   margin-right: 2rem;
-  margin-bottom: 1rem;
 }
 
 ul.container div.buttonContainer {
@@ -763,11 +774,11 @@ section.advert1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 2rem;
+  margin-top: 4rem;
   margin: 0 auto;
   margin-bottom: 2rem;
   width: 80%;
-  height: 8rem;
+  height: 4rem;
   background-color: black;
   opacity: 0.1;
   color: white;
@@ -821,17 +832,20 @@ section.advert1 h2 {
 }
 
 @media only screen and (min-width: 1032px) {
+  main {
+    margin: 0 16rem;
+  }
   h1 {
-    font-size: 3.6vw;
+    font-size: 2.6vw;
   }
   h2, th {
-    font-size: 3vw;
+    font-size: 1.8vw;
   }
   h3 {
-    font-size: 2.5vw;
+    font-size: 1.3vw;
   }
   p, input, li, label {
-    font-size: 1.8vw;
+    font-size: 1vw;
   }
   section.searchWrapper img {
     top: 5vw;
@@ -843,25 +857,31 @@ section.advert1 h2 {
   section.yourRecipes {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (33vw)[3];
-        grid-template-columns: repeat(3, 33vw);
+    -ms-grid-columns: (20vw)[3];
+        grid-template-columns: repeat(3, 20vw);
     row-gap: 4rem;
     -webkit-column-gap: 0;
             column-gap: 0;
+    margin-bottom: 4rem;
   }
   section.yourRecipes ul.container {
     cursor: pointer;
     margin: 0 auto;
-    width: 70%;
+    width: 80%;
   }
   section.yourRecipes ul.container h3 {
-    font-size: 1.8vw;
+    margin-top: 0.5rem;
+    font-size: 1.3vw;
   }
   section.yourRecipes ul.container div.buttonContainer button {
     font-size: 1.8vw;
   }
+  section.yourRecipes div.recipeDetails {
+    padding-left: 1.5rem;
+  }
   section.yourRecipes section.advert1 {
-    top: 90vw;
+    height: 8rem;
+    top: 76vw;
     left: 10vw;
     position: absolute;
   }

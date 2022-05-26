@@ -121,27 +121,32 @@ div.recipeDetails{
 }
 
 div.recipeDetails p{
-        color:$secondaryColor;
+    margin-top:1rem;
+    color:$secondaryColor;
 }
 
 ul.descripDetails {
     display:flex;
     flex-direction:row;
+    align-items: center;
     justify-content: space-between;
     list-style-type:none;
    
     li {
+        display:flex;
+        align-items: center;
         padding-right:.5rem;
+        margin-bottom:1rem;
     }
 
     li img{
         width:1.5rem;
         height:1.5rem;
+        padding-right:0.5rem;
     }
 
     li:nth-child(2) {
         margin-right:2rem;
-        margin-bottom:1rem;
     }
 }
 
@@ -156,11 +161,11 @@ section.advert1{
     justify-content: center;
     text-align: center;
     align-items: center;
-    margin-top:2rem;
+    margin-top:4rem;
     margin:0 auto;
     margin-bottom:2rem;
     width:80%;
-    height:8rem;
+    height:4rem;
     background-color: $textColor;
     opacity:0.1;
     color:$whiteSpace;
@@ -206,22 +211,26 @@ section.advert1{
             width:45%;
         }
     }
+
 }
 
 //Desktop 
 
 @media only screen and (min-width: map-get($breakPoints, xl)) {
+    main {
+        margin:0 16rem;
+    }
     h1 {
-        font-size: $pcH1;
+        font-size: $dskH1;
     }
     h2, th {
-        font-size: $pcH2;
+        font-size: $dskH2;
     }
     h3 {
-        font-size: $pcH3;
+        font-size: $dskH3;
     }
     p, input, li, label  {
-        font-size: $pcP;
+        font-size: $dskP;
     }
     section.searchWrapper {
         
@@ -236,24 +245,31 @@ section.advert1{
     }
     section.yourRecipes{
         display:grid;
-        grid-template-columns: repeat(3, 33vw);
+        grid-template-columns: repeat(3, 20vw);
         row-gap: 4rem;
         column-gap: 0;
+        margin-bottom:4rem;
         ul.container{
             cursor:pointer;
             margin:0 auto;
-            width:70%;
+            width:80%;
             h3{
-                font-size:$pcP;
+                margin-top:0.5rem;
+                font-size:$dskH3;
             }
             div.buttonContainer button{
                 font-size:$pcP;
             }
             
         }
+
+        div.recipeDetails{
+            padding-left:1.5rem;
+        }
         section.advert1{
             
-            top:90vw;
+            height:8rem;
+            top:76vw;
             left:10vw;
             position:absolute;
         }
