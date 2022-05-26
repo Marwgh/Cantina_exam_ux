@@ -61,10 +61,13 @@ function changeSteps(_this) {
                 <label for="">
                     <img class="bars" src="images/svg/bars-solid.svg" alt="bars">
                 </label>
-                <input type="text" name="ingredient" id="ingredient" placeholder="ingredient here">
-                <label for="">
-                    <img class="cross" src="images/svg/xmark-solid.svg" alt="cross">
-                </label>
+                <input type="text" name="stepText" id="stepText" placeholder="ingredient here">
+                <div>
+                    <input type="button" id="remove" name="remove" onclick="this.parentElement.parentElement.parentElement.remove();">
+                    <label for="remove">
+                        <img class="remove" src="images/svg/xmark-solid.svg" alt="remove">
+                    </label>
+                </div>
             </div>
             <label for="fileUpload">
                 <img src="images/svg/image-solid.svg" alt="upload">
@@ -102,4 +105,6 @@ function addTag() {
 //         document.getElementById("tagButton").click();
 //     }
 // });
+
+
 
