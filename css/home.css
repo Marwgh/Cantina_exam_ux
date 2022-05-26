@@ -506,7 +506,7 @@ footer section {
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1032px) {
   body {
     margin-top: 6vw;
   }
