@@ -154,6 +154,10 @@ section.yourRecipes{
 div.recipeDetails{
     text-align:left;
     padding-left:2rem;
+    p{
+        padding-top:1rem;
+        color:$secondaryColor;
+    }
     div.buttonContainer{
         display:flex;
         flex-direction: row;
@@ -164,7 +168,21 @@ div.recipeDetails{
 }
 
 ul.descripDetails {
+    
+    display:flex;
     list-style-type:none;
+    justify-content: space-between;
+    width:100%;
+    li{
+        display:flex;
+        align-items: center;
+        padding-right:2rem;
+    }
+    img {
+        padding-right:0.5rem;
+        width:2rem;
+        height:2rem;
+    }
     li:nth-child(3){
         color:$secondaryColor;        
     }

@@ -721,6 +721,11 @@ div.recipeDetails {
   padding-left: 2rem;
 }
 
+div.recipeDetails p {
+  padding-top: 1rem;
+  color: #f4a234;
+}
+
 div.recipeDetails div.buttonContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -739,7 +744,30 @@ div.recipeDetails div.buttonContainer {
 }
 
 ul.descripDetails {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   list-style-type: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+ul.descripDetails li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 2rem;
+}
+
+ul.descripDetails img {
+  padding-right: 0.5rem;
+  width: 2rem;
+  height: 2rem;
 }
 
 ul.descripDetails li:nth-child(3) {
