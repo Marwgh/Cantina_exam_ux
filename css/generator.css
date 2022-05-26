@@ -230,14 +230,14 @@ header #menuB a {
 }
 /*BODY      BODY        BODY        BODY        BODY        BODY        BODY        BODY        BODY*/
 body {
-  margin-top: 20vw;
+  margin-top: 25vw;
 }
 
 /*FOOTER        FOOTER      FOOTER        FOOTER        FOOTER        FOOTER        FOOTER        FOOTER*/
 footer {
   background-color: #1f5473;
   width: 100%;
-  height: 75vh;
+  height: 170vw;
   bottom: 0;
   color: white;
   font-family: "Roboto", sans-serif;
@@ -364,7 +364,7 @@ footer section {
   }
 
   footer {
-    height: 13.5vw;
+    height: 23.5vw;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     font-size: 1.8vw;
@@ -390,7 +390,7 @@ footer section {
     left: 47.5vw;
   }
   footer > section {
-    grid-column-start: 5;
+    grid-column: 4/span 2;
     text-align: right;
     align-items: unset;
   }
@@ -399,10 +399,20 @@ footer section {
     text-align: right;
     grid-column: 6/span 2;
     width: 80%;
-    margin-right: 5vw;
+  }
+  footer > :nth-child(4) p {
+    float: right;
+    width: 100%;
   }
   footer > :last-child {
     grid-column-start: 8;
+    position: relative;
+  }
+  footer > :last-child ul {
+    position: absolute;
+    top: 4vw;
+    right: 0vw;
+    width: 13vw;
   }
   footer li {
     padding-bottom: 0.5vw;
@@ -428,6 +438,7 @@ footer section {
 
   footer {
     font-size: 1vw;
+    height: 13.5vw;
   }
   footer h2 {
     font-size: 1.8vw;
