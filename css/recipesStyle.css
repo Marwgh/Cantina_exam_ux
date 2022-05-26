@@ -556,6 +556,16 @@ label {
   font-weight: 900;
 }
 
+section.recipeWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
 section.searchWrapper {
   margin-top: 10vw;
   position: relative;
@@ -629,40 +639,6 @@ section.buttonWrapper section select {
   background: transparent;
   width: 5vw;
   border: none;
-}
-
-section.recipeWrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-section.recipeWrapper section.yourRecipe:nth-child(1) {
-  -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
-}
-
-section.recipeWrapper section.yourRecipe:nth-child(2) {
-  -webkit-box-ordinal-group: 4;
-      -ms-flex-order: 3;
-          order: 3;
-}
-
-section.recipeWrapper section.yourRecipe:nth-child(3) {
-  -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
-}
-
-section.recipeWrapper section.yourRecipe:nth-child(4) {
-  -webkit-box-ordinal-group: 5;
-      -ms-flex-order: 4;
-          order: 4;
 }
 
 section.yourRecipes {
@@ -752,22 +728,6 @@ ul.container div.buttonContainer {
           justify-content: center;
 }
 
-ul.container div.buttonContainer button {
-  margin-top: 1rem;
-  width: 50%;
-  background-color: white;
-  border: 1px solid #6e1916;
-  border-style: solid none none none;
-  color: #6e1916;
-  cursor: pointer;
-  padding: 1rem 1rem;
-  font-size: 3.4vw;
-}
-
-ul.container div.buttonContainer button:nth-child(1) {
-  border-style: solid solid none none;
-}
-
 section.advert1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -784,8 +744,9 @@ section.advert1 {
   margin-bottom: 2rem;
   width: 80%;
   height: 8rem;
-  background-color: gray;
-  opacity: 0.5;
+  background-color: black;
+  opacity: 0.1;
+  color: white;
 }
 
 section.advert1 h2 {
@@ -808,6 +769,15 @@ section.advert1 h2 {
   section.searchWrapper img {
     top: 8vw;
     right: 16vw;
+  }
+  section.recipeWrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
   }
   section.yourRecipes {
     display: -webkit-box;
@@ -843,43 +813,11 @@ section.advert1 h2 {
     top: 5vw;
     right: 12vw;
   }
-  section.recipeWrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  section.recipeWrapper section.yourRecipes:nth-child(1) {
-    -webkit-box-ordinal-group: 5;
-        -ms-flex-order: 4;
-            order: 4;
-  }
-  section.recipeWrapper section.yourRecipes:nth-child(2) {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-  }
-  section.recipeWrapper section.yourRecipes:nth-child(3) {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-  }
-  section.recipeWrapper section.yourRecipes:nth-child(4) {
-    -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-            order: 3;
-  }
   section.yourRecipes {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (100vw)[2];
+        grid-template-columns: repeat(2, 100vw);
   }
   section.yourRecipes ul.container {
     margin: 1rem;
