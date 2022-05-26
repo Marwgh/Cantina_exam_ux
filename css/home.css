@@ -229,9 +229,14 @@ header #menuB a {
 }
 /*BODY      BODY        BODY        BODY        BODY        BODY        BODY        BODY        BODY*/
 body {
-  margin-top: 25vw;
+  margin-top: 20vw;
 }
 
+@media only screen and (min-width: 480px) {
+  body {
+    margin-top: 25vw;
+  }
+}
 /*FOOTER        FOOTER      FOOTER        FOOTER        FOOTER        FOOTER        FOOTER        FOOTER*/
 footer {
   background-color: #1f5473;
@@ -259,8 +264,8 @@ footer div {
 }
 footer div section {
   display: flex;
-  justify-content: space-around;
   margin-top: 45vw;
+  margin-left: 2vw;
 }
 footer div section img {
   z-index: 2;
@@ -300,10 +305,6 @@ footer section {
 }
 
 @media only screen and (min-width: 480px) {
-  body {
-    margin-top: 6vw;
-  }
-
   footer {
     height: 35vw;
     display: grid;
@@ -448,6 +449,16 @@ footer section {
   font-family: "Roboto", sans-serif, sans-serif;
 }
 
+/*Nav*/
+nav button {
+  background-color: #6e1916;
+  width: 6vw;
+  height: 2vw;
+  color: white;
+  border-style: none;
+  border-radius: 0.5vw;
+}
+
 /*Typography*/
 p {
   font-family: "Roboto", sans-serif;
@@ -456,15 +467,24 @@ p {
 }
 
 /* SEARCH BAR STYLING*/
-form {
-  height: 25vw;
+.search_wrapper img {
+  margin-top: 5vw;
+  width: 30vw;
+  height: auto;
+  margin-left: 37vw;
 }
-form input {
+.search_wrapper form {
+  height: 15vw;
+  width: 100%;
+}
+.search_wrapper form input {
   width: 35vw;
-  height: 4vw;
-  margin-top: 10vw;
-  margin-left: 30vw;
+  height: 4.5vw;
+  margin-left: 35vw;
   font-size: large;
+  border-radius: 1vw;
+  border: solid 0.15vw #1f5473;
+  text-align: center;
 }
 
 /*Food Categories Styling*/
@@ -491,13 +511,22 @@ form input {
   width: 10vw;
 }
 .food_categories_wrapper div button {
-  width: 6vw;
+  width: 8vw;
   height: 2vw;
-  margin-left: 3vw;
+  margin-left: 2vw;
   margin-top: 2vw;
+  color: black;
+  font-size: 1vw;
   background-color: #f4a234;
   border: #f4a234 solid;
   border-radius: 0.4vw;
+}
+
+/*ADS*/
+section.advert2 img {
+  height: 10vw;
+  width: 60%;
+  margin-left: 20vw;
 }
 
 /*Top Recipes*/
@@ -509,7 +538,10 @@ form input {
 }
 .top_recipes_wrapper h1 {
   margin-top: 2rem;
+  margin-bottom: 2rem;
   text-align: center;
+  font-size: 2.6vw;
+  font-family: "Oswald", sans-serif;
 }
 .top_recipes_wrapper img {
   text-align: center;
@@ -518,6 +550,7 @@ form input {
 .top_recipes_wrapper ul.container {
   display: grid;
   grid-template-columns: repeat(4, 20vw);
+  margin-left: 2.5vw;
   gap: 4vw;
   width: 20%;
 }
@@ -525,6 +558,7 @@ form input {
   padding-bottom: 1rem;
 }
 .top_recipes_wrapper ul.container > li {
+  background-color: white;
   width: 100%;
   margin-top: 1rem;
   list-style-type: none;
@@ -538,7 +572,7 @@ form input {
 
 div.recipeDetails {
   text-align: left;
-  padding-left: 2rem;
+  padding-left: 1.5rem;
 }
 div.recipeDetails div.buttonContainer {
   display: flex;
@@ -549,8 +583,9 @@ div.recipeDetails div.buttonContainer {
 }
 
 div.recipeDetails p {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   color: #f4a234;
+  font-size: 1vw;
 }
 
 ul.descripDetails {
@@ -567,8 +602,8 @@ ul.descripDetails li {
   margin-bottom: 1rem;
 }
 ul.descripDetails li img {
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
   padding-right: 0.5rem;
 }
 ul.descripDetails li:nth-child(2) {
@@ -588,6 +623,10 @@ ul.container div.buttonContainer {
   margin: 3vw;
   text-align: center;
 }
+.article_wrapper h1 {
+  font-size: 2.6vw;
+  font-family: "Oswald", sans-serif;
+}
 .article_wrapper img {
   height: 30vw;
   width: auto;
@@ -599,6 +638,9 @@ ul.container div.buttonContainer {
   margin-left: 25vw;
   width: 56vw;
   display: flex;
+}
+.blog_section article {
+  margin-top: 3vw;
 }
 .blog_section article ul {
   list-style-type: none;
@@ -612,6 +654,7 @@ ul.container div.buttonContainer {
 }
 
 .article_intro {
+  margin-top: 3vw;
   margin-right: 5vw;
 }
 .article_intro h3 {
@@ -619,17 +662,32 @@ ul.container div.buttonContainer {
 }
 .article_intro p {
   margin-bottom: 1.5vw;
+  margin-top: 2vw;
+}
+.article_intro button {
+  background-color: #6e1916;
+  width: 6vw;
+  height: 2vw;
+  border-radius: 0.3vw;
+  border-style: none;
+  color: white;
+  font-weight: 400;
 }
 
 /*CHEF WRAPPER SECTION*/
 .chef_wrapper {
   height: 40vw;
   width: 80%;
-  margin-top: 10vw;
+  margin-top: 13vw;
+  margin-left: 5vw;
   align-self: center;
 }
-.chef_wrapper h2 {
+.chef_wrapper h1 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   text-align: center;
+  font-size: 2.6vw;
+  font-family: "Oswald", sans-serif;
 }
 .chef_wrapper ul {
   margin-top: 5vw;
@@ -640,6 +698,9 @@ ul.container div.buttonContainer {
 }
 .chef_wrapper ul li {
   margin-left: 6vw;
+}
+.chef_wrapper ul li :nth-child(2) {
+  color: #f4a234;
 }
 .chef_wrapper ul li img {
   width: 12vw;
@@ -664,6 +725,7 @@ ul.container div.buttonContainer {
 .sign_up_wrapper h1 {
   font-family: "Oswald", sans-serif;
   font-size: 2.6vw;
+  color: white;
 }
 .sign_up_wrapper p {
   font-family: "Roboto", sans-serif;
