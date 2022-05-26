@@ -450,35 +450,42 @@ main {
 }
 main h1 {
   text-align: center;
+  font-size: 8vw;
 }
 
 form {
   position: relative;
 }
-form input, form textarea, form select {
-  font-size: 3.8vw;
-}
-form select {
-  margin-bottom: 1vw;
-}
-form label {
-  font-size: 3.8vw;
-  font-weight: 900;
+form p {
+  text-align: center;
 }
 form fieldset:nth-child(2) input:first-child, form fieldset:nth-child(2) textarea {
   width: 100%;
   margin-bottom: 1vw;
 }
 form fieldset:nth-child(2) div {
-  display: grid;
-  grid-area: "label input";
+  display: flex;
+}
+form fieldset:nth-child(2) div input, form fieldset:nth-child(2) div label {
+  width: 50%;
+  margin-bottom: 1vw;
 }
 form fieldset {
   padding: 1.5rem;
   margin-bottom: 1rem;
 }
+form fieldset input, form fieldset input[type=text], form fieldset textarea, form fieldset select {
+  font-size: 3.8vw;
+}
+form fieldset select {
+  margin-bottom: 1vw;
+}
+form fieldset label {
+  font-size: 3.8vw;
+  font-weight: 900;
+}
 form fieldset img {
-  width: 6vw;
+  width: 19vw;
   height: auto;
   display: block;
   margin: auto;
@@ -498,17 +505,12 @@ form fieldset .ingredient input, form fieldset .utensil input, form fieldset .st
 form fieldset .step label:first-child {
   padding: 1vw;
 }
-form fieldset .bars {
-  width: 3.8vw;
-  height: 3.8vw;
+form fieldset .bars, form fieldset .remove {
+  width: 5.7vw;
+  height: 5.7vw;
   padding: 1.5vw 1vw;
 }
-form fieldset .remove {
-  width: 3.8vw;
-  height: 3.8vw;
-  padding: 1.5vw 1vw;
-}
-form fieldset .removeHidden {
+form fieldset div > .removeHidden {
   display: none;
 }
 form input[type=button], form input[type=submit] {
@@ -518,6 +520,8 @@ form input[type=button], form input[type=submit] {
   border-radius: 0.5vw;
   cursor: pointer;
   color: white;
+  display: block;
+  margin: auto;
 }
 form input[type=submit] {
   display: block;
@@ -525,6 +529,64 @@ form input[type=submit] {
 }
 form #tagButton {
   margin-top: 1vw;
+}
+
+@media only screen and (min-width: 480px) {
+  main h1 {
+    font-size: 4vw;
+  }
+
+  form input[type=submit] {
+    font-size: 2.4vw;
+  }
+  form fieldset input, form fieldset input[type=text], form fieldset textarea, form fieldset select, form fieldset label, form fieldset input[type=button] {
+    font-size: 2.4vw;
+  }
+  form fieldset .bars, form fieldset .remove {
+    width: 3.6vw;
+    height: 3.6vw;
+  }
+  form fieldset img {
+    width: 12vw;
+  }
+}
+@media only screen and (min-width: 768px) {
+  main h1 {
+    font-size: 3.6vw;
+  }
+
+  form input[type=submit] {
+    font-size: 1.8vw;
+  }
+  form fieldset input, form fieldset input[type=text], form fieldset textarea, form fieldset select, form fieldset label, form fieldset input[type=button] {
+    font-size: 1.8vw;
+  }
+  form fieldset .bars, form fieldset .remove {
+    width: 2.7vw;
+    height: 2.7vw;
+  }
+  form fieldset img {
+    width: 9vw;
+  }
+}
+@media only screen and (min-width: 1032px) {
+  main h1 {
+    font-size: 2.6vw;
+  }
+
+  form input[type=submit] {
+    font-size: 1vw;
+  }
+  form fieldset input, form fieldset input[type=text], form fieldset textarea, form fieldset select, form fieldset label, form fieldset input[type=button] {
+    font-size: 1vw;
+  }
+  form fieldset .bars, form fieldset .remove {
+    width: 1.5vw;
+    height: 1.5vw;
+  }
+  form fieldset img {
+    width: 5vw;
+  }
 }
 
 /*# sourceMappingURL=addRecipe.css.map */
