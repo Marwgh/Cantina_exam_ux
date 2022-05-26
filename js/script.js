@@ -62,9 +62,9 @@ function removeUtensil(utensil) {
 
 
 function changeSteps(_this) {
-    const stepCount = +_this.value //get the value
-    const steps = document.querySelector('#steps') //append results
-    steps.innerHTML = '' //clear the results on each update
+    const stepCount = +_this.value
+    const steps = document.querySelector('#steps')
+    steps.innerHTML = ''
     for (let i = 1; i <= stepCount; i++) {
         const newStep = document.createElement("div");
         let counter = 0;
