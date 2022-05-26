@@ -321,7 +321,7 @@ header {
 
 /*BODY      BODY        BODY        BODY        BODY        BODY        BODY        BODY        BODY*/
 body {
-    margin-top: 20vw;
+    margin-top: 25vw;
 }
 
 /*FOOTER        FOOTER      FOOTER        FOOTER        FOOTER        FOOTER        FOOTER        FOOTER*/
@@ -329,7 +329,7 @@ body {
 footer {
     background-color: $primaryColor;
     width: 100%;
-    height: 75vh;
+    height: 170vw;
     bottom: 0;
     color: $whiteSpace;
     font-family: $paragraphFont ;
@@ -492,7 +492,7 @@ footer {
     }
 
     footer {
-        height: 13.5vw;
+        height: 23.5vw;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         font-size: $pcP;
@@ -524,7 +524,8 @@ footer {
         }
 
         >section {
-            grid-column-start: 5;
+            grid-column: 4/ span 2;
+
             text-align: right;
             align-items: unset;
 
@@ -536,12 +537,27 @@ footer {
             text-align: right;
             grid-column: 6/ span 2;
             width: 80%;
-            margin-right: 5vw;
+
+            p {
+                float: right;
+                width: 100%;
+            }
 
         }
 
         >:last-child {
             grid-column-start: 8;
+            position: relative;
+
+            ul {
+                position: absolute;
+                top: 4vw;
+                right: 0vw;
+                width: 13vw;
+
+
+
+            }
 
         }
 
@@ -575,9 +591,11 @@ footer {
 
     footer {
         font-size: 1vw;
+        height: 13.5vw;
 
         h2 {
             font-size: 1.8vw;
         }
+
     }
 }
