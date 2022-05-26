@@ -44,6 +44,10 @@ form {
         border-radius: 0.5vw;
         border: solid 1px $primaryColor;
 
+        input {
+            padding: 1vw 0;
+        }
+
         input, input[type="text"], textarea, select, option {
             font-size: $iphoneP;
             border-radius: 0.2vw;
@@ -133,7 +137,8 @@ form {
     }
 
     #tagButton {
-        margin: 2vw auto;
+        // margin: 2vw auto;
+        display: none;
     }
 }
 

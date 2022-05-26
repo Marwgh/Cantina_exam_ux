@@ -124,4 +124,19 @@ function removeTag(tag) {
 }
 
 
+// RECIPE enter instead of button (click)
+
+const tagList = document.querySelector('#tagList');
+
+tagList.addEventListener('click', function(e) {
+    this.removeChild(e.target);
+})
+
+const inputTag = document.getElementById("tag");
+inputTag.addEventListener("keypress", function(event) {
+    if (event.key === "Enter") {
+        event.preventDefault();
+        document.getElementById("tagButton").click();
+    }
+});
 
