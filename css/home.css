@@ -448,14 +448,21 @@ footer section {
   font-family: "Roboto", sans-serif, sans-serif;
 }
 
+/*Typography*/
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1vw;
+  font-weight: 300;
+}
+
 /* SEARCH BAR STYLING*/
 form {
-  height: 15vw;
+  height: 25vw;
 }
 form input {
   width: 35vw;
   height: 4vw;
-  margin-top: 4vw;
+  margin-top: 10vw;
   margin-left: 30vw;
   font-size: large;
 }
@@ -474,6 +481,8 @@ form input {
   width: 12vw;
   height: 12vw;
   border-radius: 50%;
+  -webkit-box-shadow: 0px 4px 21px -6px rgba(0, 0, 0, 0.78);
+  box-shadow: 0px 4px 21px -6px rgba(0, 0, 0, 0.78);
 }
 
 .food_categories_wrapper div {
@@ -486,6 +495,9 @@ form input {
   height: 2vw;
   margin-left: 3vw;
   margin-top: 2vw;
+  background-color: #f4a234;
+  border: #f4a234 solid;
+  border-radius: 0.4vw;
 }
 
 /*Top Recipes*/
@@ -507,7 +519,7 @@ form input {
 
 /*ARTICLE WRAPPER SECTION*/
 .article_wrapper {
-  height: 60vw;
+  height: 35vw;
   width: 100%;
   margin: 3vw;
   text-align: center;
@@ -519,26 +531,44 @@ form input {
 }
 
 .blog_section {
+  height: 30vw;
+  margin-left: 25vw;
+  width: 56vw;
   display: flex;
 }
 .blog_section article ul {
   list-style-type: none;
+}
+.blog_section article li {
+  margin-bottom: 1vw;
 }
 .blog_section article li img {
   width: 18vw;
   height: 10vw;
 }
 
+.article_intro {
+  margin-right: 5vw;
+}
+.article_intro h3 {
+  margin-bottom: 2vw;
+}
+.article_intro p {
+  margin-bottom: 1.5vw;
+}
+
 /*CHEF WRAPPER SECTION*/
 .chef_wrapper {
-  height: 30vw;
+  height: 40vw;
   width: 80%;
+  margin-top: 10vw;
   align-self: center;
 }
 .chef_wrapper h2 {
   text-align: center;
 }
 .chef_wrapper ul {
+  margin-top: 5vw;
   display: flex;
   height: 20vw;
   list-style-type: none;
@@ -552,6 +582,8 @@ form input {
   height: 12vw;
   border-radius: 50%;
   margin-bottom: 1.5vw;
+  -webkit-box-shadow: 0px 4px 21px -6px rgba(0, 0, 0, 0.78);
+  box-shadow: 0px 4px 21px -6px rgba(0, 0, 0, 0.78);
 }
 
 /*# sourceMappingURL=home.css.map */
