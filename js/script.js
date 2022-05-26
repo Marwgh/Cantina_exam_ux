@@ -77,7 +77,7 @@ function changeSteps(_this) {
 
         newStep.innerHTML = `
         <div class="step">
-            <label>${i}</label>
+            <p>${i}</p>
             <label>
                 <img class="bars" src="images/svg/bars-solid.svg" alt="bars">
             </label>
@@ -90,7 +90,7 @@ function changeSteps(_this) {
             </div>
         </div>
         <label for="fileUpload">
-            <img src="images/svg/image-solid.svg" alt="upload">
+            <img class="imgStep" src="images/svg/image-solid.svg" alt="upload">
         </label>
         <input id="fileUpload" name="fileUpload" type="file">
         `
@@ -106,6 +106,7 @@ function removeStep(step) {
 
 function addTag() {
     const newTag = document.createElement("div");
+    newTag.classList.add("tag");
     counterTag = counterTag+1;
     const id = "tag"+counterTag;
     newTag.setAttribute("id", id);
@@ -122,18 +123,5 @@ function removeTag(tag) {
     document.querySelector("#"+tag).remove();
 }
 
-// const tagList = document.querySelector('#tagList');
-
-// tagList.addEventListener('click', function(e) {
-//     this.removeChild(e.target);
-// })
-
-// const inputTag = document.getElementById("tag");
-// inputTag.addEventListener("keypress", function(event) {
-//     if (event.key === "Enter") {
-//         event.preventDefault();
-//         document.getElementById("tagButton").click();
-//     }
-// });
 
 

@@ -8,6 +8,7 @@ main {
     h1 {
         text-align: center;
         font-size: $phoneH1;
+        margin-bottom: 4vw;
     }
 }
 
@@ -36,9 +37,18 @@ form {
     fieldset {
         padding: 1.5rem;
         margin-bottom: 1rem;
+        border-radius: 0.5vw;
+        border: solid 1px $primaryColor;
 
-        input, input[type="text"], textarea, select {
+        input, input[type="text"], textarea, select, option {
             font-size: $iphoneP;
+            border-radius: 0.2vw;
+            border: solid 1px $primaryColor;
+        }
+
+        p {
+            font-size: $iphoneP*1.5;
+            padding: 1.1vw 1vw;
         }
     
         select {
@@ -56,23 +66,26 @@ form {
             display: block;
             margin:auto;
         }
+
+        .imgStep {
+            width: $iphoneP*3;
+        }
     
         #fileUpload {
             display: none;
         }
 
         .ingredient, .utensil, .step {
-            border: solid 0.1vw;
             display: flex;
             margin-bottom: 1vw;
+            border-radius: 0.5vw;
+            border: solid 1px $primaryColor;
             input {
                 border: none;
                 width: 100%;
             }
         }
-        .step label:first-child {
-            padding: 1vw;
-        }
+
         .bars, .remove {
             width: $iphoneP*1.5;
             height: $iphoneP*1.5;
@@ -80,6 +93,20 @@ form {
         }
         div > .removeHidden {
             display: none;
+        }
+
+        #tagList {
+            display: flex;
+            flex-wrap: wrap;
+            .tag {
+                background-color: $fillColor;
+                padding: 0.5vw 1vw;
+                border: $fillColor solid 0.1vw;
+                border-radius: 0.5vw;
+                cursor: pointer;
+                color: $textColor;
+                margin: 0.5vw 1vw;
+            }
         }
 
     }
@@ -92,15 +119,17 @@ form {
         color: $whiteSpace;
         display: block;
         margin: auto;
+        font-size: $iphoneP;
     }
 
     input[type="submit"] {
         display: block;
         margin:auto;
+        margin-bottom: 4vw;
     }
 
     #tagButton {
-        margin-top: 1vw;
+        margin: 2vw auto;
     }
 }
 
@@ -120,14 +149,24 @@ form {
             input, input[type="text"], textarea, select, label, input[type="button"]  {
                 font-size: $ipadP;
             }
+
+            p {
+                font-size: $ipadP*1.5;
+                padding: 0.8vw 0 0.8vw 1vw;
+            }
         
             .bars, .remove {
                 width: $ipadP*1.5;
                 height: $ipadP*1.5;
+                padding: 1vw 1vw;
             }
 
             img {
                 width: $ipadP*5;
+            }
+
+            .imgStep {
+                width: $ipadP*3;
             }
         }
     }
@@ -149,13 +188,23 @@ form {
             input, input[type="text"], textarea, select, label, input[type="button"] {
                 font-size: $pcP;
             }
+
+            p {
+                font-size: $pcP*1.5;
+                padding: 0.8vw 0 0.8vw 1vw;
+            }
         
             .bars, .remove {
                 width: $pcP*1.5;
                 height: $pcP*1.5;
+                padding: 1.2vw 1vw;
             }
+
             img {
                 width: $pcP*5;
+            }
+            .imgStep {
+                width: $pcP*3;
             }
         }
     }
@@ -179,14 +228,23 @@ form {
             input, input[type="text"], textarea, select, label, input[type="button"] {
                 font-size: $dskP;
             }
+
+            p {
+                font-size: $dskP*1.5;
+                padding: 0.8vw 0 0.8vw 1vw;
+            }
         
             .bars, .remove {
                 width: $dskP*1.5;
                 height: $dskP*1.5;
+                padding: 1vw 1vw;
             }
 
             img {
                 width: $dskP*5;
+            }
+            .imgStep {
+                width: $dskP*3;
             }
         }
     }

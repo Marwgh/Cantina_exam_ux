@@ -305,10 +305,6 @@ footer section {
 }
 
 @media only screen and (min-width: 480px) {
-  body {
-    margin-top: 6vw;
-  }
-
   footer {
     height: 35vw;
     display: grid;
@@ -456,6 +452,7 @@ main {
 main h1 {
   text-align: center;
   font-size: 8vw;
+  margin-bottom: 4vw;
 }
 
 form {
@@ -478,9 +475,17 @@ form fieldset:nth-child(2) div input, form fieldset:nth-child(2) div label {
 form fieldset {
   padding: 1.5rem;
   margin-bottom: 1rem;
+  border-radius: 0.5vw;
+  border: solid 1px #1f5473;
 }
-form fieldset input, form fieldset input[type=text], form fieldset textarea, form fieldset select {
+form fieldset input, form fieldset input[type=text], form fieldset textarea, form fieldset select, form fieldset option {
   font-size: 3.8vw;
+  border-radius: 0.2vw;
+  border: solid 1px #1f5473;
+}
+form fieldset p {
+  font-size: 5.7vw;
+  padding: 1.1vw 1vw;
 }
 form fieldset select {
   margin-bottom: 1vw;
@@ -495,20 +500,21 @@ form fieldset img {
   display: block;
   margin: auto;
 }
+form fieldset .imgStep {
+  width: 11.4vw;
+}
 form fieldset #fileUpload {
   display: none;
 }
 form fieldset .ingredient, form fieldset .utensil, form fieldset .step {
-  border: solid 0.1vw;
   display: flex;
   margin-bottom: 1vw;
+  border-radius: 0.5vw;
+  border: solid 1px #1f5473;
 }
 form fieldset .ingredient input, form fieldset .utensil input, form fieldset .step input {
   border: none;
   width: 100%;
-}
-form fieldset .step label:first-child {
-  padding: 1vw;
 }
 form fieldset .bars, form fieldset .remove {
   width: 5.7vw;
@@ -517,6 +523,19 @@ form fieldset .bars, form fieldset .remove {
 }
 form fieldset div > .removeHidden {
   display: none;
+}
+form fieldset #tagList {
+  display: flex;
+  flex-wrap: wrap;
+}
+form fieldset #tagList .tag {
+  background-color: #DEE8F2;
+  padding: 0.5vw 1vw;
+  border: #DEE8F2 solid 0.1vw;
+  border-radius: 0.5vw;
+  cursor: pointer;
+  color: black;
+  margin: 0.5vw 1vw;
 }
 form input[type=button], form input[type=submit] {
   background-color: #6e1916;
@@ -527,13 +546,15 @@ form input[type=button], form input[type=submit] {
   color: white;
   display: block;
   margin: auto;
+  font-size: 3.8vw;
 }
 form input[type=submit] {
   display: block;
   margin: auto;
+  margin-bottom: 4vw;
 }
 form #tagButton {
-  margin-top: 1vw;
+  margin: 2vw auto;
 }
 
 @media only screen and (min-width: 480px) {
@@ -547,12 +568,20 @@ form #tagButton {
   form fieldset input, form fieldset input[type=text], form fieldset textarea, form fieldset select, form fieldset label, form fieldset input[type=button] {
     font-size: 2.4vw;
   }
+  form fieldset p {
+    font-size: 3.6vw;
+    padding: 0.8vw 0 0.8vw 1vw;
+  }
   form fieldset .bars, form fieldset .remove {
     width: 3.6vw;
     height: 3.6vw;
+    padding: 1vw 1vw;
   }
   form fieldset img {
     width: 12vw;
+  }
+  form fieldset .imgStep {
+    width: 7.2vw;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -566,12 +595,20 @@ form #tagButton {
   form fieldset input, form fieldset input[type=text], form fieldset textarea, form fieldset select, form fieldset label, form fieldset input[type=button] {
     font-size: 1.8vw;
   }
+  form fieldset p {
+    font-size: 2.7vw;
+    padding: 0.8vw 0 0.8vw 1vw;
+  }
   form fieldset .bars, form fieldset .remove {
     width: 2.7vw;
     height: 2.7vw;
+    padding: 1.2vw 1vw;
   }
   form fieldset img {
     width: 9vw;
+  }
+  form fieldset .imgStep {
+    width: 5.4vw;
   }
 }
 @media only screen and (min-width: 1032px) {
@@ -585,12 +622,20 @@ form #tagButton {
   form fieldset input, form fieldset input[type=text], form fieldset textarea, form fieldset select, form fieldset label, form fieldset input[type=button] {
     font-size: 1vw;
   }
+  form fieldset p {
+    font-size: 1.5vw;
+    padding: 0.8vw 0 0.8vw 1vw;
+  }
   form fieldset .bars, form fieldset .remove {
     width: 1.5vw;
     height: 1.5vw;
+    padding: 1vw 1vw;
   }
   form fieldset img {
     width: 5vw;
+  }
+  form fieldset .imgStep {
+    width: 3vw;
   }
 }
 
