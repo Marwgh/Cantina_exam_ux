@@ -146,9 +146,16 @@ section.buttonWrapper {
     }
 }
 
+#ad{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    margin-top:2rem;
+    h2 {
+        margin:0 auto;
+    }
+}
 // Recipes
-
-//change ad placement order
 
 section.yourRecipes {
     display: flex;
@@ -256,6 +263,8 @@ section.advert1 {
 //Tablet
 
 @media only screen and (min-width: map-get($breakPoints, md)) {
+    
+    
     h1 {
         font-size: $ipadH1;
     }
@@ -310,6 +319,14 @@ section.advert1 {
             }
         }
     }
+    
+    // #ad {
+    //     display:flex;
+    //     justify-content:center;
+    //     align-items: center;
+    //     margin-top:2rem;
+        
+    // }
 
 
 }
@@ -319,6 +336,20 @@ section.advert1 {
 
 
 //Desktop 
+@media only screen and (min-width: map-get($breakPoints, lg)) {
+    #seven, #eight{
+        margin-top:12rem;
+    }
+    section.advert1 {
+
+        height: 8rem;
+        top: 168vw;
+        left: 10vw;
+        position: absolute;
+    }
+}
+
+
 
 @media only screen and (min-width: map-get($breakPoints, xl)) {
     main {
@@ -427,7 +458,7 @@ section.advert1 {
         section.advert1 {
 
             height: 8rem;
-            top: 76vw;
+            top: 71vw;
             left: 10vw;
             position: absolute;
         }
