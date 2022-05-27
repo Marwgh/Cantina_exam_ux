@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;500;700&family=Roboto:wght@300;500;700&display=swap");
+@import url("https://use.typekit.net/gjd8qze.css");
 /*Break points*/
 * {
   margin: 0;
@@ -297,7 +298,7 @@ footer li {
   padding-bottom: 2vw;
 }
 footer h2 {
-  font-family: "Oswald", sans-serif;
+  font-family: "Proxima-nova", sans-serif;
   padding-bottom: 0.5vw;
   font-size: 6vw;
 }
@@ -499,6 +500,32 @@ footer section {
   font-family: "Roboto", sans-serif, sans-serif;
 }
 
+main {
+  margin-top: 4rem;
+  font-family: "Roboto", sans-serif;
+}
+
+/*Typography*/
+p {
+  font-size: 3.8vw;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 8vw;
+  font-family: "Proxima-nova", sans-serif;
+}
+
+h2 {
+  font-size: 6vw;
+  font-family: "Roboto", sans-serif;
+}
+
+h3 {
+  font-size: 5vw;
+  font-family: "Proxima-nova", sans-serif;
+}
+
 /*Nav*/
 nav button {
   background-color: #6e1916;
@@ -509,29 +536,22 @@ nav button {
   border-radius: 0.5vw;
 }
 
-/*Typography*/
-p {
-  font-family: "Roboto", sans-serif;
-  font-size: 1vw;
-  font-weight: 300;
-}
-
 /* SEARCH BAR STYLING*/
 .search_wrapper img {
   margin-top: 5vw;
-  width: 30vw;
+  width: 60vw;
   height: auto;
-  margin-left: 37vw;
+  margin-left: 25vw;
 }
 .search_wrapper form {
-  height: 15vw;
+  height: 25vw;
   width: 100%;
 }
 .search_wrapper form input {
   width: 35vw;
   height: 4.5vw;
   margin-left: 35vw;
-  font-size: large;
+  font-size: "Roboto", sans-serif;
   border-radius: 1vw;
   border: solid 0.15vw #1f5473;
   text-align: center;
@@ -590,8 +610,7 @@ section.advert2 img {
   margin-top: 2rem;
   margin-bottom: 2rem;
   text-align: center;
-  font-size: 2.6vw;
-  font-family: "Oswald", sans-serif;
+  font-family: "Proxima-nova", sans-serif;
 }
 .top_recipes_wrapper img {
   text-align: center;
@@ -675,7 +694,7 @@ ul.container div.buttonContainer {
 }
 .article_wrapper h1 {
   font-size: 2.6vw;
-  font-family: "Oswald", sans-serif;
+  font-family: "Proxima-nova", sans-serif;
 }
 .article_wrapper img {
   height: 30vw;
@@ -736,8 +755,7 @@ ul.container div.buttonContainer {
   margin-top: 2rem;
   margin-bottom: 2rem;
   text-align: center;
-  font-size: 2.6vw;
-  font-family: "Oswald", sans-serif;
+  font-family: "Proxima-nova", sans-serif;
 }
 .chef_wrapper ul {
   margin-top: 5vw;
@@ -773,13 +791,10 @@ ul.container div.buttonContainer {
   padding: 2vw;
 }
 .sign_up_wrapper h1 {
-  font-family: "Oswald", sans-serif;
-  font-size: 2.6vw;
+  font-family: "Proxima-nova", sans-serif;
   color: white;
 }
 .sign_up_wrapper p {
-  font-family: "Roboto", sans-serif;
-  font-size: 1vw;
   padding: 1vw;
   margin-bottom: 1vw;
 }
@@ -788,7 +803,7 @@ ul.container div.buttonContainer {
   color: white;
   padding: 1vw 3vw;
   text-decoration: none;
-  font-family: "Oswald", sans-serif;
+  font-family: "Proxima-nova", sans-serif;
   border-radius: 0.2vw;
 }
 
@@ -886,7 +901,7 @@ ul.container div.buttonContainer {
     margin-bottom: 2rem;
     text-align: center;
     font-size: 2.6vw;
-    font-family: "Oswald", sans-serif;
+    font-family: "Proxima-nova", sans-serif;
   }
   .top_recipes_wrapper img {
     text-align: center;
@@ -970,7 +985,7 @@ ul.container div.buttonContainer {
   }
   .article_wrapper h1 {
     font-size: 2.6vw;
-    font-family: "Oswald", sans-serif;
+    font-family: "Proxima-nova", sans-serif;
   }
   .article_wrapper img {
     height: 30vw;
@@ -1032,7 +1047,7 @@ ul.container div.buttonContainer {
     margin-bottom: 2rem;
     text-align: center;
     font-size: 2.6vw;
-    font-family: "Oswald", sans-serif;
+    font-family: "Proxima-nova", sans-serif;
   }
   .chef_wrapper ul {
     margin-top: 5vw;
@@ -1068,7 +1083,7 @@ ul.container div.buttonContainer {
     padding: 2vw;
   }
   .sign_up_wrapper h1 {
-    font-family: "Oswald", sans-serif;
+    font-family: "Proxima-nova", sans-serif;
     font-size: 2.6vw;
     color: white;
   }
@@ -1083,7 +1098,7 @@ ul.container div.buttonContainer {
     color: white;
     padding: 1vw 3vw;
     text-decoration: none;
-    font-family: "Oswald", sans-serif;
+    font-family: "Proxima-nova", sans-serif;
     border-radius: 0.2vw;
   }
 }

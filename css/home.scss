@@ -7,22 +7,31 @@
 
 
 // MAIN
+
 main {
     margin-top: 4rem;
     font-family: $paragraphFont;
 }
 
+/*Typography*/
+p {
+    font-size: $iphoneP;
+    font-weight: 300;
+    }
+
 h1 {
     font-size: $phoneH1;
+    font-family: $titleFont;
 }
 
-h2,
-th {
+h2 {
     font-size: $iphoneH2;
+    font-family: $paragraphFont;
 }
 
 h3 {
     font-size: $iphoneH3;
+    font-family: $titleFont;
 }
 
 
@@ -39,31 +48,24 @@ nav {
     }
 }
 
-/*Typography*/
-p {
-    font-family: $paragraphFont;
-    font-size: $dskP;
-    font-weight: 300;
-    }
-
 /* SEARCH BAR STYLING*/
 
 .search_wrapper {
     img {
         margin-top: 5vw;
-        width: 30vw;
+        width: 60vw;
         height: auto;
-        margin-left: 37vw;
+        margin-left: 25vw;
     }
 
 form {
-        height: 15vw;
+        height: 25vw;
         width: 100%;
         input {
         width: 35vw;
         height: 4.5vw;
         margin-left: 35vw;
-        font-size: large;
+        font-size: $paragraphFont;
         border-radius: 1vw;
         border: solid 0.15vw $primaryColor;
         text-align: center;
