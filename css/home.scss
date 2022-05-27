@@ -5,6 +5,27 @@
     font-family:$paragraphFont, sans-serif;
 }
 
+
+// MAIN
+main {
+    margin-top: 4rem;
+    font-family: $paragraphFont;
+}
+
+h1 {
+    font-size: $phoneH1;
+}
+
+h2,
+th {
+    font-size: $iphoneH2;
+}
+
+h3 {
+    font-size: $iphoneH3;
+}
+
+
 /*Nav*/
 
 nav {
@@ -111,7 +132,6 @@ align-items: center;
         margin-top:2rem;
         margin-bottom: 2rem;
         text-align: center;
-        font-size: $dskH1;
         font-family: $titleFont;
 
     }
@@ -268,7 +288,6 @@ ul.container div.buttonContainer {
         margin-top:2rem;
         margin-bottom: 2rem;
         text-align: center;
-        font-size: $dskH1;
         font-family: $titleFont;
 
     }
@@ -310,12 +329,9 @@ ul.container div.buttonContainer {
     padding: 2vw;
     h1 {
         font-family: $titleFont;
-        font-size: $dskH1;
         color: $whiteSpace;
     }
     p {
-        font-family: $paragraphFont;
-        font-size: $dskP;
         padding: 1vw;
         margin-bottom: 1vw;
 
