@@ -50,7 +50,7 @@ main {
         left: 50%;
         transform: translate(-50%, -50%);
 
-        text-shadow: $fillColor 0 0 2px;
+        text-shadow: $fillColor 0 0 4px;
         // color: $whiteSpace;
         // backdrop-filter: grayscale(0.5);
     }
@@ -346,6 +346,11 @@ section.advert2 {
 @media only screen and (min-width: map-get($breakPoints, lg)) {
     .hero {
         height: 30vw;
+
+        h1 {
+            text-shadow: $fillColor 0 0 2px;
+
+        }
     }
 
     .steps {

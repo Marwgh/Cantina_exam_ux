@@ -62,7 +62,7 @@ header {
     display: flex;
     justify-content: space-between;
     font-family: $paragraphFont;
-    background-color: rgba($color: $primaryColor, $alpha: 0.98);
+    background-color: rgba($color: $primaryColor, $alpha: 0.90);
     color: $whiteSpace;
     position: fixed;
     top: 0;
@@ -355,11 +355,12 @@ footer {
     font-size: $iphoneP;
 
     .footerLogo img {
-        width: 100%;
+        width: 70%;
         height: auto;
         position: absolute;
         z-index: 1;
-        top: -9vw;
+        top: 0vw;
+        left: 14vw;
     }
 
     section img {
@@ -373,6 +374,7 @@ footer {
             display: flex;
             margin-top: 45vw;
             margin-left: 2vw;
+            justify-content: space-evenly;
 
             img {
                 z-index: 2;
@@ -437,22 +439,23 @@ footer {
         font-size: $ipadP;
 
         .footerLogo img {
-            width: 25vw;
-            top: 0vw;
+            width: 13.5vw;
+            top: 3vw;
+            left: -70vw;
         }
 
         section img {
-            width: 5vw;
+            width: 2.5vw;
         }
 
         div {
             grid-column-start: 1;
-            margin-top: 1vw;
-            margin-left: 2vw;
+            margin-top: 0vw;
+            margin-left: 0vw;
 
             section {
-                justify-content: space-between;
-                margin-top: 15vw;
+                justify-content: space-evenly;
+                margin-top: 12vw;
 
                 :nth-child(4) {
                     display: block;
@@ -514,7 +517,8 @@ footer {
 
         .footerLogo img {
             width: 13.5vw;
-            top: -1vw;
+            top: 2vw;
+            left: -44vw;
         }
 
         section img {
@@ -528,7 +532,7 @@ footer {
 
             section {
                 justify-content: space-between;
-                margin-top: 6vw;
+                margin-top: 10vw;
                 width: 20vw;
 
             }
@@ -608,9 +612,29 @@ footer {
         font-size: 1vw;
         height: 13.5vw;
 
+        .footerLogo img {
+            width: 13.5vw;
+            top: 0vw;
+            left: -44vw;
+        }
+
         h2 {
             font-size: 1.8vw;
         }
+
+        div {
+            grid-column-start: 1;
+            margin-top: 1vw;
+            margin-left: 2vw;
+
+            section {
+                justify-content: space-between;
+                margin-top: 7vw;
+                width: 20vw;
+
+            }
+        }
+
 
     }
 }
@@ -622,30 +646,36 @@ footer {
     .rate {
         padding: 0 10px;
     }
-    .rate:not(:checked) > input {
+
+    .rate:not(:checked)>input {
         display: none;
     }
-    .rate:not(:checked) > label {
-        float:right;
-        cursor:pointer;
-        font-size:$iphoneH3;
+
+    .rate:not(:checked)>label {
+        float: right;
+        cursor: pointer;
+        font-size: $iphoneH3;
         color: $fillColor;
     }
-    .rate:not(:checked) > label:before {
+
+    .rate:not(:checked)>label:before {
         content: '★ ';
     }
-    .rate > input:checked ~ label {
-        color: $secondaryColor;    
+
+    .rate>input:checked~label {
+        color: $secondaryColor;
     }
-    .rate:not(:checked) > label:hover,
-    .rate:not(:checked) > label:hover ~ label {
-        color: $secondaryColor;  
+
+    .rate:not(:checked)>label:hover,
+    .rate:not(:checked)>label:hover~label {
+        color: $secondaryColor;
     }
-    .rate > input:checked + label:hover,
-    .rate > input:checked + label:hover ~ label,
-    .rate > input:checked ~ label:hover,
-    .rate > input:checked ~ label:hover ~ label,
-    .rate > label:hover ~ input:checked ~ label {
+
+    .rate>input:checked+label:hover,
+    .rate>input:checked+label:hover~label,
+    .rate>input:checked~label:hover,
+    .rate>input:checked~label:hover~label,
+    .rate>label:hover~input:checked~label {
         color: $secondaryColor;
     }
 }
@@ -653,24 +683,24 @@ footer {
 
 @media only screen and (min-width: map-get($breakPoints, md)) {
     .rating {
-        .rate:not(:checked) > label {
-            font-size:$ipadH3;
+        .rate:not(:checked)>label {
+            font-size: $ipadH3;
         }
     }
 }
 
 @media only screen and (min-width: map-get($breakPoints, lg)) {
     .rating {
-        .rate:not(:checked) > label {
-            font-size:$pcH3;
+        .rate:not(:checked)>label {
+            font-size: $pcH3;
         }
     }
 }
 
 @media only screen and (min-width: map-get($breakPoints, xl)) {
     .rating {
-        .rate:not(:checked) > label {
-            font-size:$dskH3;
+        .rate:not(:checked)>label {
+            font-size: $dskH3;
         }
     }
 }
