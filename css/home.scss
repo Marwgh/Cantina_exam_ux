@@ -55,21 +55,53 @@ nav {
         margin-top: 5vw;
         width: 60vw;
         height: auto;
-        margin-left: 25vw;
+        margin-left: 22vw;
     }
 
-form {
-        height: 25vw;
+form {  
+        display: flex;
+        height: 18vw;
         width: 100%;
         input {
-        width: 35vw;
-        height: 4.5vw;
-        margin-left: 35vw;
+        width: 75vw;
+        height: 10vw;
+        margin-left: 8vw;
         font-size: $paragraphFont;
         border-radius: 1vw;
         border: solid 0.15vw $primaryColor;
         text-align: center;
         }
+        a {
+            background-color: $secondaryColor;
+            height: 10vw;
+            width: 10vw;
+            border-radius: 1vw;
+            margin-left: 1vw;
+            padding-left: 1vw;
+            img {
+                padding: 1.5vw 0.5vw;
+                width: 80%;
+                height: auto;
+                margin:0;
+            }
+        }
+        
+}
+button {
+    width: 35vw;
+    height: 9vw;
+    background-color: $ctaColor;
+    border: none;
+    border-radius: 1vw;
+    margin-bottom: 15vw;
+    margin-left: 30vw;
+
+    a {
+        color: $whiteSpace;
+        font-family: $iphoneP;
+        text-decoration: none;
+    }
+
 }
 }
 
@@ -79,19 +111,22 @@ form {
 .food_categories_wrapper {
     ul {
         display: flex;
-        height: 20vw;
+        height: 30vw;
         list-style-type: none;
-        margin-left: 7vw;
+        margin-left: 2vw;
+        :nth-child(5){
+            display: none;
+        }
         
         li {
-            margin-left: 6vw;
+            margin-left: 10vw;
+        
 
             img {
-            width: 12vw;
-            height: 12vw;
+            width: 17vw;
+            height: 17vw;
             border-radius: 50%;
-            -webkit-box-shadow: 0px 4px 21px -6px rgba(0,0,0,0.78); 
-box-shadow: 0px 4px 21px -6px rgba(0,0,0,0.78);
+            
             }
         }
     }
@@ -102,14 +137,14 @@ box-shadow: 0px 4px 21px -6px rgba(0,0,0,0.78);
     height: 10vw;
 width: 10vw;
     button {
-        width: 8vw;
-        height: 2vw;
-        margin-left: 2vw;
+        width: 12vw;
+        height: 4vw;
+        margin-left: 2.2vw;
         margin-top: 2vw;
         color: $textColor;
-        font-size: $dskP;
         background-color: $secondaryColor;
         border: $secondaryColor solid;
+        font-size: $ipadP;
         border-radius: 0.4vw;
     }
 }
@@ -127,12 +162,15 @@ section.advert2 {
 
 .top_recipes_wrapper{
 background-color: $fillColor;
-height: 40vw;
+height: auto;
+width: 100%;
 padding: 2vw;
 align-items: center;
     h1 {
+        width: 80%;
         margin-top:2rem;
         margin-bottom: 2rem;
+        margin-left: 5vw;
         text-align: center;
         font-family: $titleFont;
 
@@ -142,12 +180,13 @@ align-items: center;
         text-align: center;
         width:100%;
     }
+
     ul.container {
-    display: grid;
-    grid-template-columns: repeat(4, 20vw);
-    margin-left: 2.5vw;
+    display: flex;
+    flex-direction: column;
+    margin-left: 9vw;
     gap: 4vw;
-    width: 20%;
+    width: 80%;
         li:nth-child(3){
             padding-bottom:1rem; 
         }
@@ -162,12 +201,14 @@ align-items: center;
         }
     }
     h3{
-        margin:1rem 0rem;
+        margin:0.5rem 0rem;
+        font-weight: 600;
     }
 }
 
 div.recipeDetails{
     text-align:left;
+    font-weight: 300;
     padding-left:1.5rem;
     div.buttonContainer{
         display:flex;
@@ -181,7 +222,7 @@ div.recipeDetails{
 div.recipeDetails p{
     margin-top:0.5rem;
     color:$secondaryColor;
-    font-size: $dskP;
+    font-size: $iphoneP;
 }
 
 ul.descripDetails {
@@ -219,27 +260,28 @@ ul.container div.buttonContainer {
 /*ARTICLE WRAPPER SECTION*/
 
 .article_wrapper {
-    height: 35vw;
+    height: auto;
     width: 100%;
-    margin: 3vw;
+    margin-top: 5vw;
     text-align: center;
     h1{
-        font-size: $dskH1;
+        width: 80%;
+        margin-left: 9vw;
         font-family: $titleFont;
     }
     img {
-        height: 30vw;
-        width: auto;
+        height: auto;
+        width: 100%;
         margin-top: 5vw;
     }
 }
 
 .blog_section {
-    height: 30vw;
-    margin-left: 25vw;
-    width: 56vw;
-    display: flex;
+    height: auto;
+    margin-left: 12vw;
+    width: 80%;
     article {
+        border-bottom: solid $ctaColor 0.3vw;
         margin-top: 3vw;
         ul {
             list-style-type: none;
@@ -247,8 +289,8 @@ ul.container div.buttonContainer {
         li {
             margin-bottom: 1vw;
             img{
-                width: 18vw;
-                height: 10vw;
+                width: 68vw;
+                height: 50vw;
             }
 
         }
@@ -263,13 +305,15 @@ ul.container div.buttonContainer {
     margin-right: 5vw;
     p {
         margin-bottom: 1.5vw;
-        margin-top: 2vw;
+        margin-top: 3vw;
     }
     button {
         background-color: $ctaColor;
-        width: 6vw;
-        height: 2vw;
-        border-radius: 0.3vw;
+        width: 25vw;
+        height: 6vw;
+        margin-top: 4vw;
+        margin-bottom: 3vw;
+        border-radius: 1vw;
         border-style: none;
         color: $whiteSpace;
         font-weight: 400;
@@ -280,35 +324,33 @@ ul.container div.buttonContainer {
 /*CHEF WRAPPER SECTION*/
 
 .chef_wrapper {
-    height: 40vw;
+    height: auto;
     width: 80%;
     margin-top: 13vw;
-    margin-left: 5vw;
+    margin-left: 6vw;
     align-self: center;
     
     h1 {
-        margin-top:2rem;
-        margin-bottom: 2rem;
         text-align: center;
         font-family: $titleFont;
 
     }
     ul {
         margin-top: 5vw;
-        display: flex;
-        height: 20vw;
+        height: auto;
         list-style-type: none;
-        margin-left: 7vw;
+        margin-left: 3vw;
         
         li {
             margin-left: 6vw;
+            margin-bottom: 7vw;
 
             :nth-child(2){
                 color: $secondaryColor;
             }
             img {
-            width: 12vw;
-            height: 12vw;
+            width: 20vw;
+            height: 20vw;
             border-radius: 50%;
             margin-bottom: 1.5vw;
             -webkit-box-shadow: 0px 4px 21px -6px rgba(0,0,0,0.78); 
@@ -322,19 +364,22 @@ ul.container div.buttonContainer {
 
 .sign_up_wrapper {
     background-color: $secondaryColor;
-    height: 15vw;
-    width: 80%;
-    margin-left: 10vw;
+    height: 45vw;
+    width: 90%;
+    margin-left: 5vw;
     margin-bottom: 10vw;
     border-radius: 2vw; 
     text-align: center; 
-    padding: 2vw;
+    padding: 3vw;
     h1 {
+        line-height: 10vw;
+        font-size: $iphoneH2;
         font-family: $titleFont;
         color: $whiteSpace;
     }
     p {
-        padding: 1vw;
+        line-height: 6vw;
+        padding: 2vw;
         margin-bottom: 1vw;
 
     }
@@ -344,16 +389,37 @@ ul.container div.buttonContainer {
         padding: 1vw 3vw;
         text-decoration: none;
         font-family: $titleFont;
-        border-radius: 0.2vw;
+        border-radius: 1vw;
     }
 }
 
+/*IPAD*/
 
-/*Mobile*/
+
+/*Desktop*/
 
 @media only screen and (min-width: map-get($breakPoints, lg)) {
-    /*Nav*/
+    /*Typography*/
+p {
+    font-size: $pcP;
+    font-weight: 300;
+    }
 
+h1 {
+    font-size: $pcH1;
+    font-family: $titleFont;
+}
+
+h2 {
+    font-size: $pcH2;
+    font-family: $paragraphFont;
+}
+
+h3 {
+    font-size: $pcH3;
+    font-family: $titleFont;
+}
+    /*Nav*/
 nav {
     button {
         background-color: $ctaColor;
@@ -365,12 +431,6 @@ nav {
     }
 }
 
-/*Typography*/
-p {
-    font-family: $paragraphFont;
-    font-size: $dskP;
-    font-weight: 300;
-    }
 
 /* SEARCH BAR STYLING*/
 
@@ -458,7 +518,6 @@ align-items: center;
         margin-top:2rem;
         margin-bottom: 2rem;
         text-align: center;
-        font-size: $dskH1;
         font-family: $titleFont;
 
     }
@@ -506,7 +565,7 @@ div.recipeDetails{
 div.recipeDetails p{
     margin-top:0.5rem;
     color:$secondaryColor;
-    font-size: $dskP;
+    font-size: $pcP;
 }
 
 ul.descripDetails {
@@ -546,11 +605,12 @@ ul.container div.buttonContainer {
 .article_wrapper {
     height: 35vw;
     width: 100%;
-    margin: 3vw;
+    margin: 3vw 0vw 3vw 0vw;
     text-align: center;
     h1{
-        font-size: $dskH1;
+        font-size: $pcH1;
         font-family: $titleFont;
+        margin-left: 1vw;
     }
     img {
         height: 30vw;
@@ -615,8 +675,7 @@ ul.container div.buttonContainer {
         margin-top:2rem;
         margin-bottom: 2rem;
         text-align: center;
-        font-size: $dskH1;
-        font-family: $titleFont;
+        font-size: $pcH1;
 
     }
     ul {
@@ -656,13 +715,9 @@ ul.container div.buttonContainer {
     text-align: center; 
     padding: 2vw;
     h1 {
-        font-family: $titleFont;
-        font-size: $dskH1;
         color: $whiteSpace;
     }
     p {
-        font-family: $paragraphFont;
-        font-size: $dskP;
         padding: 1vw;
         margin-bottom: 1vw;
 
@@ -677,3 +732,38 @@ ul.container div.buttonContainer {
     }
 }
 }
+
+@media only screen and (min-width: map-get($breakPoints, xl)) {
+    //Typography
+    .chef_wrapper h1 {
+        font-size: $dskH1;
+    }
+
+    h1 {
+        font-size: $dskH1;
+    }
+
+    h2 {
+        font-size: $dskH2;
+    }
+
+    h3 {
+        font-size: $dskH3;
+    }
+
+    p {
+        font-size: $dskP;
+    }
+
+    .sign_up_wrapper h1 {
+        font-size: $dskH1;
+    }
+
+    .food_categories_wrapper ul :nth-child(5) {
+        display: block;
+    }
+
+    
+
+}
+
