@@ -541,38 +541,68 @@ nav button {
   margin-top: 5vw;
   width: 60vw;
   height: auto;
-  margin-left: 25vw;
+  margin-left: 22vw;
 }
 .search_wrapper form {
-  height: 25vw;
+  display: flex;
+  height: 18vw;
   width: 100%;
 }
 .search_wrapper form input {
-  width: 35vw;
-  height: 4.5vw;
-  margin-left: 35vw;
+  width: 75vw;
+  height: 10vw;
+  margin-left: 8vw;
   font-size: "Roboto", sans-serif;
   border-radius: 1vw;
   border: solid 0.15vw #1f5473;
   text-align: center;
 }
+.search_wrapper form a {
+  background-color: #f4a234;
+  height: 10vw;
+  width: 10vw;
+  border-radius: 1vw;
+  margin-left: 1vw;
+  padding-left: 1vw;
+}
+.search_wrapper form a img {
+  padding: 1.5vw 0.5vw;
+  width: 80%;
+  height: auto;
+  margin: 0;
+}
+.search_wrapper button {
+  width: 35vw;
+  height: 9vw;
+  background-color: #6e1916;
+  border: none;
+  border-radius: 1vw;
+  margin-bottom: 15vw;
+  margin-left: 30vw;
+}
+.search_wrapper button a {
+  color: white;
+  font-family: 3.8vw;
+  text-decoration: none;
+}
 
 /*Food Categories Styling*/
 .food_categories_wrapper ul {
   display: flex;
-  height: 20vw;
+  height: 30vw;
   list-style-type: none;
-  margin-left: 7vw;
+  margin-left: 2vw;
+}
+.food_categories_wrapper ul :nth-child(5) {
+  display: none;
 }
 .food_categories_wrapper ul li {
-  margin-left: 6vw;
+  margin-left: 10vw;
 }
 .food_categories_wrapper ul li img {
-  width: 12vw;
-  height: 12vw;
+  width: 17vw;
+  height: 17vw;
   border-radius: 50%;
-  -webkit-box-shadow: 0px 4px 21px -6px rgba(0, 0, 0, 0.78);
-  box-shadow: 0px 4px 21px -6px rgba(0, 0, 0, 0.78);
 }
 
 .food_categories_wrapper div {
@@ -581,14 +611,14 @@ nav button {
   width: 10vw;
 }
 .food_categories_wrapper div button {
-  width: 8vw;
-  height: 2vw;
-  margin-left: 2vw;
+  width: 12vw;
+  height: 4vw;
+  margin-left: 2.2vw;
   margin-top: 2vw;
   color: black;
-  font-size: 1vw;
   background-color: #f4a234;
   border: #f4a234 solid;
+  font-size: 2.4vw;
   border-radius: 0.4vw;
 }
 
@@ -602,13 +632,16 @@ section.advert2 img {
 /*Top Recipes*/
 .top_recipes_wrapper {
   background-color: #DEE8F2;
-  height: 40vw;
+  height: auto;
+  width: 100%;
   padding: 2vw;
   align-items: center;
 }
 .top_recipes_wrapper h1 {
+  width: 80%;
   margin-top: 2rem;
   margin-bottom: 2rem;
+  margin-left: 5vw;
   text-align: center;
   font-family: "Proxima-nova", sans-serif;
 }
@@ -617,11 +650,11 @@ section.advert2 img {
   width: 100%;
 }
 .top_recipes_wrapper ul.container {
-  display: grid;
-  grid-template-columns: repeat(4, 20vw);
-  margin-left: 2.5vw;
+  display: flex;
+  flex-direction: column;
+  margin-left: 9vw;
   gap: 4vw;
-  width: 20%;
+  width: 80%;
 }
 .top_recipes_wrapper ul.container li:nth-child(3) {
   padding-bottom: 1rem;
@@ -636,11 +669,13 @@ section.advert2 img {
   overflow: hidden;
 }
 .top_recipes_wrapper h3 {
-  margin: 1rem 0rem;
+  margin: 0.5rem 0rem;
+  font-weight: 600;
 }
 
 div.recipeDetails {
   text-align: left;
+  font-weight: 300;
   padding-left: 1.5rem;
 }
 div.recipeDetails div.buttonContainer {
@@ -654,7 +689,7 @@ div.recipeDetails div.buttonContainer {
 div.recipeDetails p {
   margin-top: 0.5rem;
   color: #f4a234;
-  font-size: 1vw;
+  font-size: 3.8vw;
 }
 
 ul.descripDetails {
@@ -687,28 +722,29 @@ ul.container div.buttonContainer {
 
 /*ARTICLE WRAPPER SECTION*/
 .article_wrapper {
-  height: 35vw;
+  height: auto;
   width: 100%;
-  margin: 3vw;
+  margin-top: 5vw;
   text-align: center;
 }
 .article_wrapper h1 {
-  font-size: 2.6vw;
+  width: 80%;
+  margin-left: 9vw;
   font-family: "Proxima-nova", sans-serif;
 }
 .article_wrapper img {
-  height: 30vw;
-  width: auto;
+  height: auto;
+  width: 100%;
   margin-top: 5vw;
 }
 
 .blog_section {
-  height: 30vw;
-  margin-left: 25vw;
-  width: 56vw;
-  display: flex;
+  height: auto;
+  margin-left: 12vw;
+  width: 80%;
 }
 .blog_section article {
+  border-bottom: solid #6e1916 0.3vw;
   margin-top: 3vw;
 }
 .blog_section article ul {
@@ -718,8 +754,8 @@ ul.container div.buttonContainer {
   margin-bottom: 1vw;
 }
 .blog_section article li img {
-  width: 18vw;
-  height: 10vw;
+  width: 68vw;
+  height: 50vw;
 }
 
 .article_intro {
@@ -731,13 +767,15 @@ ul.container div.buttonContainer {
 }
 .article_intro p {
   margin-bottom: 1.5vw;
-  margin-top: 2vw;
+  margin-top: 3vw;
 }
 .article_intro button {
   background-color: #6e1916;
-  width: 6vw;
-  height: 2vw;
-  border-radius: 0.3vw;
+  width: 25vw;
+  height: 6vw;
+  margin-top: 4vw;
+  margin-bottom: 3vw;
+  border-radius: 1vw;
   border-style: none;
   color: white;
   font-weight: 400;
@@ -745,34 +783,32 @@ ul.container div.buttonContainer {
 
 /*CHEF WRAPPER SECTION*/
 .chef_wrapper {
-  height: 40vw;
+  height: auto;
   width: 80%;
   margin-top: 13vw;
-  margin-left: 5vw;
+  margin-left: 6vw;
   align-self: center;
 }
 .chef_wrapper h1 {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
   text-align: center;
   font-family: "Proxima-nova", sans-serif;
 }
 .chef_wrapper ul {
   margin-top: 5vw;
-  display: flex;
-  height: 20vw;
+  height: auto;
   list-style-type: none;
-  margin-left: 7vw;
+  margin-left: 3vw;
 }
 .chef_wrapper ul li {
   margin-left: 6vw;
+  margin-bottom: 7vw;
 }
 .chef_wrapper ul li :nth-child(2) {
   color: #f4a234;
 }
 .chef_wrapper ul li img {
-  width: 12vw;
-  height: 12vw;
+  width: 20vw;
+  height: 20vw;
   border-radius: 50%;
   margin-bottom: 1.5vw;
   -webkit-box-shadow: 0px 4px 21px -6px rgba(0, 0, 0, 0.78);
@@ -782,20 +818,23 @@ ul.container div.buttonContainer {
 /*CTA WRAPPER*/
 .sign_up_wrapper {
   background-color: #f4a234;
-  height: 15vw;
-  width: 80%;
-  margin-left: 10vw;
+  height: 45vw;
+  width: 90%;
+  margin-left: 5vw;
   margin-bottom: 10vw;
   border-radius: 2vw;
   text-align: center;
-  padding: 2vw;
+  padding: 3vw;
 }
 .sign_up_wrapper h1 {
+  line-height: 10vw;
+  font-size: 6vw;
   font-family: "Proxima-nova", sans-serif;
   color: white;
 }
 .sign_up_wrapper p {
-  padding: 1vw;
+  line-height: 6vw;
+  padding: 2vw;
   margin-bottom: 1vw;
 }
 .sign_up_wrapper a {
@@ -804,11 +843,33 @@ ul.container div.buttonContainer {
   padding: 1vw 3vw;
   text-decoration: none;
   font-family: "Proxima-nova", sans-serif;
-  border-radius: 0.2vw;
+  border-radius: 1vw;
 }
 
-/*Mobile*/
+/*IPAD*/
+/*Desktop*/
 @media only screen and (min-width: 768px) {
+  /*Typography*/
+  p {
+    font-size: 1.8vw;
+    font-weight: 300;
+  }
+
+  h1 {
+    font-size: 3.6vw;
+    font-family: "Proxima-nova", sans-serif;
+  }
+
+  h2 {
+    font-size: 3vw;
+    font-family: "Roboto", sans-serif;
+  }
+
+  h3 {
+    font-size: 2.5vw;
+    font-family: "Proxima-nova", sans-serif;
+  }
+
   /*Nav*/
   nav button {
     background-color: #6e1916;
@@ -817,13 +878,6 @@ ul.container div.buttonContainer {
     color: white;
     border-style: none;
     border-radius: 0.5vw;
-  }
-
-  /*Typography*/
-  p {
-    font-family: "Roboto", sans-serif;
-    font-size: 1vw;
-    font-weight: 300;
   }
 
   /* SEARCH BAR STYLING*/
@@ -900,7 +954,6 @@ ul.container div.buttonContainer {
     margin-top: 2rem;
     margin-bottom: 2rem;
     text-align: center;
-    font-size: 2.6vw;
     font-family: "Proxima-nova", sans-serif;
   }
   .top_recipes_wrapper img {
@@ -945,7 +998,7 @@ ul.container div.buttonContainer {
   div.recipeDetails p {
     margin-top: 0.5rem;
     color: #f4a234;
-    font-size: 1vw;
+    font-size: 1.8vw;
   }
 
   ul.descripDetails {
@@ -980,12 +1033,13 @@ ul.container div.buttonContainer {
   .article_wrapper {
     height: 35vw;
     width: 100%;
-    margin: 3vw;
+    margin: 3vw 0vw 3vw 0vw;
     text-align: center;
   }
   .article_wrapper h1 {
-    font-size: 2.6vw;
+    font-size: 3.6vw;
     font-family: "Proxima-nova", sans-serif;
+    margin-left: 1vw;
   }
   .article_wrapper img {
     height: 30vw;
@@ -1046,8 +1100,7 @@ ul.container div.buttonContainer {
     margin-top: 2rem;
     margin-bottom: 2rem;
     text-align: center;
-    font-size: 2.6vw;
-    font-family: "Proxima-nova", sans-serif;
+    font-size: 3.6vw;
   }
   .chef_wrapper ul {
     margin-top: 5vw;
@@ -1083,13 +1136,9 @@ ul.container div.buttonContainer {
     padding: 2vw;
   }
   .sign_up_wrapper h1 {
-    font-family: "Proxima-nova", sans-serif;
-    font-size: 2.6vw;
     color: white;
   }
   .sign_up_wrapper p {
-    font-family: "Roboto", sans-serif;
-    font-size: 1vw;
     padding: 1vw;
     margin-bottom: 1vw;
   }
@@ -1100,6 +1149,35 @@ ul.container div.buttonContainer {
     text-decoration: none;
     font-family: "Proxima-nova", sans-serif;
     border-radius: 0.2vw;
+  }
+}
+@media only screen and (min-width: 1032px) {
+  .chef_wrapper h1 {
+    font-size: 2.6vw;
+  }
+
+  h1 {
+    font-size: 2.6vw;
+  }
+
+  h2 {
+    font-size: 1.8vw;
+  }
+
+  h3 {
+    font-size: 1.3vw;
+  }
+
+  p {
+    font-size: 1vw;
+  }
+
+  .sign_up_wrapper h1 {
+    font-size: 2.6vw;
+  }
+
+  .food_categories_wrapper ul :nth-child(5) {
+    display: block;
   }
 }
 
