@@ -2,9 +2,21 @@
 * {
     font-family:$paragraphFont, sans-serif;
 }
+nav {
+    button {
+      background-color: $ctaColor;
+      width: 6vw;
+      height: 2vw;
+      color: $whiteSpace;
+      border-style: none;
+      border-radius: 0.5vw;
+      cursor:pointer;
+  }
+}
 
 body {
     main form {
+        height:100vh;
         display: flex;
         flex-direction:column;
         align-items: center;
@@ -57,7 +69,7 @@ form a {
         text-decoration:none;
         border-radius: 1vw;
         padding: 0.5vw 1vw;
-        font-size: 3.4vw;
+        font-size: $iphoneP;
         cursor:pointer;
         box-shadow:none;
       }
@@ -69,19 +81,46 @@ form a {
     border:none;
     padding: 0.5vw 1vw;
     border-radius: 1vw;
-    font-size: 3.4vw;
+    font-size: $iphoneP;
     cursor:pointer;
       }
   }
 
-
-  //Desktop
-  @media only screen and (min-width: map-get($breakPoints, lg)) {
+  @media only screen and (min-width: map-get($breakPoints, md)) {
     .clearfix .Signupbtn {
-      font-size:1.4vw;
+      border-radius:0.8vw;
+      font-size:$ipadP;
   }
 
   .clearfix .Loginbtn{
-      font-size:1.4vw;
+    border-radius:0.8vw;
+    font-size:$ipadP;
+  }
+  }
+
+  
+  @media only screen and (min-width: map-get($breakPoints, lg)) {
+   
+    .clearfix .Signupbtn {
+      border-radius:0.6vw;
+      font-size:$pcP;
+  }
+
+  .clearfix .Loginbtn{
+    border-radius:0.6vw;
+    font-size:$pcP;
+  }
+  }
+
+  @media only screen and (min-width: map-get($breakPoints, xl)) {
+    
+    .clearfix .Signupbtn {
+      border-radius:0.5vw;
+      font-size:$dskP;
+  }
+
+  .clearfix .Loginbtn{
+      border-radius:0.5vw;
+      font-size:$dskP;
   }
   }

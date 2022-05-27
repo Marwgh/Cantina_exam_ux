@@ -5,6 +5,7 @@
 
 main {
     max-width: 1100px;
+    height:100vh;
     margin:0 auto;
     display: flex;
     flex-direction: column;
@@ -73,7 +74,7 @@ form input::placeholder{
     text-decoration:none;
     border-radius: 1vw;
     padding: 2vw 5vw;
-    font-size: 3.4vw;
+    font-size: $iphoneP;
     cursor:pointer;
     box-shadow:none;
 }
@@ -88,7 +89,7 @@ section.uploader {
 
 button.upload {
     margin-bottom:1rem;
-    font-size:3.4vw;
+    font-size:$iphoneP;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -102,14 +103,48 @@ button.upload {
     }
 
 }
+//Tablet 
+@media only screen and (min-width: map-get($breakPoints, md)) {
+    button.upload {
+        font-size:$ipadP;
+  }
+    .clearfix .cancelbtn {
+        border-radius:0.7vw;
+        font-size: $ipadP;
+        padding: 1vw 1.5vw;
+    }
+    .clearfix .signupbtn{
+        border-radius:0.9vw;
+        font-size: $ipadP;
+    }
+}
+@media only screen and (min-width: map-get($breakPoints, lg)) {
+    main {
+        display:flex;
+        justify-content: flex-start;
+    }
+    button.upload {
+          font-size:$pcP;
+    }
+    .clearfix .cancelbtn {
 
+        font-size: $pcP;
+        padding: 0.5vw 1vw;
+    }
+    .clearfix .signupbtn{
+        font-size: $pcP;
+        padding: 0.6vw 1.2vw;
+
+    }
+}
 
 // Desktop
 
-  @media only screen and (min-width: map-get($breakPoints, lg)) {
+  @media only screen and (min-width: map-get($breakPoints, xl)) {
         main {
             display:flex;
             flex-direction: row;
+            justify-content: center;
         }
         header h1 {
             margin-top:10rem;
@@ -117,22 +152,27 @@ button.upload {
             text-align: center;
         }
 
+
         .clearfix .cancelbtn {
-            font-size:1.4vw;
+            border-radius:0.5vw;
+            font-size:$dskP;
             padding: 0.5vw 1vw;
         }
 
         .clearfix .signupbtn{
-            font-size:1.4vw;
-            padding: 0.5vw 1vw;
+            border-radius:0.5vw;
+            font-size:$dskP;
+            padding: 0.6vw 1.2vw;
+
 
         }
         button.upload{
+            border-radius:0.5vw;
             margin-right:5rem;
             display:flex;
             justify-content: center;
             align-items: center;
-            font-size:1.4vw;
+            font-size:$dskP;
         }
         form {
             padding-bottom:2rem;
