@@ -146,15 +146,17 @@ section.buttonWrapper {
     }
 }
 
-#ad{
-    display:flex;
-    justify-content:center;
+#ad {
+    display: flex;
+    justify-content: center;
     align-items: center;
-    margin-top:2rem;
+    margin-top: 2rem;
+
     h2 {
-        margin:0 auto;
+        margin: 0 auto;
     }
 }
+
 // Recipes
 
 section.yourRecipes {
@@ -263,8 +265,8 @@ section.advert1 {
 //Tablet
 
 @media only screen and (min-width: map-get($breakPoints, md)) {
-    
-    
+
+
     h1 {
         font-size: $ipadH1;
     }
@@ -319,13 +321,13 @@ section.advert1 {
             }
         }
     }
-    
+
     // #ad {
     //     display:flex;
     //     justify-content:center;
     //     align-items: center;
     //     margin-top:2rem;
-        
+
     // }
 
 
@@ -337,9 +339,12 @@ section.advert1 {
 
 //Desktop 
 @media only screen and (min-width: map-get($breakPoints, lg)) {
-    #seven, #eight{
-        margin-top:12rem;
+
+    #seven,
+    #eight {
+        margin-top: 12rem;
     }
+
     section.advert1 {
 
         height: 8rem;

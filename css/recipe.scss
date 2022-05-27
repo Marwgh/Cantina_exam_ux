@@ -131,6 +131,10 @@ main {
     padding: 0.5rem;
     box-shadow: 4px 4px 10px rgba($color: $textColor, $alpha: 0.5);
 
+    table {
+        width: 100%;
+    }
+
     th {
         text-align: left;
     }

@@ -14,7 +14,7 @@ header {
   display: flex;
   justify-content: space-between;
   font-family: "Roboto", sans-serif;
-  background-color: rgba(31, 84, 115, 0.98);
+  background-color: rgba(31, 84, 115, 0.9);
   color: white;
   position: fixed;
   top: 0;
@@ -118,6 +118,16 @@ header #menuB a {
     align-items: center;
     justify-content: space-around;
     position: relative;
+  }
+  header nav button {
+    background-color: #6e1916;
+    width: 10vw;
+    height: 4vw;
+    border-style: none;
+    border-radius: 0.6vw;
+  }
+  header nav button a {
+    color: white;
   }
   header nav a {
     text-decoration: none;
@@ -252,11 +262,12 @@ footer {
   font-size: 3.8vw;
 }
 footer .footerLogo img {
-  width: 100%;
+  width: 70%;
   height: auto;
   position: absolute;
   z-index: 1;
-  top: -9vw;
+  top: 0vw;
+  left: 14vw;
 }
 footer section img {
   width: 10vw;
@@ -268,6 +279,7 @@ footer div section {
   display: flex;
   margin-top: 45vw;
   margin-left: 2vw;
+  justify-content: space-evenly;
 }
 footer div section img {
   z-index: 2;
@@ -314,20 +326,21 @@ footer section {
     font-size: 2.4vw;
   }
   footer .footerLogo img {
-    width: 25vw;
-    top: 0vw;
+    width: 13.5vw;
+    top: 3vw;
+    left: -70vw;
   }
   footer section img {
-    width: 5vw;
+    width: 2.5vw;
   }
   footer div {
     grid-column-start: 1;
-    margin-top: 1vw;
-    margin-left: 2vw;
+    margin-top: 0vw;
+    margin-left: 0vw;
   }
   footer div section {
-    justify-content: space-between;
-    margin-top: 15vw;
+    justify-content: space-evenly;
+    margin-top: 12vw;
   }
   footer div section :nth-child(4) {
     display: block;
@@ -373,7 +386,8 @@ footer section {
   }
   footer .footerLogo img {
     width: 13.5vw;
-    top: -1vw;
+    top: 2vw;
+    left: -44vw;
   }
   footer section img {
     width: 2.5vw;
@@ -385,7 +399,7 @@ footer section {
   }
   footer div section {
     justify-content: space-between;
-    margin-top: 6vw;
+    margin-top: 10vw;
     width: 20vw;
   }
   footer .copyRight {
@@ -442,8 +456,23 @@ footer section {
     font-size: 1vw;
     height: 13.5vw;
   }
+  footer .footerLogo img {
+    width: 13.5vw;
+    top: 0vw;
+    left: -44vw;
+  }
   footer h2 {
     font-size: 1.8vw;
+  }
+  footer div {
+    grid-column-start: 1;
+    margin-top: 1vw;
+    margin-left: 2vw;
+  }
+  footer div section {
+    justify-content: space-between;
+    margin-top: 7vw;
+    width: 20vw;
   }
 }
 /* STARS STARS STARS STARS (TWO PAGES) */

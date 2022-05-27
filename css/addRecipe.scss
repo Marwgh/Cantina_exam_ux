@@ -5,6 +5,7 @@ main {
     font-family: $paragraphFont;
     max-width: 500px;
     margin: 0 auto;
+
     h1 {
         text-align: center;
         font-size: $phoneH1;
@@ -18,23 +19,31 @@ main {
 
 form {
     position: relative;
+    font-size: $iphoneP;
+
 
     p {
         text-align: center;
     }
 
     fieldset:nth-child(2) {
-        input:first-child, textarea {
+
+        input:first-child,
+        textarea {
             width: 100%;
             margin-bottom: 1vw;
         }
+
         div {
             display: flex;
-            input, label {
+            align-items: center;
+
+            input,
+            label {
                 width: 50%;
                 margin-bottom: 1vw;
             }
-            
+
         }
     }
 
@@ -45,12 +54,21 @@ form {
         border: solid 1px $primaryColor;
 
         input {
-            padding: 1vw 0;
+            padding: 1vw 0 1vw 1vw;
         }
 
-        input, input[type="text"], textarea, select, option {
-            font-size: $iphoneP;
-            border-radius: 0.2vw;
+        textarea {
+            padding: 1vw 0 1vw 1vw;
+
+
+        }
+
+        input,
+        input[type="text"],
+        textarea,
+        select,
+        option {
+            border-radius: 1vw;
             border: solid 1px $primaryColor;
         }
 
@@ -58,13 +76,12 @@ form {
             font-size: $iphoneP*1.5;
             padding: 1.1vw 1vw;
         }
-    
+
         select {
             margin-bottom: 1vw;
         }
-    
+
         label {
-            font-size: $iphoneP;
             font-weight: 900;
         }
 
@@ -72,40 +89,46 @@ form {
             width: $iphoneP*5;
             height: auto;
             display: block;
-            margin:auto;
+            margin: auto;
         }
 
         .imgStep {
             width: $iphoneP*3;
         }
-    
+
         #fileUpload {
             display: none;
         }
 
-        .ingredient, .utensil, .step {
+        .ingredient,
+        .utensil,
+        .step {
             display: flex;
             margin-bottom: 1vw;
             border-radius: 0.5vw;
             border: solid 1px $primaryColor;
+
             input {
                 border: none;
                 width: 100%;
             }
         }
 
-        .bars, .remove {
+        .bars,
+        .remove {
             width: $iphoneP*1.5;
             height: $iphoneP*1.5;
             padding: 1.5vw 1vw;
         }
-        div > .removeHidden {
+
+        div>.removeHidden {
             display: none;
         }
 
         #tagList {
             display: flex;
             flex-wrap: wrap;
+
             .tag {
                 background-color: $fillColor;
                 padding: 0.5vw 1vw;
@@ -118,7 +141,9 @@ form {
         }
 
     }
-    input[type="button"], input[type="submit"] {
+
+    input[type="button"],
+    input[type="submit"] {
         background-color: $ctaColor;
         padding: 0.5vw 2vw;
         border: $ctaColor solid 0.1vw;
@@ -127,12 +152,11 @@ form {
         color: $whiteSpace;
         display: block;
         margin: auto;
-        font-size: $iphoneP;
     }
 
     input[type="submit"] {
         display: block;
-        margin:auto;
+        margin: auto;
         margin-bottom: 4vw;
     }
 
@@ -151,20 +175,31 @@ form {
     }
 
     form {
-        input[type="submit"]  {
+        font-size: $ipadP;
+
+        input[type="submit"] {
             font-size: $ipadP;
         }
+
+        input,
+        input[type="text"],
+        textarea,
+        select,
+        option {
+            border-radius: 0.5vw;
+        }
+
+
         fieldset {
-            input, input[type="text"], textarea, select, label, input[type="button"]  {
-                font-size: $ipadP;
-            }
+
 
             p {
                 font-size: $ipadP*1.5;
                 padding: 0.8vw 0 0.8vw 1vw;
             }
-        
-            .bars, .remove {
+
+            .bars,
+            .remove {
                 width: $ipadP*1.5;
                 height: $ipadP*1.5;
                 padding: 1vw 1vw;
@@ -190,20 +225,32 @@ form {
     }
 
     form {
-        input[type="submit"]  {
+        font-size: $pcP;
+
+        input[type="submit"] {
             font-size: $pcP;
         }
+
+
+
         fieldset {
-            input, input[type="text"], textarea, select, label, input[type="button"] {
-                font-size: $pcP;
+
+            input,
+            input[type="text"],
+            textarea,
+            select,
+            option {
+                border-radius: 0.5vw;
             }
+
 
             p {
                 font-size: $pcP*1.5;
                 padding: 0.8vw 0 0.8vw 1vw;
             }
-        
-            .bars, .remove {
+
+            .bars,
+            .remove {
                 width: $pcP*1.5;
                 height: $pcP*1.5;
                 padding: 1.2vw 1vw;
@@ -212,6 +259,7 @@ form {
             img {
                 width: $pcP*5;
             }
+
             .imgStep {
                 width: $pcP*3;
             }
@@ -228,22 +276,54 @@ form {
         }
     }
 
+
+
     form {
-        input[type="submit"]  {
-            font-size: $dskP;
-        }
+        font-size: $dskP;
+
         fieldset {
-    
-            input, input[type="text"], textarea, select, label, input[type="button"] {
-                font-size: $dskP;
+
+            input,
+            input[type="text"],
+            textarea,
+            select,
+            option {
+                border-radius: 0.3vw;
             }
+
+            #recipeDescription {
+                #title {
+                    width: 90%;
+                    margin-bottom: 1vw;
+                }
+
+                textarea {
+                    width: 90%;
+                }
+
+                div {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-top: 2vw;
+
+                    input {
+                        width: 50%;
+                    }
+                }
+            }
+
+
+
+
 
             p {
                 font-size: $dskP*1.5;
                 padding: 0.5vw 0 0.5vw 1vw;
             }
-        
-            .bars, .remove {
+
+            .bars,
+            .remove {
                 width: $dskP*1.5;
                 height: $dskP*1.5;
                 padding: 0.7vw 1vw;
@@ -252,10 +332,19 @@ form {
             img {
                 width: $dskP*5;
             }
+
             .imgStep {
                 width: $dskP*3;
             }
         }
+
+        input[type="submit"] {
+            font-size: $dskP;
+        }
+
+
+
+
     }
 }
 
@@ -263,6 +352,7 @@ form {
 // advert
 section.advert1 {
     display: none;
+
     img {
         height: auto;
         width: 12vw;
@@ -311,7 +401,7 @@ section.advert2 {
         .adLeft {
             padding-left: 5vw;
         }
-    
+
         .adRight {
             padding-right: 5vw;
         }
@@ -325,7 +415,7 @@ section.advert2 {
 }
 
 @media only screen and (min-width: map-get($breakPoints, xl)) {
-    
+
     section.advert1 {
         display: block;
     }
@@ -334,7 +424,7 @@ section.advert2 {
         .adLeft {
             padding-left: 10vw;
         }
-    
+
         .adRight {
             padding-right: 10vw;
         }
