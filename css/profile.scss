@@ -45,6 +45,10 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 margin-bottom:2rem;
+    img.profileImage {
+    width:6rem;
+    height:6rem;
+}
 img {
     margin:1rem 0;
     text-align: center;
@@ -265,6 +269,7 @@ button {
         align-items: center;
     }
     .Details p {
+        border-radius:0.4vw;
         width:20rem;
     }
     article div.btnContainer{
@@ -275,9 +280,12 @@ button {
         position:relative;
         left:5rem;
         font-size:$pcP;
+        border-radius:0.6vw;
+
     }
 
     div.deleteWrapper button.delete-btn{
+        border-radius:0.6vw;
         font-size:$pcP;
     }
     ul.container div.buttonContainer button{
